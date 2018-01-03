@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YoutubeKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'YoutubeKit is a video player for easily create a Youtube app.'
 
   s.description      = <<-DESC
