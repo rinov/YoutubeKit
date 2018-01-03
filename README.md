@@ -93,7 +93,7 @@ final class VideoPlayerController: UIViewController {
 ```
 
 ### YTSwiftyPlayerDelegate
-`YTSwiftyPlayerDelegate` is supports folowing delegate methods.
+`YTSwiftyPlayerDelegate`  supports folowing delegate methods.
 
 ```swift
 func playerReady(_ player: YTSwiftyPlayer)
@@ -238,7 +238,13 @@ Swift 4+
 ## Installation
 
 ### Cocoapods
-Add this to your Podfile:
+
+```
+$ pod repo update
+```
+
+And add this to your Podfile:
+
 
 ```ruby
 pod 'YoutubeKit'
