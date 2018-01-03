@@ -16,5 +16,6 @@ YoutubeKit is a video player that fully supports Youtube IFrame API and YoutubeD
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'YoutubeKit/**/*'
- 
+  s.resources    = 'YoutubeKit/player.html'
+
  end
