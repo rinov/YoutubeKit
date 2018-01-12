@@ -92,7 +92,7 @@ extension Snippet {
 
 extension Snippet {
     public struct ChannelList: Codable {
-        public let customURL: String
+        public let customURL: String?
         public let description: String
         public let localized: Localized
         public let publishedAt: String
