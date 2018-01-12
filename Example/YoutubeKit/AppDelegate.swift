@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        // Set your API key here
+        // Set your API key to use YoutubeDataAPI. If you only use YoutubeIFrameAPI(VideoPlayer), you don't have to set it.
         YoutubeKit.shared.setAPIKey("Your API key")
         
-        // Set your access token for autheticate request
+        // (Optional) Set your access token for autheticate request
         YoutubeKit.shared.setAccessToken("Your access token")
         
         return true
