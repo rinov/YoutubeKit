@@ -19,7 +19,7 @@ final class ViewController: UIViewController {
         // Create a new player
         player = YTSwiftyPlayer(
             frame: CGRect(x: 0, y: 0, width: 640, height: 480),
-            playerVars: [.autoplay(true), .playsInline(true), .videoID("videoID-abcde")])
+            playerVars: [.autoplay(true), .playsInline(true), .videoID("NPiYTw8WkyU")])
 
         // Set player view
         view = player
