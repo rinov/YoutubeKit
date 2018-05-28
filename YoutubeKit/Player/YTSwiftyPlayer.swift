@@ -76,16 +76,32 @@ open class YTSwiftyPlayer: WKWebView {
     ]
     
     public init(frame: CGRect = .zero, playerVars: [String: AnyObject]) {
-        super.init(frame: frame, configuration: defaultConfiguration())
+        let config = WKWebViewConfiguration()
+        config.allowsAirPlayForMediaPlayback = true
+        config.allowsInlineMediaPlayback = true
+        config.allowsPictureInPictureMediaPlayback = true
+        
+        super.init(frame: frame, configuration: config)
+        
+        config.userContentController = userController
         
         commonInit()
+        
         self.playerVars = playerVars
     }
     
     public init(frame: CGRect = .zero, playerVars: [VideoEmbedParameter] = []) {
-        super.init(frame: frame, configuration: defaultConfiguration())
-        
+        let config = WKWebViewConfiguration()
+        config.allowsAirPlayForMediaPlayback = true
+        config.allowsInlineMediaPlayback = true
+        config.allowsPictureInPictureMediaPlayback = true
+
+        super.init(frame: frame, configuration: config)
+
+        config.userContentController = userController
+
         commonInit()
+
         guard !playerVars.isEmpty else { return }
         var params: [String: AnyObject] = [:]
         playerVars.forEach {
@@ -243,15 +259,6 @@ open class YTSwiftyPlayer: WKWebView {
     }
     
     // MARK: - Private Methods
-    
-    private func defaultConfiguration() -> WKWebViewConfiguration {
-        let config = WKWebViewConfiguration()
-        config.allowsAirPlayForMediaPlayback = true
-        config.allowsInlineMediaPlayback = true
-        config.allowsPictureInPictureMediaPlayback = true
-        config.userContentController = userController
-        return config
-    }
     
     private func commonInit() {
         scrollView.bounces = false
