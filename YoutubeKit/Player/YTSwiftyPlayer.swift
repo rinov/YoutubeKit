@@ -21,7 +21,7 @@ open class YTSwiftyPlayer: WKWebView {
 
     open weak var delegate: YTSwiftyPlayerDelegate? {
         didSet {
-            configuration.userContentController = userController
+            configuration.userContentController = userContentController
         }
     }
 
@@ -55,12 +55,12 @@ open class YTSwiftyPlayer: WKWebView {
  
     private var playerVars: [String: AnyObject] = [:]
     
-    private var userController: WKUserContentController {
-        let userController = WKUserContentController()
+    private var userContentController: WKUserContentController {
+        let userContentController = WKUserContentController()
         callbackHandlers.forEach {
-            userController.add(self, name: $0.rawValue)
+            userContentController.add(self, name: $0.rawValue)
         }
-        return userController
+        return userContentController
     }
     
     private let callbackHandlers: [YTSwiftyPlayerEvent] = [
@@ -83,7 +83,7 @@ open class YTSwiftyPlayer: WKWebView {
         
         super.init(frame: frame, configuration: config)
         
-        config.userContentController = userController
+        config.userContentController = userContentController
         
         commonInit()
         
@@ -98,7 +98,7 @@ open class YTSwiftyPlayer: WKWebView {
 
         super.init(frame: frame, configuration: config)
 
-        config.userContentController = userController
+        config.userContentController = userContentController
 
         commonInit()
 
