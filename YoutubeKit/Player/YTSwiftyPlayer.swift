@@ -19,49 +19,37 @@ open class YTSwiftyPlayer: WKWebView {
     /// The property for easily set auto playback.
     open var autoplay = false
 
-    open weak var delegate: YTSwiftyPlayerDelegate? {
-        didSet {
-            configuration.userContentController = userContentController
-        }
-    }
+    open weak var delegate: YTSwiftyPlayerDelegate?
 
-    open fileprivate(set) var isMuted = false
+    open private(set) var isMuted = false
     
-    open fileprivate(set) var volume: Int = 100
+    open private(set) var volume: Int = 100
     
-    open fileprivate(set) var playbackRate: Double = 1.0
+    open private(set) var playbackRate: Double = 1.0
     
-    open fileprivate(set) var availablePlaybackRates: [Double] = [1]
+    open private(set) var availablePlaybackRates: [Double] = [1]
     
-    open fileprivate(set) var availableQualityLevels: [YTSwiftyVideoQuality] = []
+    open private(set) var availableQualityLevels: [YTSwiftyVideoQuality] = []
     
-    open fileprivate(set) var bufferedVideoRate: Double = 0
+    open private(set) var bufferedVideoRate: Double = 0
 
-    open fileprivate(set) var currentPlaylist: [String] = []
+    open private(set) var currentPlaylist: [String] = []
     
-    open fileprivate(set) var currentPlaylistIndex: Int = 0
+    open private(set) var currentPlaylistIndex: Int = 0
     
-    open fileprivate(set) var currentVideoURL: String?
+    open private(set) var currentVideoURL: String?
     
-    open fileprivate(set) var currentVideoEmbedCode: String?
+    open private(set) var currentVideoEmbedCode: String?
 
-    open fileprivate(set) var playerState: YTSwiftyPlayerState = .unstarted
+    open private(set) var playerState: YTSwiftyPlayerState = .unstarted
     
-    open fileprivate(set) var playerQuality: YTSwiftyVideoQuality = .unknown
+    open private(set) var playerQuality: YTSwiftyVideoQuality = .unknown
 
-    open fileprivate(set) var duration: Double?
+    open private(set) var duration: Double?
 
-    open fileprivate(set) var currentTime: Double = 0.0
+    open private(set) var currentTime: Double = 0.0
  
     private var playerVars: [String: AnyObject] = [:]
-    
-    private var userContentController: WKUserContentController {
-        let userContentController = WKUserContentController()
-        callbackHandlers.forEach {
-            userContentController.add(self, name: $0.rawValue)
-        }
-        return userContentController
-    }
     
     private let callbackHandlers: [YTSwiftyPlayerEvent] = [
         .onYoutubeIframeAPIReady,
@@ -75,15 +63,24 @@ open class YTSwiftyPlayer: WKWebView {
         .onUpdateCurrentTime
     ]
     
-    public init(frame: CGRect = .zero, playerVars: [String: AnyObject]) {
+    static private var defaultConfiguration: WKWebViewConfiguration {
         let config = WKWebViewConfiguration()
         config.allowsAirPlayForMediaPlayback = true
         config.allowsInlineMediaPlayback = true
         config.allowsPictureInPictureMediaPlayback = true
+        return config
+    }
+    
+    public init(frame: CGRect = .zero, playerVars: [String: AnyObject]) {
+        let config = YTSwiftyPlayer.defaultConfiguration
+        let userContentController = WKUserContentController()
+        config.userContentController = userContentController
         
         super.init(frame: frame, configuration: config)
         
-        config.userContentController = userContentController
+        callbackHandlers.forEach {
+            userContentController.add(self, name: $0.rawValue)
+        }
         
         commonInit()
         
@@ -91,14 +88,15 @@ open class YTSwiftyPlayer: WKWebView {
     }
     
     public init(frame: CGRect = .zero, playerVars: [VideoEmbedParameter] = []) {
-        let config = WKWebViewConfiguration()
-        config.allowsAirPlayForMediaPlayback = true
-        config.allowsInlineMediaPlayback = true
-        config.allowsPictureInPictureMediaPlayback = true
+        let config = YTSwiftyPlayer.defaultConfiguration
+        let userContentController = WKUserContentController()
+        config.userContentController = userContentController
 
         super.init(frame: frame, configuration: config)
 
-        config.userContentController = userContentController
+        callbackHandlers.forEach {
+            userContentController.add(self, name: $0.rawValue)
+        }
 
         commonInit()
 
@@ -376,7 +374,7 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
             guard let me = self,
                 let availableQualityLevels = result as? [String] else { return }
             me.availableQualityLevels = availableQualityLevels
-                .flatMap { YTSwiftyVideoQuality(rawValue: $0) }
+              .compactMap { YTSwiftyVideoQuality(rawValue: $0) }
         }
     }
     
