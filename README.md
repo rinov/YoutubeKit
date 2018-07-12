@@ -77,8 +77,11 @@ final class VideoPlayerController: UIViewController {
         // Create a new player
         player = YTSwiftyPlayer(
                     frame: CGRect(x: 0, y: 0, width: 640, height: 480),
-                    playerVars: [.autoplay(true), .videoID("videoID-abcde")])
+                    playerVars: [.videoID("videoID-abcde")])
 
+        // Enable auto playback when video is loaded
+        player.autoplay = true
+        
         // Set player view.
         view = player
 
@@ -226,9 +229,6 @@ ApiSession.shared.send(request) { result in
     }
 }
 ```
-
-## TODO
-- [ ] Support fully ACID YoutubeDataAPI requests.
 
 ## Requirements
 XCode 9+
