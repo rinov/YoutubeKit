@@ -161,7 +161,7 @@ extension Snippet {
         public let description: String
         public let liveBroadcastContent: String
         public let publishedAt: String
-        public let thumbnails: Thumbnails.Default
+        public let thumbnails: Thumbnails.SearchList
         public let title: String
         
         public enum CodingKeys: String, CodingKey {
