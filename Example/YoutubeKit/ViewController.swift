@@ -19,7 +19,7 @@ final class ViewController: UIViewController {
         // Create a new player
         player = YTSwiftyPlayer(
             frame: CGRect(x: 0, y: 0, width: 640, height: 480),
-            playerVars: [.playsInline(true), .videoID("NPiYTw8WkyU"), .loopVideo(true), .showRelatedVideo(false)])
+            playerVars: [.playsInline(true), .videoID("_6u6UrtXUEI"), .loopVideo(true), .showRelatedVideo(false)])
 
         // Enable auto playback when video is loaded
         player.autoplay = true
@@ -39,6 +39,8 @@ extension ViewController: YTSwiftyPlayerDelegate {
     
     func playerReady(_ player: YTSwiftyPlayer) {
         print(#function)
+        // After loading a video, player's API is available.
+        // e.g. player.mute()
     }
     
     func player(_ player: YTSwiftyPlayer, didUpdateCurrentTime currentTime: Double) {
