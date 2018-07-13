@@ -19,7 +19,7 @@ final class ViewController: UIViewController {
         // Create a new player
         player = YTSwiftyPlayer(
             frame: CGRect(x: 0, y: 0, width: 640, height: 480),
-            playerVars: [.playsInline(true), .videoID("NPiYTw8WkyU")])
+            playerVars: [.playsInline(true), .videoID("NPiYTw8WkyU"), .loopVideo(true), .showRelatedVideo(false)])
 
         // Enable auto playback when video is loaded
         player.autoplay = true

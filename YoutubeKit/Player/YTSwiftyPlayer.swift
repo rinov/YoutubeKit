@@ -294,6 +294,10 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
             updateInfo()
         case .onStateChange:
             updateState(message.body as? Int)
+            let isLoop = playerVars["loop"] as? String == "1"
+            if playerState == .ended && isLoop {
+                playVideo()
+            }
             delegate?.player(self, didChangeState: playerState)
         case .onQualityChange:
             updateQuality(message.body as? String)
