@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D66330B20F88FA500AA2310 /* player.html in Resources */ = {isa = PBXBuildFile; fileRef = 1D66330A20F88FA500AA2310 /* player.html */; };
 		5467098132C72356E469BAF2 /* Pods_YoutubeKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4436EB5C1E3BF2B9787EFE02 /* Pods_YoutubeKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		02B6BF7FD57257BBD7DF796A /* Pods-YoutubeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubeKit_Tests/Pods-YoutubeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D66330A20F88FA500AA2310 /* player.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = player.html; path = ../YoutubeKit/player.html; sourceTree = "<group>"; };
 		1D87458CBA26DAB1803DAA18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		33690EE60B995312FD9131F2 /* Pods-YoutubeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubeKit_Example/Pods-YoutubeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4436EB5C1E3BF2B9787EFE02 /* Pods_YoutubeKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1D66330A20F88FA500AA2310 /* player.html */,
 				607FACD21AFB9204008FA782 /* Example for YoutubeKit */,
 				0E746C7752B663A544D0CFC0 /* Frameworks */,
 				525315030BAE3B51F1E05514 /* Pods */,
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D66330B20F88FA500AA2310 /* player.html in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
