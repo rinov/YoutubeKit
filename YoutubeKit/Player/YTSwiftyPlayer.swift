@@ -23,8 +23,6 @@ open class YTSwiftyPlayer: WKWebView {
 
     open private(set) var isMuted = false
     
-    open private(set) var volume: Int = 100
-    
     open private(set) var playbackRate: Double = 1.0
     
     open private(set) var availablePlaybackRates: [Double] = [1]
@@ -170,13 +168,6 @@ open class YTSwiftyPlayer: WKWebView {
     
     public func playVideo(at index: Int) {
         evaluatePlayerCommand("playVideoAt(\(index))")
-    }
-    
-    public func setVolume(_ volume: Int) {
-        evaluatePlayerCommand("setVolume(\(volume))") { [weak self] result in
-            guard result != nil else { return }
-            self?.volume = volume
-        }
     }
     
     public func setPlayerSize(width: Int, height: Int) {
@@ -330,7 +321,6 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
     
     private func updateInfo() {
         updateMute()
-        updateVolume()
         updatePlaybackRate()
         updateAvailableQualityLevels()
         updateCurrentPlaylist()
@@ -346,14 +336,6 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
             guard let me = self,
                 let isMuted = result as? Bool else { return }
             me.isMuted = isMuted
-        }
-    }
-    
-    private func updateVolume() {
-        evaluatePlayerCommand("getVolume()") { [weak self] result in
-            guard let me = self,
-                let volume = result as? Int else { return }
-            me.volume = volume
         }
     }
     
