@@ -31,6 +31,26 @@ public class ApiSession {
                 return
             }
             
+            // rawResponse must be HTTPURLResponse
+            guard let httpResponse = rawResponse as? HTTPURLResponse else {
+                closure(.failed(ResponseError.unexpectedResponse("The response is not a HTTPURLResponse")))
+                return
+            }
+            
+            // To successfully decode to T.Response.self, the status code must between 0 and 299
+            guard (0..<300).contains(httpResponse.statusCode) else {
+                do {
+                    let errJson = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                    print(errJson) //print error json object if data is serializable
+                } catch let serializationError {
+                    closure(.failed(ResponseError.unexpectedResponse(serializationError)))
+                }
+            
+                closure(.failed(ResponseError.unacceptableStatusCode(httpResponse.statusCode)))
+                return
+            }
+            
+            
             // Decoding the response from `data` and handle DecodingError if occured.
             do {
                 let decoder = JSONDecoder()
