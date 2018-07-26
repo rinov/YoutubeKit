@@ -1,6 +1,6 @@
 # YoutubeKit
 
-`YoutubeKit` is a video player that fully supports `Youtube IFrame API` and `YoutubeDataAPI` for easily create a Youtube app.
+`YoutubeKit` is a video player that fully supports `Youtube IFrame API` and `YoutubeDataAPI` to easily create Youtube applications.
 
 [![Swift](https://img.shields.io/badge/Swift-4-blue.svg)](https://img.shields.io/badge/Swift-4-blue.svg)
 [![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)
@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)
 
 ## Important Referecens
-`YoutubeKit` is created that based on the folowing references. If you are unsure whether it is a normal behavior or a bug, please check the following document first.
+`YoutubeKit` is created based on the following references. If you are unsure whether it is a normal behavior or a bug, please check the following documents first.
 
 - [YoutubeDataAPI (V3)](https://developers.google.com/youtube/v3/docs/)
 
@@ -16,8 +16,8 @@
 
 ## Example
 
-This is an app using `YoutubeKit`. And simple video playback example is included into `Example`.
-You can create these functions very easy by using the `YoutubeKit`.
+This is an app using `YoutubeKit`. A simple video playback example is included into `Example`.
+You can create these functions very easily by using `YoutubeKit`.
 
 |Example1|Example2|
 |:-:|:-:|
@@ -25,8 +25,8 @@ You can create these functions very easy by using the `YoutubeKit`.
 |Example3|Example4|
 |![Floating](https://github.com/rinov/Storage/blob/master/YoutubeKit/floating.gif)|![Rotate](https://github.com/rinov/Storage/blob/master/YoutubeKit/rotate.gif)|
 
-## What YoutubeKit?
-`YoutubeKit` provides usefull functions to create Youtube app. it is consisting of the following two functions.
+## What is YoutubeKit?
+`YoutubeKit` provides useful functions to create Youtube applications. It consists of the following two functions.
 
 - `YTSwiftyPlayer (WKWebView + HTML5 + IFrame API)`
 
@@ -128,7 +128,7 @@ player.loadVideo(videoID: "abcde")
 ### Get video information using YoutubeDataAPI
 First, Get API key from [Here](https://console.developers.google.com/apis).
 
-Next, Add this code in your AppDelegate.
+Next, add this code in your AppDelegate.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -201,7 +201,7 @@ If you want authorized request such as a getting your activity in Youtube, you s
 To use `GoogleSignIn`, you can easily get your access token.
 `pod 'GoogleSignIn'`
 
-First, Add this code in your AppDelegate.
+First, add this code in your AppDelegate.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
