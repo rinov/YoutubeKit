@@ -78,7 +78,7 @@ public protocol YTSwiftyPlayerDelegate: class {
 }
 
 // Default implementation of delegate methods, These delegate functions are option.
-extension YTSwiftyPlayerDelegate {
+public extension YTSwiftyPlayerDelegate {
 
     /**
       * Invoked when player state has changed.

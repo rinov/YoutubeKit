@@ -219,7 +219,7 @@ open class YTSwiftyPlayer: WKWebView {
     }
 
     public func loadPlayer() {
-        let currentBundle = Bundle(for: type(of: self))
+        let currentBundle = Bundle(for: YTSwiftyPlayer.self)
         let path = currentBundle.path(forResource: "player", ofType: "html")!
         let htmlString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
         let events: [String: AnyObject] = {

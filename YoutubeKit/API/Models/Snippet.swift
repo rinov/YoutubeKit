@@ -15,7 +15,7 @@ extension Snippet {
         public let categoryID: String
         public let channelTitle: String
         public let localized: Localized
-        public let tags: [String]
+        public let tags: [String]?
         public let liveBroadcastContent: String
         public let publishedAt: String
         public let thumbnails: Thumbnails.VideoList

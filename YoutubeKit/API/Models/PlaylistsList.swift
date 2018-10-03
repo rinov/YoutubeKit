@@ -20,8 +20,8 @@ public struct Playlist: Codable {
     public let etag: String
     public let id: String
     public let kind: String
-    public let snippet: Snippet.PlaylistsList
-    public let status: PlaylistsStatus
+    public let snippet: Snippet.PlaylistsList?
+    public let status: PlaylistsStatus?
 }
 
 public struct PlaylistsStatus: Codable {
