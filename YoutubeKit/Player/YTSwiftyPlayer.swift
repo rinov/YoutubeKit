@@ -16,6 +16,20 @@ import WebKit
  */
 open class YTSwiftyPlayer: WKWebView {
     
+    // https://stackoverflow.com/a/26383032
+    class LeakAvoider : NSObject, WKScriptMessageHandler {
+        weak var delegate : WKScriptMessageHandler?
+        init(delegate:WKScriptMessageHandler) {
+            self.delegate = delegate
+            super.init()
+        }
+        func userContentController(_ userContentController: WKUserContentController,
+                                   didReceive message: WKScriptMessage) {
+            self.delegate?.userContentController(
+                userContentController, didReceive: message)
+        }
+    }
+
     /// The property for easily set auto playback.
     open var autoplay = false
 
@@ -77,7 +91,7 @@ open class YTSwiftyPlayer: WKWebView {
         super.init(frame: frame, configuration: config)
         
         callbackHandlers.forEach {
-            userContentController.add(self, name: $0.rawValue)
+            userContentController.add(LeakAvoider(delegate: self), name: $0.rawValue)
         }
         
         commonInit()
@@ -93,7 +107,7 @@ open class YTSwiftyPlayer: WKWebView {
         super.init(frame: frame, configuration: config)
 
         callbackHandlers.forEach {
-            userContentController.add(self, name: $0.rawValue)
+            userContentController.add(LeakAvoider(delegate: self), name: $0.rawValue)
         }
 
         commonInit()
@@ -109,6 +123,10 @@ open class YTSwiftyPlayer: WKWebView {
     
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        stopLoading()
     }
     
     public func setPlayerParameters(_ parameters: [String: AnyObject]) {
