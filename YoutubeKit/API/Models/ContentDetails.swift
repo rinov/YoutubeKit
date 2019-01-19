@@ -48,8 +48,8 @@ extension ContentDetails {
 extension ContentDetails {
     public struct PlaylistItemsList: Codable {
         public let videoID: String
-        public let videoPublishedAt: String
-        
+        public let videoPublishedAt: String?
+		
         public enum CodingKeys: String, CodingKey {
             case videoID = "videoId"
             case videoPublishedAt = "videoPublishedAt"

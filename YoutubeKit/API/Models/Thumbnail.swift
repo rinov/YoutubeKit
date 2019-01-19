@@ -87,13 +87,11 @@ extension Thumbnails {
         public let high: Default
         public let medium: Default
         public let `default`: Default
-        public let standard: Default
-        
+		
         public enum CodingKeys: String, CodingKey {
             case high = "high"
             case medium = "medium"
             case `default` = "default"
-            case standard = "standard"
         }
     }
 }
