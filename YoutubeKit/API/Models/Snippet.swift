@@ -96,7 +96,7 @@ extension Snippet {
         public let description: String
         public let localized: Localized
         public let publishedAt: String
-        public let thumbnails: Thumbnails.Default
+        public let thumbnails: Thumbnails.ChannelList
         public let title: String
         
         public enum CodingKeys: String, CodingKey {
