@@ -19,6 +19,20 @@ extension Thumbnails {
 }
 
 extension Thumbnails {
+    public struct ChannelList: Codable {
+        public let high: Default
+        public let medium: Default
+        public let `default`: Default
+        
+        public enum CodingKeys: String, CodingKey {
+            case high = "high"
+            case medium = "medium"
+            case `default` = "default"
+        }
+    }
+}
+
+extension Thumbnails {
     public struct SearchList: Codable {
         public let high: Default
         public let `default`: Default
