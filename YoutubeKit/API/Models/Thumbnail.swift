@@ -51,11 +51,15 @@ extension Thumbnails {
         public let high: Default
         public let `default`: Default
         public let medium: Default
+        public let standard: Default?
+        public let maxres: Default?
         
         public enum CodingKeys: String, CodingKey {
             case high
             case `default` = "default"
             case medium
+            case standard
+            case maxres
         }
     }
 }
