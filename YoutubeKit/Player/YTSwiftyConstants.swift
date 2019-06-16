@@ -210,7 +210,7 @@ public enum VideoEmbedParameter {
         case .playerLanguage(let isoCode):
             return ("hl", isoCode as AnyObject)
         case .showLoadPolicy(let isShow):
-            return ("iv_load_policy", isShow.jsValue)
+            return ("iv_load_policy", (isShow ? 1 : 3) as AnyObject)
         case .listType(let type):
             return ("listType", type.rawValue as AnyObject)
         case .list(let value):
