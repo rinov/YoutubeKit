@@ -22,7 +22,7 @@ public struct PlaylistItem: Codable {
     public let id: String
     public let kind: String
     public let snippet: Snippet.PlaylistItemsList
-    public let status: PlaylistItemsStatus
+    public let status: PlaylistItemsStatus?
 }
 
 public struct PlaylistItemsStatus: Codable {
