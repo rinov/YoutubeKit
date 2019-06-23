@@ -12,12 +12,14 @@ public struct SubsucriptionsList: Codable {
     public let items: [Subsucription]
     public let kind: String
     public let pageInfo: PageInfo
+    public let nextPageToken: String?
+    public let prevPageToken: String?
 }
 
 public struct Subsucription: Codable {
-    public let contentDetails: ContentDetails.SubscriptionsList
+    public let contentDetails: ContentDetails.SubscriptionsList?
     public let etag: String
     public let id: String
     public let kind: String
-    public let snippet: Snippet.SubscriptionsList
+    public let snippet: Snippet.SubscriptionsList?
 }
