@@ -10,7 +10,7 @@ import Foundation
 /// SeeAlso: https://developers.google.com/youtube/v3/docs/subscriptions/list
 public struct SubscriptionsListRequest: Requestable {
     
-    public typealias Response = SubsucriptionsList
+    public typealias Response = SubscriptionsList
 
     public var path: String {
         return "subscriptions"
