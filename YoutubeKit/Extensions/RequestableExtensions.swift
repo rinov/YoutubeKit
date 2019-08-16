@@ -5,7 +5,7 @@
 //  Created by Ryo Ishikawa on 12/30/2017
 //
 
-public extension Requestable {
+extension Requestable {
     
     public var baseURL: URL {
         return URL(string: "https://www.googleapis.com/youtube/\(YoutubeKit.youtubeDataAPIVersion)/")!
