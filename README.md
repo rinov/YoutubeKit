@@ -231,7 +231,7 @@ ApiSession.shared.send(request) { result in
 ```
 
 ## Requirements
-XCode 9+
+XCode 10.2+
 
 Swift 4+
 
