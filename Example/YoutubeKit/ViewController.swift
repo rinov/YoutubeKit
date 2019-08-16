@@ -19,7 +19,12 @@ final class ViewController: UIViewController {
         // Create a new player
         player = YTSwiftyPlayer(
             frame: CGRect(x: 0, y: 0, width: 640, height: 480),
-            playerVars: [.playsInline(true), .videoID("_6u6UrtXUEI"), .loopVideo(true), .showRelatedVideo(false)])
+            playerVars: [
+                .playsInline(true),
+                .videoID("_6u6UrtXUEI"),
+                .loopVideo(true),
+                .showRelatedVideo(false)
+            ])
 
         // Enable auto playback when video is loaded
         player.autoplay = true
@@ -32,6 +37,21 @@ final class ViewController: UIViewController {
         
         // Load video player
         player.loadPlayer()
+        
+        // (Optional) Create a new request for video list
+        // Please make sure to set your API configuration in `AppDelegate`.
+        let request = VideoListRequest(part: [.id, .snippet, .contentDetails], filter: .chart)
+        
+        // Send a request
+        YoutubeAPI.shared.send(request) { result in
+            switch result {
+            case .success(let response):
+                print(response)
+            case .failed(let error):
+                print(error)
+            }
+        }
+
     }
 }
 
@@ -44,23 +64,23 @@ extension ViewController: YTSwiftyPlayerDelegate {
     }
     
     func player(_ player: YTSwiftyPlayer, didUpdateCurrentTime currentTime: Double) {
-        print("\(#function):\(currentTime)")
+        print("\(#function): \(currentTime)")
     }
     
     func player(_ player: YTSwiftyPlayer, didChangeState state: YTSwiftyPlayerState) {
-        print("\(#function):\(state)")
+        print("\(#function): \(state)")
     }
     
     func player(_ player: YTSwiftyPlayer, didChangePlaybackRate playbackRate: Double) {
-        print("\(#function):\(playbackRate)")
+        print("\(#function): \(playbackRate)")
     }
     
     func player(_ player: YTSwiftyPlayer, didReceiveError error: YTSwiftyPlayerError) {
-        print("\(#function):\(error)")
+        print("\(#function): \(error)")
     }
     
     func player(_ player: YTSwiftyPlayer, didChangeQuality quality: YTSwiftyVideoQuality) {
-        print("\(#function):\(quality)")
+        print("\(#function): \(quality)")
     }
     
     func apiDidChange(_ player: YTSwiftyPlayer) {

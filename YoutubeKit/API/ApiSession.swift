@@ -7,9 +7,12 @@
 
 import Foundation
 
-public class ApiSession {
+@available(*, unavailable, renamed: "YoutubeAPI")
+public class ApiSession {}
+
+public class YoutubeAPI {
     
-    public static let shared = ApiSession()
+    public static let shared = YoutubeAPI()
     
     private init() {}
     
