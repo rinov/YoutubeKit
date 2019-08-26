@@ -17,7 +17,7 @@ public enum YTSwiftyPlayerState: Int {
     case playing    = 1
     case paused     = 2
     case buffering  = 3
-    case cued       = 4
+    case cued       = 5
 }
 
 /**
@@ -49,6 +49,7 @@ public enum YTSwiftyVideoQuality: String {
     case hd720      = "hd720"
     case hd1080     = "hd1080"
     case highres    = "highres"
+    case auto       = "default"
     case unknown
 }
 
