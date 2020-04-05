@@ -11,16 +11,24 @@ public final class YoutubeKit {
     
     public static let shared = YoutubeKit()
     public static let youtubeDataAPIVersion = "v3"
-    
-    internal private(set) var apiKey: String = ""
-    internal private(set) var accessToken: String = ""
+
+    public var apiKey: String {
+        return _apiKey
+    }
+
+    public var accessToken: String {
+        return _accessToken
+    }
+
+    internal private(set) var _apiKey: String = ""
+    internal private(set) var _accessToken: String = ""
     
     public func setAPIKey(_ key: String) {
-        self.apiKey = key
+        self._apiKey = key
     }
     
     public func setAccessToken(_ token: String) {
-        self.accessToken = token
+        self._accessToken = token
     }
     
     private init() {}
