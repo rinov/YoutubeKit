@@ -1,0 +1,266 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Filter"
+provides-nominal:
+- "10YoutubeKit6FilterO"
+- "10YoutubeKit6FilterO9VideoListO"
+- "10YoutubeKit6FilterO12ActivityListO"
+- "10YoutubeKit6FilterO11ChannelListO"
+- "10YoutubeKit6FilterO19ChannelSectionsListO"
+- "10YoutubeKit6FilterO19VideoCategoriesListO"
+- "10YoutubeKit6FilterO10SearchListO"
+- "10YoutubeKit6FilterO19GuideCategoriesListO"
+- "10YoutubeKit6FilterO17SubscriptionsListO"
+- "10YoutubeKit6FilterO13PlaylistsListO"
+- "10YoutubeKit6FilterO17PlaylistItemsListO"
+- "10YoutubeKit6FilterO18CommentThreadsListO"
+- "10YoutubeKit6FilterO11CommentListO"
+provides-member:
+- ["10YoutubeKit6FilterO", ""]
+- ["10YoutubeKit6FilterO9VideoListO", ""]
+- ["10YoutubeKit6FilterO12ActivityListO", ""]
+- ["10YoutubeKit6FilterO11ChannelListO", ""]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", ""]
+- ["10YoutubeKit6FilterO19VideoCategoriesListO", ""]
+- ["10YoutubeKit6FilterO10SearchListO", ""]
+- ["10YoutubeKit6FilterO19GuideCategoriesListO", ""]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", ""]
+- ["10YoutubeKit6FilterO13PlaylistsListO", ""]
+- ["10YoutubeKit6FilterO17PlaylistItemsListO", ""]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", ""]
+- ["10YoutubeKit6FilterO11CommentListO", ""]
+- ["10YoutubeKit6FilterO", "VideoList"]
+- ["10YoutubeKit6FilterO", "ActivityList"]
+- ["10YoutubeKit6FilterO", "ChannelList"]
+- ["10YoutubeKit6FilterO", "ChannelSectionsList"]
+- ["10YoutubeKit6FilterO", "VideoCategoriesList"]
+- ["10YoutubeKit6FilterO", "SearchList"]
+- ["10YoutubeKit6FilterO", "GuideCategoriesList"]
+- ["10YoutubeKit6FilterO", "SubscriptionsList"]
+- ["10YoutubeKit6FilterO", "PlaylistsList"]
+- ["10YoutubeKit6FilterO", "PlaylistItemsList"]
+- ["10YoutubeKit6FilterO", "CommentThreadsList"]
+- ["10YoutubeKit6FilterO", "CommentList"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "Filter"
+- "MyRating"
+- "QueryParameterable"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- ["10YoutubeKit6FilterO12ActivityListO", "Bool"]
+- ["10YoutubeKit6FilterO12ActivityListO", "String"]
+- ["10YoutubeKit6FilterO12ActivityListO", "channelID"]
+- ["10YoutubeKit6FilterO12ActivityListO", "deinit"]
+- ["10YoutubeKit6FilterO12ActivityListO", "home"]
+- ["10YoutubeKit6FilterO12ActivityListO", "keyValue"]
+- ["10YoutubeKit6FilterO12ActivityListO", "mine"]
+- !private ["Sb", "literalString"]
+- !private ["s7CVarArgP", "literalString"]
+- ["10YoutubeKit6FilterO11ChannelListO", "Bool"]
+- ["10YoutubeKit6FilterO11ChannelListO", "String"]
+- ["10YoutubeKit6FilterO11ChannelListO", "categoryID"]
+- ["10YoutubeKit6FilterO11ChannelListO", "deinit"]
+- ["10YoutubeKit6FilterO11ChannelListO", "id"]
+- ["10YoutubeKit6FilterO11ChannelListO", "keyValue"]
+- ["10YoutubeKit6FilterO11ChannelListO", "managedByMe"]
+- ["10YoutubeKit6FilterO11ChannelListO", "mine"]
+- ["10YoutubeKit6FilterO11ChannelListO", "userName"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "Bool"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "String"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "channelID"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "deinit"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "id"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "keyValue"]
+- ["10YoutubeKit6FilterO19ChannelSectionsListO", "mine"]
+- ["10YoutubeKit6FilterO11CommentListO", "String"]
+- ["10YoutubeKit6FilterO11CommentListO", "deinit"]
+- ["10YoutubeKit6FilterO11CommentListO", "id"]
+- ["10YoutubeKit6FilterO11CommentListO", "keyValue"]
+- ["10YoutubeKit6FilterO11CommentListO", "parentID"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "String"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "allThreadsRelatedToChannelID"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "channelID"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "deinit"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "id"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "keyValue"]
+- ["10YoutubeKit6FilterO18CommentThreadsListO", "videoID"]
+- !private ["s17CustomReflectableP", "literalString"]
+- !private ["s23CustomStringConvertibleP", "literalString"]
+- !private ["Se", "literalString"]
+- !private ["SE", "literalString"]
+- !private ["SQ", "literalString"]
+- !private ["SQ", "rawValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "literalString"]
+- ["10YoutubeKit6FilterO", "ActivityList"]
+- ["10YoutubeKit6FilterO", "Bool"]
+- ["10YoutubeKit6FilterO", "ChannelList"]
+- ["10YoutubeKit6FilterO", "ChannelSectionsList"]
+- ["10YoutubeKit6FilterO", "CommentList"]
+- ["10YoutubeKit6FilterO", "CommentThreadsList"]
+- ["10YoutubeKit6FilterO", "GuideCategoriesList"]
+- ["10YoutubeKit6FilterO", "MyRating"]
+- ["10YoutubeKit6FilterO", "PlaylistItemsList"]
+- ["10YoutubeKit6FilterO", "PlaylistsList"]
+- ["10YoutubeKit6FilterO", "QueryParameterable"]
+- ["10YoutubeKit6FilterO", "SearchList"]
+- ["10YoutubeKit6FilterO", "String"]
+- ["10YoutubeKit6FilterO", "SubscriptionsList"]
+- ["10YoutubeKit6FilterO", "VideoCategoriesList"]
+- ["10YoutubeKit6FilterO", "VideoList"]
+- ["10YoutubeKit6FilterO19GuideCategoriesListO", "String"]
+- ["10YoutubeKit6FilterO19GuideCategoriesListO", "deinit"]
+- ["10YoutubeKit6FilterO19GuideCategoriesListO", "id"]
+- ["10YoutubeKit6FilterO19GuideCategoriesListO", "keyValue"]
+- ["10YoutubeKit6FilterO19GuideCategoriesListO", "regionCode"]
+- !private ["SH", "literalString"]
+- !private ["SH", "rawValue"]
+- !private ["s25LosslessStringConvertibleP", "literalString"]
+- !private ["10YoutubeKit8MyRatingO", "deinit"]
+- !private ["10YoutubeKit8MyRatingO", "rawValue"]
+- ["10YoutubeKit6FilterO17PlaylistItemsListO", "String"]
+- ["10YoutubeKit6FilterO17PlaylistItemsListO", "deinit"]
+- ["10YoutubeKit6FilterO17PlaylistItemsListO", "id"]
+- ["10YoutubeKit6FilterO17PlaylistItemsListO", "keyValue"]
+- ["10YoutubeKit6FilterO17PlaylistItemsListO", "playlistID"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "Bool"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "String"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "channelID"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "deinit"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "id"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "keyValue"]
+- ["10YoutubeKit6FilterO13PlaylistsListO", "mine"]
+- ["10YoutubeKit18QueryParameterableP", ""]
+- ["10YoutubeKit18QueryParameterableP", "allThreadsRelatedToChannelID"]
+- ["10YoutubeKit18QueryParameterableP", "categoryID"]
+- ["10YoutubeKit18QueryParameterableP", "channelID"]
+- ["10YoutubeKit18QueryParameterableP", "chart"]
+- ["10YoutubeKit18QueryParameterableP", "forContentOwner"]
+- ["10YoutubeKit18QueryParameterableP", "forMine"]
+- ["10YoutubeKit18QueryParameterableP", "home"]
+- ["10YoutubeKit18QueryParameterableP", "id"]
+- ["10YoutubeKit18QueryParameterableP", "keyValue"]
+- ["10YoutubeKit18QueryParameterableP", "managedByMe"]
+- ["10YoutubeKit18QueryParameterableP", "mine"]
+- ["10YoutubeKit18QueryParameterableP", "myRating"]
+- ["10YoutubeKit18QueryParameterableP", "mySubscriptions"]
+- ["10YoutubeKit18QueryParameterableP", "parentID"]
+- ["10YoutubeKit18QueryParameterableP", "playlistID"]
+- ["10YoutubeKit18QueryParameterableP", "regionCode"]
+- ["10YoutubeKit18QueryParameterableP", "relatedToVideoID"]
+- ["10YoutubeKit18QueryParameterableP", "userName"]
+- ["10YoutubeKit18QueryParameterableP", "videoID"]
+- !private ["SY", "rawValue"]
+- ["10YoutubeKit6FilterO10SearchListO", "Bool"]
+- ["10YoutubeKit6FilterO10SearchListO", "String"]
+- ["10YoutubeKit6FilterO10SearchListO", "deinit"]
+- ["10YoutubeKit6FilterO10SearchListO", "forContentOwner"]
+- ["10YoutubeKit6FilterO10SearchListO", "forMine"]
+- ["10YoutubeKit6FilterO10SearchListO", "keyValue"]
+- ["10YoutubeKit6FilterO10SearchListO", "relatedToVideoID"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "Bool"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "String"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "channelID"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "deinit"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "id"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "keyValue"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "mine"]
+- ["10YoutubeKit6FilterO17SubscriptionsListO", "mySubscriptions"]
+- ["10YoutubeKit6FilterO19VideoCategoriesListO", "String"]
+- ["10YoutubeKit6FilterO19VideoCategoriesListO", "deinit"]
+- ["10YoutubeKit6FilterO19VideoCategoriesListO", "id"]
+- ["10YoutubeKit6FilterO19VideoCategoriesListO", "keyValue"]
+- ["10YoutubeKit6FilterO19VideoCategoriesListO", "regionCode"]
+- ["10YoutubeKit6FilterO9VideoListO", "MyRating"]
+- ["10YoutubeKit6FilterO9VideoListO", "String"]
+- ["10YoutubeKit6FilterO9VideoListO", "chart"]
+- ["10YoutubeKit6FilterO9VideoListO", "deinit"]
+- ["10YoutubeKit6FilterO9VideoListO", "id"]
+- ["10YoutubeKit6FilterO9VideoListO", "keyValue"]
+- ["10YoutubeKit6FilterO9VideoListO", "myRating"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "literalString"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "literalString"]
+- !private ["s21_ObjectiveCBridgeableP", "literalString"]
+depends-nominal:
+- "10YoutubeKit6FilterO12ActivityListO"
+- !private "Sb"
+- !private "s7CVarArgP"
+- "10YoutubeKit6FilterO11ChannelListO"
+- "10YoutubeKit6FilterO19ChannelSectionsListO"
+- "10YoutubeKit6FilterO11CommentListO"
+- "10YoutubeKit6FilterO18CommentThreadsListO"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "10YoutubeKit6FilterO"
+- "10YoutubeKit6FilterO19GuideCategoriesListO"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "10YoutubeKit8MyRatingO"
+- "10YoutubeKit6FilterO17PlaylistItemsListO"
+- "10YoutubeKit6FilterO13PlaylistsListO"
+- "10YoutubeKit18QueryParameterableP"
+- !private "SY"
+- "10YoutubeKit6FilterO10SearchListO"
+- "10YoutubeKit6FilterO17SubscriptionsListO"
+- "10YoutubeKit6FilterO19VideoCategoriesListO"
+- "10YoutubeKit6FilterO9VideoListO"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "317ccb7795ca2371223229522e144606"

@@ -1,0 +1,1218 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Snippet"
+provides-nominal:
+- "10YoutubeKit7SnippetO"
+- "10YoutubeKit7SnippetO9VideoListV"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17I18nLanguagesListV"
+- "10YoutubeKit7SnippetO15I18nRegionsListV"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV"
+- "10YoutubeKit7SnippetO13PlaylistsListV"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO15TopLevelCommentV"
+- "10YoutubeKit7SnippetO7CommentV"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+provides-member:
+- ["10YoutubeKit7SnippetO", ""]
+- ["10YoutubeKit7SnippetO9VideoListV", ""]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO12ActivityListV", ""]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO11CaptionListV", ""]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO11ChannelListV", ""]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", ""]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", ""]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", ""]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", ""]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO10SearchListV", ""]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", ""]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", ""]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", ""]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", ""]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", ""]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO11CommentInfoV", ""]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", ""]
+- ["10YoutubeKit7SnippetO7CommentV", ""]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", ""]
+- ["10YoutubeKit7SnippetO", "VideoList"]
+- ["10YoutubeKit7SnippetO", "ActivityList"]
+- ["10YoutubeKit7SnippetO", "CaptionList"]
+- ["10YoutubeKit7SnippetO", "ChannelList"]
+- ["10YoutubeKit7SnippetO", "ChannelSectionsList"]
+- ["10YoutubeKit7SnippetO", "I18nLanguagesList"]
+- ["10YoutubeKit7SnippetO", "I18nRegionsList"]
+- ["10YoutubeKit7SnippetO", "VideoCategoriesList"]
+- ["10YoutubeKit7SnippetO", "SearchList"]
+- ["10YoutubeKit7SnippetO", "GuideCategoriesList"]
+- ["10YoutubeKit7SnippetO", "SubscriptionsList"]
+- ["10YoutubeKit7SnippetO", "VideoAbuseReportReasonsList"]
+- ["10YoutubeKit7SnippetO", "PlaylistsList"]
+- ["10YoutubeKit7SnippetO", "PlaylistItemsList"]
+- ["10YoutubeKit7SnippetO", "CommentInfo"]
+- ["10YoutubeKit7SnippetO", "TopLevelComment"]
+- ["10YoutubeKit7SnippetO", "Comment"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AuthorChannelID"
+- "Bool"
+- "Codable"
+- "CodingKey"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "Localized"
+- "ResourceID"
+- "SecondaryReason"
+- "Snippet"
+- "String"
+- "StringLiteralType"
+- "Thumbnails"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["10YoutubeKit7SnippetO12ActivityListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "String"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO12ActivityListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "channelID"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "channelTitle"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "deinit"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "deinit"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "description"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "encode"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "init"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "title"]
+- ["10YoutubeKit7SnippetO12ActivityListV", "type"]
+- ["10YoutubeKit15AuthorChannelIDV", "deinit"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "Bool"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "String"]
+- !private ["10YoutubeKit7SnippetO11CaptionListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "audioTrackType"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "deinit"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "encode"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "init"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "isAutoSynced"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "isCC"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "isDraft"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "isEasyReader"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "isLarge"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "language"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "lastUpdated"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "name"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "status"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "trackKind"]
+- ["10YoutubeKit7SnippetO11CaptionListV", "videoID"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "Localized"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "String"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO11ChannelListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "customURL"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "deinit"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "deinit"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "description"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "encode"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "init"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "localized"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO11ChannelListV", "title"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "Int"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "String"]
+- !private ["10YoutubeKit7SnippetO19ChannelSectionsListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "channelID"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "deinit"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "encode"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "init"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "position"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "style"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV", "type"]
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "=="]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "_Default_RawValue"]
+- !private ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "assignable"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "audioTrackType"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "authorChannelID"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "authorChannelURL"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "authorDisplayName"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "authorProfileImageURL"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "canRate"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "canReply"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "categoryID"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "channelID"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "channelTitle"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "channelTitle"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "channelTitle"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "channelTitle"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "channelTitle"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "customURL"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "description"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "hash"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "init"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "isAutoSynced"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "isCC"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "isDraft"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "isEasyReader"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "isLarge"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "isPublic"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "language"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "lastUpdated"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "likeCount"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "liveBroadcastContent"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "liveBroadcastContent"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "localized"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "localized"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "localized"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "name"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "parentID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "playlistID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "position"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "position"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "publishedAt"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "resourceID"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "resourceID"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "status"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "style"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "tags"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "textDisplay"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "textOriginal"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "thumbnails"]
+- ["10YoutubeKit7SnippetO10SearchListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO11ChannelListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO9VideoListV10CodingKeysO", "title"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "topLevelComment"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "totalReplyCount"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "trackKind"]
+- ["10YoutubeKit7SnippetO12ActivityListV10CodingKeysO", "type"]
+- ["10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO", "type"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "updatedAt"]
+- ["10YoutubeKit7SnippetO11CaptionListV10CodingKeysO", "videoID"]
+- ["10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO", "videoID"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "videoID"]
+- ["10YoutubeKit7SnippetO7CommentV10CodingKeysO", "viewerRating"]
+- ["10YoutubeKit7SnippetO7CommentV", "AuthorChannelID"]
+- ["10YoutubeKit7SnippetO7CommentV", "Bool"]
+- ["10YoutubeKit7SnippetO7CommentV", "CodingKey"]
+- ["10YoutubeKit7SnippetO7CommentV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO7CommentV", "Int"]
+- ["10YoutubeKit7SnippetO7CommentV", "String"]
+- !private ["10YoutubeKit7SnippetO7CommentV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO7CommentV", "authorChannelID"]
+- ["10YoutubeKit7SnippetO7CommentV", "authorChannelURL"]
+- ["10YoutubeKit7SnippetO7CommentV", "authorDisplayName"]
+- ["10YoutubeKit7SnippetO7CommentV", "authorProfileImageURL"]
+- ["10YoutubeKit7SnippetO7CommentV", "canRate"]
+- ["10YoutubeKit7SnippetO7CommentV", "deinit"]
+- ["10YoutubeKit7SnippetO7CommentV", "encode"]
+- ["10YoutubeKit7SnippetO7CommentV", "init"]
+- ["10YoutubeKit7SnippetO7CommentV", "likeCount"]
+- ["10YoutubeKit7SnippetO7CommentV", "parentID"]
+- ["10YoutubeKit7SnippetO7CommentV", "publishedAt"]
+- ["10YoutubeKit7SnippetO7CommentV", "textDisplay"]
+- ["10YoutubeKit7SnippetO7CommentV", "textOriginal"]
+- ["10YoutubeKit7SnippetO7CommentV", "updatedAt"]
+- ["10YoutubeKit7SnippetO7CommentV", "videoID"]
+- ["10YoutubeKit7SnippetO7CommentV", "viewerRating"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "Bool"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "CodingKey"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "Int"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "Snippet"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "String"]
+- !private ["10YoutubeKit7SnippetO11CommentInfoV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "canReply"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "deinit"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "encode"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "init"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "isPublic"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "topLevelComment"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "totalReplyCount"]
+- ["10YoutubeKit7SnippetO11CommentInfoV", "videoID"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "assignable"]
+- !private ["Se", "audioTrackType"]
+- !private ["Se", "authorChannelID"]
+- !private ["Se", "authorChannelURL"]
+- !private ["Se", "authorDisplayName"]
+- !private ["Se", "authorProfileImageURL"]
+- !private ["Se", "canRate"]
+- !private ["Se", "canReply"]
+- !private ["Se", "categoryID"]
+- !private ["Se", "channelID"]
+- !private ["Se", "channelTitle"]
+- !private ["Se", "customURL"]
+- !private ["Se", "description"]
+- ["Se", "encode"]
+- !private ["Se", "etag"]
+- !private ["Se", "gl"]
+- !private ["Se", "hl"]
+- !private ["Se", "id"]
+- ["Se", "init"]
+- !private ["Se", "isAutoSynced"]
+- !private ["Se", "isCC"]
+- !private ["Se", "isDraft"]
+- !private ["Se", "isEasyReader"]
+- !private ["Se", "isLarge"]
+- !private ["Se", "isPublic"]
+- !private ["Se", "kind"]
+- !private ["Se", "label"]
+- !private ["Se", "language"]
+- !private ["Se", "lastUpdated"]
+- !private ["Se", "likeCount"]
+- !private ["Se", "liveBroadcastContent"]
+- !private ["Se", "localized"]
+- !private ["Se", "name"]
+- !private ["Se", "parentID"]
+- !private ["Se", "playlistID"]
+- !private ["Se", "position"]
+- !private ["Se", "publishedAt"]
+- !private ["Se", "resourceID"]
+- !private ["Se", "secondaryReasons"]
+- !private ["Se", "snippet"]
+- !private ["Se", "status"]
+- !private ["Se", "style"]
+- !private ["Se", "tags"]
+- !private ["Se", "textDisplay"]
+- !private ["Se", "textOriginal"]
+- !private ["Se", "thumbnails"]
+- !private ["Se", "title"]
+- !private ["Se", "topLevelComment"]
+- !private ["Se", "totalReplyCount"]
+- !private ["Se", "trackKind"]
+- !private ["Se", "type"]
+- !private ["Se", "updatedAt"]
+- !private ["Se", "videoID"]
+- !private ["Se", "viewerRating"]
+- !private ["s7DecoderP", "container"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "deinit"]
+- ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "assignable"]
+- !private ["SE", "audioTrackType"]
+- !private ["SE", "authorChannelID"]
+- !private ["SE", "authorChannelURL"]
+- !private ["SE", "authorDisplayName"]
+- !private ["SE", "authorProfileImageURL"]
+- !private ["SE", "canRate"]
+- !private ["SE", "canReply"]
+- !private ["SE", "categoryID"]
+- !private ["SE", "channelID"]
+- !private ["SE", "channelTitle"]
+- !private ["SE", "customURL"]
+- !private ["SE", "description"]
+- ["SE", "encode"]
+- !private ["SE", "etag"]
+- !private ["SE", "gl"]
+- !private ["SE", "hl"]
+- !private ["SE", "id"]
+- ["SE", "init"]
+- !private ["SE", "isAutoSynced"]
+- !private ["SE", "isCC"]
+- !private ["SE", "isDraft"]
+- !private ["SE", "isEasyReader"]
+- !private ["SE", "isLarge"]
+- !private ["SE", "isPublic"]
+- !private ["SE", "kind"]
+- !private ["SE", "label"]
+- !private ["SE", "language"]
+- !private ["SE", "lastUpdated"]
+- !private ["SE", "likeCount"]
+- !private ["SE", "liveBroadcastContent"]
+- !private ["SE", "localized"]
+- !private ["SE", "name"]
+- !private ["SE", "parentID"]
+- !private ["SE", "playlistID"]
+- !private ["SE", "position"]
+- !private ["SE", "publishedAt"]
+- !private ["SE", "resourceID"]
+- !private ["SE", "secondaryReasons"]
+- !private ["SE", "snippet"]
+- !private ["SE", "status"]
+- !private ["SE", "style"]
+- !private ["SE", "tags"]
+- !private ["SE", "textDisplay"]
+- !private ["SE", "textOriginal"]
+- !private ["SE", "thumbnails"]
+- !private ["SE", "title"]
+- !private ["SE", "topLevelComment"]
+- !private ["SE", "totalReplyCount"]
+- !private ["SE", "trackKind"]
+- !private ["SE", "type"]
+- !private ["SE", "updatedAt"]
+- !private ["SE", "videoID"]
+- !private ["SE", "viewerRating"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "String"]
+- !private ["10YoutubeKit7SnippetO19GuideCategoriesListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "channelID"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "deinit"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "encode"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "init"]
+- ["10YoutubeKit7SnippetO19GuideCategoriesListV", "title"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", "String"]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", "deinit"]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", "encode"]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", "hl"]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", "init"]
+- ["10YoutubeKit7SnippetO17I18nLanguagesListV", "name"]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", "String"]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", "deinit"]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", "encode"]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", "gl"]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", "init"]
+- ["10YoutubeKit7SnippetO15I18nRegionsListV", "name"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- ["10YoutubeKit9LocalizedV", "deinit"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "Int"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "ResourceID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "String"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO17PlaylistItemsListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "channelID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "channelTitle"]
+- ["10YoutubeKit10ResourceIDO17PlaylistItemsListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "deinit"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "deinit"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "description"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "encode"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "init"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "playlistID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "position"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "resourceID"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO17PlaylistItemsListV", "title"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "Localized"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "String"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO13PlaylistsListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "channelID"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "channelTitle"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "deinit"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "deinit"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "description"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "encode"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "init"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "localized"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO13PlaylistsListV", "title"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- ["10YoutubeKit10ResourceIDO", "PlaylistItemsList"]
+- ["10YoutubeKit10ResourceIDO", "SubscriptionsList"]
+- ["10YoutubeKit7SnippetO10SearchListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO10SearchListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO10SearchListV", "String"]
+- ["10YoutubeKit7SnippetO10SearchListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO10SearchListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO10SearchListV", "channelID"]
+- ["10YoutubeKit7SnippetO10SearchListV", "channelTitle"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "deinit"]
+- ["10YoutubeKit7SnippetO10SearchListV", "deinit"]
+- ["10YoutubeKit7SnippetO10SearchListV", "description"]
+- ["10YoutubeKit7SnippetO10SearchListV", "encode"]
+- ["10YoutubeKit7SnippetO10SearchListV", "init"]
+- ["10YoutubeKit7SnippetO10SearchListV", "liveBroadcastContent"]
+- ["10YoutubeKit7SnippetO10SearchListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO10SearchListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO10SearchListV", "title"]
+- ["10YoutubeKit15SecondaryReasonV", "deinit"]
+- ["10YoutubeKit7SnippetO", "ActivityList"]
+- ["10YoutubeKit7SnippetO", "AuthorChannelID"]
+- ["10YoutubeKit7SnippetO", "Bool"]
+- ["10YoutubeKit7SnippetO", "CaptionList"]
+- ["10YoutubeKit7SnippetO", "ChannelList"]
+- ["10YoutubeKit7SnippetO", "ChannelSectionsList"]
+- ["10YoutubeKit7SnippetO", "Codable"]
+- ["10YoutubeKit7SnippetO", "CodingKey"]
+- ["10YoutubeKit7SnippetO", "Comment"]
+- ["10YoutubeKit7SnippetO", "CommentInfo"]
+- ["10YoutubeKit7SnippetO", "GuideCategoriesList"]
+- ["10YoutubeKit7SnippetO", "I18nLanguagesList"]
+- ["10YoutubeKit7SnippetO", "I18nRegionsList"]
+- ["10YoutubeKit7SnippetO", "Int"]
+- ["10YoutubeKit7SnippetO", "Localized"]
+- ["10YoutubeKit7SnippetO", "PlaylistItemsList"]
+- ["10YoutubeKit7SnippetO", "PlaylistsList"]
+- ["10YoutubeKit7SnippetO", "ResourceID"]
+- ["10YoutubeKit7SnippetO", "SearchList"]
+- ["10YoutubeKit7SnippetO", "SecondaryReason"]
+- ["10YoutubeKit7SnippetO", "Snippet"]
+- ["10YoutubeKit7SnippetO", "String"]
+- ["10YoutubeKit7SnippetO", "SubscriptionsList"]
+- ["10YoutubeKit7SnippetO", "Thumbnails"]
+- ["10YoutubeKit7SnippetO", "TopLevelComment"]
+- ["10YoutubeKit7SnippetO", "VideoAbuseReportReasonsList"]
+- ["10YoutubeKit7SnippetO", "VideoCategoriesList"]
+- ["10YoutubeKit7SnippetO", "VideoList"]
+- !private ["10YoutubeKit7SnippetO", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "ResourceID"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "String"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO17SubscriptionsListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "channelID"]
+- ["10YoutubeKit10ResourceIDO17SubscriptionsListV", "deinit"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "deinit"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "description"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "encode"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "init"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "resourceID"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO17SubscriptionsListV", "title"]
+- ["10YoutubeKit10ThumbnailsO", "ActivityList"]
+- ["10YoutubeKit10ThumbnailsO", "ChannelList"]
+- ["10YoutubeKit10ThumbnailsO", "Default"]
+- ["10YoutubeKit10ThumbnailsO", "PlaylistItemsList"]
+- ["10YoutubeKit10ThumbnailsO", "PlaylistsList"]
+- ["10YoutubeKit10ThumbnailsO", "SearchList"]
+- ["10YoutubeKit10ThumbnailsO", "VideoList"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "Snippet"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "String"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "deinit"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "encode"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "etag"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "id"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "init"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "kind"]
+- ["10YoutubeKit7SnippetO15TopLevelCommentV", "snippet"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "SecondaryReason"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "String"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "deinit"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "encode"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "init"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "label"]
+- ["10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV", "secondaryReasons"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "Bool"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "String"]
+- !private ["10YoutubeKit7SnippetO19VideoCategoriesListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "assignable"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "channelID"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "deinit"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "encode"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "init"]
+- ["10YoutubeKit7SnippetO19VideoCategoriesListV", "title"]
+- ["10YoutubeKit7SnippetO9VideoListV", "CodingKey"]
+- ["10YoutubeKit7SnippetO9VideoListV", "CodingKeys"]
+- ["10YoutubeKit7SnippetO9VideoListV", "Localized"]
+- ["10YoutubeKit7SnippetO9VideoListV", "String"]
+- ["10YoutubeKit7SnippetO9VideoListV", "Thumbnails"]
+- !private ["10YoutubeKit7SnippetO9VideoListV", "_findStringSwitchCase"]
+- ["10YoutubeKit7SnippetO9VideoListV", "categoryID"]
+- ["10YoutubeKit7SnippetO9VideoListV", "channelID"]
+- ["10YoutubeKit7SnippetO9VideoListV", "channelTitle"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "deinit"]
+- ["10YoutubeKit7SnippetO9VideoListV", "deinit"]
+- ["10YoutubeKit7SnippetO9VideoListV", "description"]
+- ["10YoutubeKit7SnippetO9VideoListV", "encode"]
+- ["10YoutubeKit7SnippetO9VideoListV", "init"]
+- ["10YoutubeKit7SnippetO9VideoListV", "liveBroadcastContent"]
+- ["10YoutubeKit7SnippetO9VideoListV", "localized"]
+- ["10YoutubeKit7SnippetO9VideoListV", "publishedAt"]
+- ["10YoutubeKit7SnippetO9VideoListV", "tags"]
+- ["10YoutubeKit7SnippetO9VideoListV", "thumbnails"]
+- ["10YoutubeKit7SnippetO9VideoListV", "title"]
+depends-nominal:
+- "10YoutubeKit7SnippetO12ActivityListV"
+- "10YoutubeKit10ThumbnailsO12ActivityListV"
+- "10YoutubeKit7SnippetO12ActivityListV"
+- "10YoutubeKit15AuthorChannelIDV"
+- "10YoutubeKit7SnippetO11CaptionListV"
+- "10YoutubeKit7SnippetO11ChannelListV"
+- "10YoutubeKit10ThumbnailsO11ChannelListV"
+- "10YoutubeKit7SnippetO11ChannelListV"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV"
+- "s9CodingKeyP"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- !private "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO10SearchListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11ChannelListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV10CodingKeysO"
+- "10YoutubeKit7SnippetO9VideoListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO12ActivityListV10CodingKeysO"
+- "10YoutubeKit7SnippetO19ChannelSectionsListV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CaptionListV10CodingKeysO"
+- "10YoutubeKit7SnippetO11CommentInfoV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV10CodingKeysO"
+- "10YoutubeKit7SnippetO7CommentV"
+- "10YoutubeKit7SnippetO11CommentInfoV"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "10YoutubeKit10ThumbnailsO7DefaultV"
+- "SE"
+- !private "s7EncoderP"
+- "SQ"
+- "10YoutubeKit7SnippetO19GuideCategoriesListV"
+- "SH"
+- !private "s6HasherV"
+- "10YoutubeKit7SnippetO17I18nLanguagesListV"
+- "10YoutubeKit7SnippetO15I18nRegionsListV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "10YoutubeKit9LocalizedV"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV"
+- "10YoutubeKit10ResourceIDO17PlaylistItemsListV"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV"
+- "10YoutubeKit7SnippetO17PlaylistItemsListV"
+- "10YoutubeKit7SnippetO13PlaylistsListV"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV"
+- "10YoutubeKit7SnippetO13PlaylistsListV"
+- "SY"
+- "10YoutubeKit10ResourceIDO"
+- "10YoutubeKit7SnippetO10SearchListV"
+- "10YoutubeKit10ThumbnailsO10SearchListV"
+- "10YoutubeKit7SnippetO10SearchListV"
+- "10YoutubeKit15SecondaryReasonV"
+- "10YoutubeKit7SnippetO"
+- "10YoutubeKit7SnippetO17SubscriptionsListV"
+- "10YoutubeKit10ResourceIDO17SubscriptionsListV"
+- "10YoutubeKit7SnippetO17SubscriptionsListV"
+- "10YoutubeKit10ThumbnailsO"
+- "10YoutubeKit7SnippetO15TopLevelCommentV"
+- "10YoutubeKit7SnippetO27VideoAbuseReportReasonsListV"
+- "10YoutubeKit7SnippetO19VideoCategoriesListV"
+- "10YoutubeKit7SnippetO9VideoListV"
+- "10YoutubeKit10ThumbnailsO9VideoListV"
+- "10YoutubeKit7SnippetO9VideoListV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e1bfed3c2c93248eb56ba25320413e8e"

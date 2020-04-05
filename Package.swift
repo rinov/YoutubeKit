@@ -1,8 +1,11 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 import PackageDescription
 
 let package = Package(
     name: "YoutubeKit",
+    platforms: [
+        .iOS(.v9)
+    ],
     products: [
         .library(
             name: "YoutubeKit",
@@ -12,10 +15,7 @@ let package = Package(
     targets: [
         .target(
             name: "YoutubeKit",
-            dependencies: []),
-        .testTarget(
-            name: "YoutubeKitTests",
-            dependencies: ["YoutubeKit"]),
+            dependencies: [])
     ],
     swiftLanguageVersions: [.v5]
 )

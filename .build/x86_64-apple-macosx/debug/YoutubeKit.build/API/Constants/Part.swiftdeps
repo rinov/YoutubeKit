@@ -1,0 +1,410 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Part"
+provides-nominal:
+- "10YoutubeKit4PartO"
+- "10YoutubeKit4PartO9VideoListO"
+- "10YoutubeKit4PartO12ActivityListO"
+- "10YoutubeKit4PartO14ActivityInsertO"
+- "10YoutubeKit4PartO11CaptionListO"
+- "10YoutubeKit4PartO11ChannelListO"
+- "10YoutubeKit4PartO19ChannelSectionsListO"
+- "10YoutubeKit4PartO17I18nLanguagesListO"
+- "10YoutubeKit4PartO15I18nRegionsListO"
+- "10YoutubeKit4PartO19VideoCategoriesListO"
+- "10YoutubeKit4PartO10SearchListO"
+- "10YoutubeKit4PartO19GuideCategoriesListO"
+- "10YoutubeKit4PartO17SubscriptionsListO"
+- "10YoutubeKit4PartO27VideoAbuseReportReasonsListO"
+- "10YoutubeKit4PartO13PlaylistsListO"
+- "10YoutubeKit4PartO17PlaylistItemsListO"
+- "10YoutubeKit4PartO18CommentThreadsListO"
+- "10YoutubeKit4PartO11CommentListO"
+provides-member:
+- ["10YoutubeKit4PartO", ""]
+- ["10YoutubeKit4PartO9VideoListO", ""]
+- ["10YoutubeKit4PartO12ActivityListO", ""]
+- ["10YoutubeKit4PartO14ActivityInsertO", ""]
+- ["10YoutubeKit4PartO11CaptionListO", ""]
+- ["10YoutubeKit4PartO11ChannelListO", ""]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", ""]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", ""]
+- ["10YoutubeKit4PartO15I18nRegionsListO", ""]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", ""]
+- ["10YoutubeKit4PartO10SearchListO", ""]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", ""]
+- ["10YoutubeKit4PartO17SubscriptionsListO", ""]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", ""]
+- ["10YoutubeKit4PartO13PlaylistsListO", ""]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", ""]
+- ["10YoutubeKit4PartO18CommentThreadsListO", ""]
+- ["10YoutubeKit4PartO11CommentListO", ""]
+- ["10YoutubeKit4PartO", "VideoList"]
+- ["10YoutubeKit4PartO", "ActivityList"]
+- ["10YoutubeKit4PartO", "ActivityInsert"]
+- ["10YoutubeKit4PartO", "CaptionList"]
+- ["10YoutubeKit4PartO", "ChannelList"]
+- ["10YoutubeKit4PartO", "ChannelSectionsList"]
+- ["10YoutubeKit4PartO", "I18nLanguagesList"]
+- ["10YoutubeKit4PartO", "I18nRegionsList"]
+- ["10YoutubeKit4PartO", "VideoCategoriesList"]
+- ["10YoutubeKit4PartO", "SearchList"]
+- ["10YoutubeKit4PartO", "GuideCategoriesList"]
+- ["10YoutubeKit4PartO", "SubscriptionsList"]
+- ["10YoutubeKit4PartO", "VideoAbuseReportReasonsList"]
+- ["10YoutubeKit4PartO", "PlaylistsList"]
+- ["10YoutubeKit4PartO", "PlaylistItemsList"]
+- ["10YoutubeKit4PartO", "CommentThreadsList"]
+- ["10YoutubeKit4PartO", "CommentList"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "Part"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["10YoutubeKit4PartO14ActivityInsertO", "=="]
+- ["10YoutubeKit4PartO14ActivityInsertO", "RawValue"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO14ActivityInsertO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "_rawHashValue"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "contentDetails"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "deinit"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "hash"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "hashValue"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "init"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "rawValue"]
+- ["10YoutubeKit4PartO14ActivityInsertO", "snippet"]
+- ["10YoutubeKit4PartO12ActivityListO", "=="]
+- ["10YoutubeKit4PartO12ActivityListO", "RawValue"]
+- ["10YoutubeKit4PartO12ActivityListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO12ActivityListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO12ActivityListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO12ActivityListO", "contentDetails"]
+- ["10YoutubeKit4PartO12ActivityListO", "deinit"]
+- ["10YoutubeKit4PartO12ActivityListO", "hash"]
+- ["10YoutubeKit4PartO12ActivityListO", "hashValue"]
+- ["10YoutubeKit4PartO12ActivityListO", "id"]
+- ["10YoutubeKit4PartO12ActivityListO", "init"]
+- ["10YoutubeKit4PartO12ActivityListO", "rawValue"]
+- ["10YoutubeKit4PartO12ActivityListO", "snippet"]
+- ["10YoutubeKit4PartO11CaptionListO", "=="]
+- ["10YoutubeKit4PartO11CaptionListO", "RawValue"]
+- ["10YoutubeKit4PartO11CaptionListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO11CaptionListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO11CaptionListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO11CaptionListO", "deinit"]
+- ["10YoutubeKit4PartO11CaptionListO", "hash"]
+- ["10YoutubeKit4PartO11CaptionListO", "hashValue"]
+- ["10YoutubeKit4PartO11CaptionListO", "id"]
+- ["10YoutubeKit4PartO11CaptionListO", "init"]
+- ["10YoutubeKit4PartO11CaptionListO", "rawValue"]
+- ["10YoutubeKit4PartO11CaptionListO", "snippet"]
+- ["10YoutubeKit4PartO11ChannelListO", "=="]
+- ["10YoutubeKit4PartO11ChannelListO", "RawValue"]
+- ["10YoutubeKit4PartO11ChannelListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO11ChannelListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO11ChannelListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO11ChannelListO", "brandingSettings"]
+- ["10YoutubeKit4PartO11ChannelListO", "contentDetails"]
+- ["10YoutubeKit4PartO11ChannelListO", "deinit"]
+- ["10YoutubeKit4PartO11ChannelListO", "hash"]
+- ["10YoutubeKit4PartO11ChannelListO", "hashValue"]
+- ["10YoutubeKit4PartO11ChannelListO", "id"]
+- ["10YoutubeKit4PartO11ChannelListO", "init"]
+- ["10YoutubeKit4PartO11ChannelListO", "invideoPromotion"]
+- ["10YoutubeKit4PartO11ChannelListO", "rawValue"]
+- ["10YoutubeKit4PartO11ChannelListO", "snippet"]
+- ["10YoutubeKit4PartO11ChannelListO", "statistics"]
+- ["10YoutubeKit4PartO11ChannelListO", "topicDetails"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "=="]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "RawValue"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO19ChannelSectionsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "contentDetails"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "deinit"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "hash"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "hashValue"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "id"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "init"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "localizations"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "rawValue"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "snippet"]
+- ["10YoutubeKit4PartO19ChannelSectionsListO", "targeting"]
+- ["10YoutubeKit4PartO11CommentListO", "=="]
+- ["10YoutubeKit4PartO11CommentListO", "RawValue"]
+- ["10YoutubeKit4PartO11CommentListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO11CommentListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO11CommentListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO11CommentListO", "deinit"]
+- ["10YoutubeKit4PartO11CommentListO", "hash"]
+- ["10YoutubeKit4PartO11CommentListO", "hashValue"]
+- ["10YoutubeKit4PartO11CommentListO", "id"]
+- ["10YoutubeKit4PartO11CommentListO", "init"]
+- ["10YoutubeKit4PartO11CommentListO", "rawValue"]
+- ["10YoutubeKit4PartO11CommentListO", "snippet"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "=="]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "RawValue"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO18CommentThreadsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "deinit"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "hash"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "hashValue"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "id"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "init"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "rawValue"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "replies"]
+- ["10YoutubeKit4PartO18CommentThreadsListO", "snippet"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "rawValue"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "=="]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "RawValue"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO19GuideCategoriesListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "deinit"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "hash"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "hashValue"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "id"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "init"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "rawValue"]
+- ["10YoutubeKit4PartO19GuideCategoriesListO", "snippet"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "rawValue"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "=="]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "RawValue"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO17I18nLanguagesListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "deinit"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "hash"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "hashValue"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "init"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "rawValue"]
+- ["10YoutubeKit4PartO17I18nLanguagesListO", "snippet"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "=="]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "RawValue"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO15I18nRegionsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "deinit"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "hash"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "hashValue"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "init"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "rawValue"]
+- ["10YoutubeKit4PartO15I18nRegionsListO", "snippet"]
+- ["10YoutubeKit4PartO", "ActivityInsert"]
+- ["10YoutubeKit4PartO", "ActivityList"]
+- ["10YoutubeKit4PartO", "CaptionList"]
+- ["10YoutubeKit4PartO", "ChannelList"]
+- ["10YoutubeKit4PartO", "ChannelSectionsList"]
+- ["10YoutubeKit4PartO", "CommentList"]
+- ["10YoutubeKit4PartO", "CommentThreadsList"]
+- ["10YoutubeKit4PartO", "GuideCategoriesList"]
+- ["10YoutubeKit4PartO", "I18nLanguagesList"]
+- ["10YoutubeKit4PartO", "I18nRegionsList"]
+- ["10YoutubeKit4PartO", "PlaylistItemsList"]
+- ["10YoutubeKit4PartO", "PlaylistsList"]
+- ["10YoutubeKit4PartO", "SearchList"]
+- ["10YoutubeKit4PartO", "String"]
+- ["10YoutubeKit4PartO", "SubscriptionsList"]
+- ["10YoutubeKit4PartO", "VideoAbuseReportReasonsList"]
+- ["10YoutubeKit4PartO", "VideoCategoriesList"]
+- ["10YoutubeKit4PartO", "VideoList"]
+- !private ["10YoutubeKit4PartO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "=="]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "RawValue"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO17PlaylistItemsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "contentDetails"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "deinit"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "hash"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "hashValue"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "id"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "init"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "rawValue"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "snippet"]
+- ["10YoutubeKit4PartO17PlaylistItemsListO", "status"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "=="]
+- ["10YoutubeKit4PartO13PlaylistsListO", "RawValue"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO13PlaylistsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "deinit"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "hash"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "hashValue"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "id"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "init"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "rawValue"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "snippet"]
+- ["10YoutubeKit4PartO13PlaylistsListO", "status"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["10YoutubeKit4PartO10SearchListO", "=="]
+- ["10YoutubeKit4PartO10SearchListO", "RawValue"]
+- ["10YoutubeKit4PartO10SearchListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO10SearchListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO10SearchListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO10SearchListO", "deinit"]
+- ["10YoutubeKit4PartO10SearchListO", "hash"]
+- ["10YoutubeKit4PartO10SearchListO", "hashValue"]
+- ["10YoutubeKit4PartO10SearchListO", "id"]
+- ["10YoutubeKit4PartO10SearchListO", "init"]
+- ["10YoutubeKit4PartO10SearchListO", "rawValue"]
+- ["10YoutubeKit4PartO10SearchListO", "snippet"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "=="]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "RawValue"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO17SubscriptionsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "contentDetails"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "deinit"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "hash"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "hashValue"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "id"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "init"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "rawValue"]
+- ["10YoutubeKit4PartO17SubscriptionsListO", "snippet"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "=="]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "RawValue"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "deinit"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "hash"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "hashValue"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "id"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "init"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "rawValue"]
+- ["10YoutubeKit4PartO27VideoAbuseReportReasonsListO", "snippet"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "=="]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "RawValue"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO19VideoCategoriesListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "deinit"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "hash"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "hashValue"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "id"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "init"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "rawValue"]
+- ["10YoutubeKit4PartO19VideoCategoriesListO", "snippet"]
+- ["10YoutubeKit4PartO9VideoListO", "=="]
+- ["10YoutubeKit4PartO9VideoListO", "RawValue"]
+- ["10YoutubeKit4PartO9VideoListO", "_Default_RawValue"]
+- !private ["10YoutubeKit4PartO9VideoListO", "_findStringSwitchCase"]
+- ["10YoutubeKit4PartO9VideoListO", "_rawHashValue"]
+- ["10YoutubeKit4PartO9VideoListO", "contentDetails"]
+- ["10YoutubeKit4PartO9VideoListO", "deinit"]
+- ["10YoutubeKit4PartO9VideoListO", "hash"]
+- ["10YoutubeKit4PartO9VideoListO", "hashValue"]
+- ["10YoutubeKit4PartO9VideoListO", "id"]
+- ["10YoutubeKit4PartO9VideoListO", "init"]
+- ["10YoutubeKit4PartO9VideoListO", "rawValue"]
+- ["10YoutubeKit4PartO9VideoListO", "snippet"]
+- ["10YoutubeKit4PartO9VideoListO", "statistics"]
+- ["10YoutubeKit4PartO9VideoListO", "status"]
+depends-nominal:
+- "10YoutubeKit4PartO14ActivityInsertO"
+- "10YoutubeKit4PartO12ActivityListO"
+- "10YoutubeKit4PartO11CaptionListO"
+- "10YoutubeKit4PartO11ChannelListO"
+- "10YoutubeKit4PartO19ChannelSectionsListO"
+- "10YoutubeKit4PartO11CommentListO"
+- "10YoutubeKit4PartO18CommentThreadsListO"
+- "SQ"
+- "10YoutubeKit4PartO19GuideCategoriesListO"
+- "SH"
+- "10YoutubeKit4PartO17I18nLanguagesListO"
+- "10YoutubeKit4PartO15I18nRegionsListO"
+- "10YoutubeKit4PartO"
+- "10YoutubeKit4PartO17PlaylistItemsListO"
+- "10YoutubeKit4PartO13PlaylistsListO"
+- "SY"
+- "10YoutubeKit4PartO10SearchListO"
+- "10YoutubeKit4PartO17SubscriptionsListO"
+- "10YoutubeKit4PartO27VideoAbuseReportReasonsListO"
+- "10YoutubeKit4PartO19VideoCategoriesListO"
+- "10YoutubeKit4PartO9VideoListO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4ccfe8a8ec77a4b54636774b107bb305"

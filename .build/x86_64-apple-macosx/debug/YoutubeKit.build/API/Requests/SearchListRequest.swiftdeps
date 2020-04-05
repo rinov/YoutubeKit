@@ -1,0 +1,351 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SearchListRequest"
+provides-nominal:
+- "10YoutubeKit17SearchListRequestV"
+provides-member:
+- ["10YoutubeKit17SearchListRequestV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Date"
+- "Filter"
+- "HTTPMethod"
+- "Int"
+- "Part"
+- "Requestable"
+- "ResultOrder"
+- "SearchEventType"
+- "SearchList"
+- "SearchListRequest"
+- "SearchResourceType"
+- "SearchSafeMode"
+- "SearchVideoCaption"
+- "SearchVideoDefinition"
+- "SearchVideoDimension"
+- "SearchVideoDuration"
+- "SearchVideoEmbeddable"
+- "SearchVideoLicense"
+- "SearchVideoSyndicated"
+- "SearchVideoType"
+- "String"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- "VideoCategoryID"
+depends-member:
+- !private ["Sa", "joined"]
+- !private ["Sa", "map"]
+- !private ["SK", "joined"]
+- !private ["SK", "map"]
+- !private ["s7CVarArgP", "appendingQueryParameter"]
+- !private ["s7CVarArgP", "joined"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "appendingQueryParameter"]
+- !private ["Sl", "joined"]
+- !private ["Sl", "map"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "joined"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingQueryParameter"]
+- !private ["s28CustomDebugStringConvertibleP", "joined"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "appendingQueryParameter"]
+- !private ["s17CustomReflectableP", "joined"]
+- !private ["s17CustomReflectableP", "map"]
+- ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "appendingQueryParameter"]
+- !private ["s23CustomStringConvertibleP", "joined"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "joined"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "appendingQueryParameter"]
+- !private ["Se", "joined"]
+- !private ["Se", "map"]
+- ["Se", "none"]
+- !private ["Se", "subscript"]
+- !private ["SD", "appendingQueryParameter"]
+- !private ["SD", "subscript"]
+- !private ["SE", "appendingQueryParameter"]
+- !private ["SE", "joined"]
+- !private ["SE", "map"]
+- ["SE", "none"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "appendingQueryParameter"]
+- !private ["SQ", "get"]
+- !private ["SQ", "joined"]
+- !private ["SQ", "map"]
+- ["SQ", "none"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "joined"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "appendingQueryParameter"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["s23ExpressibleByNilLiteralP", "none"]
+- ["10YoutubeKit6FilterO", "SearchList"]
+- !private ["10YoutubeKit10HTTPMethodO", "get"]
+- !private ["SH", "appendingQueryParameter"]
+- !private ["SH", "get"]
+- !private ["SH", "joined"]
+- !private ["SH", "map"]
+- ["SH", "none"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "subscript"]
+- !private ["SM", "joined"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "joined"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- ["Sq", "none"]
+- ["10YoutubeKit4PartO", "SearchList"]
+- ["10YoutubeKit18QueryParameterableP", "forContentOwner"]
+- ["10YoutubeKit18QueryParameterableP", "forMine"]
+- !private ["10YoutubeKit18QueryParameterableP", "keyValue"]
+- ["10YoutubeKit18QueryParameterableP", "relatedToVideoID"]
+- !private ["Sk", "joined"]
+- !private ["Sk", "map"]
+- !private ["Sm", "joined"]
+- !private ["Sm", "map"]
+- !private ["SY", "get"]
+- !private ["SY", "rawValue"]
+- ["10YoutubeKit11RequestableP", "Response"]
+- ["10YoutubeKit11RequestableP", ""]
+- ["10YoutubeKit11RequestableP", "baseURL"]
+- !private ["10YoutubeKit11RequestableP", "channelID"]
+- !private ["10YoutubeKit11RequestableP", "channelType"]
+- !private ["10YoutubeKit11RequestableP", "eventType"]
+- !private ["10YoutubeKit11RequestableP", "filter"]
+- ["10YoutubeKit11RequestableP", "headerField"]
+- ["10YoutubeKit11RequestableP", "httpBody"]
+- ["10YoutubeKit11RequestableP", "httpMethod"]
+- ["10YoutubeKit11RequestableP", "isAuthorizedRequest"]
+- !private ["10YoutubeKit11RequestableP", "maxResults"]
+- !private ["10YoutubeKit11RequestableP", "onBehalfOfContentOwner"]
+- !private ["10YoutubeKit11RequestableP", "order"]
+- !private ["10YoutubeKit11RequestableP", "pageToken"]
+- !private ["10YoutubeKit11RequestableP", "part"]
+- ["10YoutubeKit11RequestableP", "path"]
+- !private ["10YoutubeKit11RequestableP", "publishedAfter"]
+- !private ["10YoutubeKit11RequestableP", "publishedBefore"]
+- ["10YoutubeKit11RequestableP", "queryParameters"]
+- !private ["10YoutubeKit11RequestableP", "regionCode"]
+- !private ["10YoutubeKit11RequestableP", "resourceType"]
+- !private ["10YoutubeKit11RequestableP", "safeSearch"]
+- !private ["10YoutubeKit11RequestableP", "searchQuery"]
+- !private ["10YoutubeKit11RequestableP", "topicID"]
+- !private ["10YoutubeKit11RequestableP", "videoCaption"]
+- !private ["10YoutubeKit11RequestableP", "videoCategoryID"]
+- !private ["10YoutubeKit11RequestableP", "videoDefinition"]
+- !private ["10YoutubeKit11RequestableP", "videoDimension"]
+- !private ["10YoutubeKit11RequestableP", "videoDuration"]
+- !private ["10YoutubeKit11RequestableP", "videoEmbeddable"]
+- !private ["10YoutubeKit11RequestableP", "videoLicense"]
+- !private ["10YoutubeKit11RequestableP", "videoSyndicated"]
+- !private ["10YoutubeKit11RequestableP", "videoType"]
+- ["10YoutubeKit11ResultOrderO", "Search"]
+- !private ["10YoutubeKit11ResultOrderO6SearchO", "deinit"]
+- !private ["10YoutubeKit15SearchEventTypeO", "deinit"]
+- ["10YoutubeKit10SearchListV", "deinit"]
+- !private ["10YoutubeKit4PartO10SearchListO", "deinit"]
+- !private ["10YoutubeKit6FilterO10SearchListO", "deinit"]
+- ["10YoutubeKit6FilterO10SearchListO", "forContentOwner"]
+- ["10YoutubeKit6FilterO10SearchListO", "forMine"]
+- !private ["10YoutubeKit6FilterO10SearchListO", "keyValue"]
+- !private ["10YoutubeKit4PartO10SearchListO", "rawValue"]
+- ["10YoutubeKit6FilterO10SearchListO", "relatedToVideoID"]
+- ["10YoutubeKit17SearchListRequestV", "Bool"]
+- ["10YoutubeKit17SearchListRequestV", "Date"]
+- ["10YoutubeKit17SearchListRequestV", "Filter"]
+- ["10YoutubeKit17SearchListRequestV", "HTTPMethod"]
+- ["10YoutubeKit17SearchListRequestV", "Int"]
+- ["10YoutubeKit17SearchListRequestV", "Part"]
+- ["10YoutubeKit17SearchListRequestV", "Response"]
+- ["10YoutubeKit17SearchListRequestV", "ResultOrder"]
+- ["10YoutubeKit17SearchListRequestV", "SearchEventType"]
+- ["10YoutubeKit17SearchListRequestV", "SearchList"]
+- ["10YoutubeKit17SearchListRequestV", "SearchResourceType"]
+- ["10YoutubeKit17SearchListRequestV", "SearchSafeMode"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoCaption"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoDefinition"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoDimension"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoDuration"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoEmbeddable"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoLicense"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoSyndicated"]
+- ["10YoutubeKit17SearchListRequestV", "SearchVideoType"]
+- ["10YoutubeKit17SearchListRequestV", "String"]
+- ["10YoutubeKit17SearchListRequestV", "VideoCategoryID"]
+- ["10YoutubeKit17SearchListRequestV", "baseURL"]
+- ["10YoutubeKit17SearchListRequestV", "channelID"]
+- ["10YoutubeKit17SearchListRequestV", "channelType"]
+- ["10YoutubeKit17SearchListRequestV", "deinit"]
+- ["10YoutubeKit17SearchListRequestV", "eventType"]
+- ["10YoutubeKit17SearchListRequestV", "filter"]
+- ["10YoutubeKit17SearchListRequestV", "headerField"]
+- ["10YoutubeKit17SearchListRequestV", "httpBody"]
+- ["10YoutubeKit17SearchListRequestV", "httpMethod"]
+- ["10YoutubeKit17SearchListRequestV", "init"]
+- ["10YoutubeKit17SearchListRequestV", "isAuthorizedRequest"]
+- ["10YoutubeKit17SearchListRequestV", "maxResults"]
+- ["10YoutubeKit17SearchListRequestV", "onBehalfOfContentOwner"]
+- ["10YoutubeKit17SearchListRequestV", "order"]
+- ["10YoutubeKit17SearchListRequestV", "pageToken"]
+- ["10YoutubeKit17SearchListRequestV", "part"]
+- ["10YoutubeKit17SearchListRequestV", "path"]
+- ["10YoutubeKit17SearchListRequestV", "publishedAfter"]
+- ["10YoutubeKit17SearchListRequestV", "publishedBefore"]
+- ["10YoutubeKit17SearchListRequestV", "queryParameters"]
+- ["10YoutubeKit17SearchListRequestV", "regionCode"]
+- ["10YoutubeKit17SearchListRequestV", "resourceType"]
+- ["10YoutubeKit17SearchListRequestV", "safeSearch"]
+- ["10YoutubeKit17SearchListRequestV", "searchQuery"]
+- ["10YoutubeKit17SearchListRequestV", "topicID"]
+- ["10YoutubeKit17SearchListRequestV", "videoCaption"]
+- ["10YoutubeKit17SearchListRequestV", "videoCategoryID"]
+- ["10YoutubeKit17SearchListRequestV", "videoDefinition"]
+- ["10YoutubeKit17SearchListRequestV", "videoDimension"]
+- ["10YoutubeKit17SearchListRequestV", "videoDuration"]
+- ["10YoutubeKit17SearchListRequestV", "videoEmbeddable"]
+- ["10YoutubeKit17SearchListRequestV", "videoLicense"]
+- ["10YoutubeKit17SearchListRequestV", "videoSyndicated"]
+- ["10YoutubeKit17SearchListRequestV", "videoType"]
+- !private ["10YoutubeKit14SearchSafeModeO", "deinit"]
+- !private ["10YoutubeKit18SearchVideoCaptionO", "deinit"]
+- !private ["10YoutubeKit21SearchVideoDefinitionO", "deinit"]
+- !private ["10YoutubeKit20SearchVideoDimensionO", "deinit"]
+- !private ["10YoutubeKit19SearchVideoDurationO", "deinit"]
+- !private ["10YoutubeKit21SearchVideoEmbeddableO", "deinit"]
+- !private ["10YoutubeKit18SearchVideoLicenseO", "deinit"]
+- !private ["10YoutubeKit21SearchVideoSyndicatedO", "deinit"]
+- !private ["10YoutubeKit15SearchVideoTypeO", "deinit"]
+- !private ["ST", "appendingQueryParameter"]
+- !private ["ST", "joined"]
+- !private ["ST", "map"]
+- !private ["ST", "subscript"]
+- !private ["10YoutubeKit15VideoCategoryIDO", "deinit"]
+- !private ["s14_ArrayProtocolP", "joined"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s24_DestructorSafeContainerP", "joined"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s19_HasContiguousBytesP", "joined"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "appendingQueryParameter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "appendingQueryParameter"]
+- !private ["s21_ObjectiveCBridgeableP", "joined"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "SD"
+- "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- "10YoutubeKit6FilterO"
+- !private "10YoutubeKit10HTTPMethodO"
+- "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "Sq"
+- "10YoutubeKit4PartO"
+- "10YoutubeKit18QueryParameterableP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- "10YoutubeKit11RequestableP"
+- "10YoutubeKit11ResultOrderO"
+- !private "10YoutubeKit11ResultOrderO6SearchO"
+- !private "10YoutubeKit15SearchEventTypeO"
+- "10YoutubeKit10SearchListV"
+- !private "10YoutubeKit4PartO10SearchListO"
+- "10YoutubeKit6FilterO10SearchListO"
+- !private "10YoutubeKit4PartO10SearchListO"
+- "10YoutubeKit6FilterO10SearchListO"
+- "10YoutubeKit17SearchListRequestV"
+- !private "10YoutubeKit14SearchSafeModeO"
+- !private "10YoutubeKit18SearchVideoCaptionO"
+- !private "10YoutubeKit21SearchVideoDefinitionO"
+- !private "10YoutubeKit20SearchVideoDimensionO"
+- !private "10YoutubeKit19SearchVideoDurationO"
+- !private "10YoutubeKit21SearchVideoEmbeddableO"
+- !private "10YoutubeKit18SearchVideoLicenseO"
+- !private "10YoutubeKit21SearchVideoSyndicatedO"
+- !private "10YoutubeKit15SearchVideoTypeO"
+- !private "ST"
+- !private "10YoutubeKit15VideoCategoryIDO"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d503e57c6da5cf05731c5064abab9810"

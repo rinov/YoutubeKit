@@ -1,0 +1,299 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "YTSwiftyPlayerState"
+- "YTSwiftyPlayerEvent"
+- "YTSwiftyVideoQuality"
+- "YTSwiftyPlayerError"
+- "VideoProgressBarColor"
+- "VideoControlAppearance"
+- "VideoListType"
+- "VideoEmbedParameter"
+provides-nominal:
+- "10YoutubeKit19YTSwiftyPlayerStateO"
+- "10YoutubeKit19YTSwiftyPlayerEventO"
+- "10YoutubeKit20YTSwiftyVideoQualityO"
+- "10YoutubeKit19YTSwiftyPlayerErrorO"
+- "10YoutubeKit21VideoProgressBarColorO"
+- "10YoutubeKit22VideoControlAppearanceO"
+- "10YoutubeKit13VideoListTypeO"
+- "10YoutubeKit19VideoEmbedParameterO"
+provides-member:
+- ["10YoutubeKit19YTSwiftyPlayerStateO", ""]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", ""]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", ""]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", ""]
+- ["10YoutubeKit21VideoProgressBarColorO", ""]
+- ["10YoutubeKit22VideoControlAppearanceO", ""]
+- ["10YoutubeKit13VideoListTypeO", ""]
+- ["10YoutubeKit19VideoEmbedParameterO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AnyObject"
+- "Bool"
+- "CastingPrecedence"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "VideoControlAppearance"
+- "VideoEmbedParameter"
+- "VideoListType"
+- "VideoProgressBarColor"
+- "YTSwiftyPlayerError"
+- "YTSwiftyPlayerEvent"
+- "YTSwiftyPlayerState"
+- "YTSwiftyVideoQuality"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- !private ["Sb", "jsValue"]
+- !private ["s7CVarArgP", "jsValue"]
+- !private ["s17CustomReflectableP", "jsValue"]
+- !private ["s23CustomStringConvertibleP", "jsValue"]
+- !private ["Se", "jsValue"]
+- !private ["SE", "jsValue"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "jsValue"]
+- ["SQ", "rawValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "jsValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "jsValue"]
+- ["SH", "rawValue"]
+- !private ["s25LosslessStringConvertibleP", "jsValue"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "=="]
+- ["10YoutubeKit22VideoControlAppearanceO", "RawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "_Default_RawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "_rawHashValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "deinit"]
+- ["10YoutubeKit22VideoControlAppearanceO", "hash"]
+- ["10YoutubeKit22VideoControlAppearanceO", "hashValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "hidden"]
+- ["10YoutubeKit22VideoControlAppearanceO", "init"]
+- ["10YoutubeKit22VideoControlAppearanceO", "rawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "show"]
+- ["10YoutubeKit22VideoControlAppearanceO", "showAfterPlaying"]
+- ["10YoutubeKit19VideoEmbedParameterO", "AnyObject"]
+- ["10YoutubeKit19VideoEmbedParameterO", "Bool"]
+- ["10YoutubeKit19VideoEmbedParameterO", "Int"]
+- ["10YoutubeKit19VideoEmbedParameterO", "String"]
+- ["10YoutubeKit19VideoEmbedParameterO", "VideoControlAppearance"]
+- ["10YoutubeKit19VideoEmbedParameterO", "VideoListType"]
+- ["10YoutubeKit19VideoEmbedParameterO", "VideoProgressBarColor"]
+- ["10YoutubeKit19VideoEmbedParameterO", "alwaysShowCaption"]
+- ["10YoutubeKit19VideoEmbedParameterO", "autoplay"]
+- ["10YoutubeKit19VideoEmbedParameterO", "disableKeyboardControl"]
+- ["10YoutubeKit19VideoEmbedParameterO", "enableJavaScriptAPI"]
+- ["10YoutubeKit19VideoEmbedParameterO", "list"]
+- ["10YoutubeKit19VideoEmbedParameterO", "listType"]
+- ["10YoutubeKit19VideoEmbedParameterO", "loopVideo"]
+- ["10YoutubeKit19VideoEmbedParameterO", "origin"]
+- ["10YoutubeKit19VideoEmbedParameterO", "playerLanguage"]
+- ["10YoutubeKit19VideoEmbedParameterO", "playlist"]
+- ["10YoutubeKit19VideoEmbedParameterO", "playsInline"]
+- ["10YoutubeKit19VideoEmbedParameterO", "progressBarColor"]
+- ["10YoutubeKit19VideoEmbedParameterO", "property"]
+- ["10YoutubeKit19VideoEmbedParameterO", "registerEndTimeAt"]
+- ["10YoutubeKit19VideoEmbedParameterO", "registerStartTimeAt"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showControls"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showFullScreenButton"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showInfo"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showLoadPolicy"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showModestbranding"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showRelatedVideo"]
+- ["10YoutubeKit19VideoEmbedParameterO", "videoID"]
+- ["10YoutubeKit13VideoListTypeO", "=="]
+- ["10YoutubeKit13VideoListTypeO", "RawValue"]
+- ["10YoutubeKit13VideoListTypeO", "_Default_RawValue"]
+- !private ["10YoutubeKit13VideoListTypeO", "_findStringSwitchCase"]
+- ["10YoutubeKit13VideoListTypeO", "_rawHashValue"]
+- ["10YoutubeKit13VideoListTypeO", "deinit"]
+- ["10YoutubeKit13VideoListTypeO", "hash"]
+- ["10YoutubeKit13VideoListTypeO", "hashValue"]
+- ["10YoutubeKit13VideoListTypeO", "init"]
+- ["10YoutubeKit13VideoListTypeO", "playlist"]
+- ["10YoutubeKit13VideoListTypeO", "rawValue"]
+- ["10YoutubeKit13VideoListTypeO", "search"]
+- ["10YoutubeKit13VideoListTypeO", "userUploads"]
+- ["10YoutubeKit21VideoProgressBarColorO", "=="]
+- ["10YoutubeKit21VideoProgressBarColorO", "RawValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "_Default_RawValue"]
+- !private ["10YoutubeKit21VideoProgressBarColorO", "_findStringSwitchCase"]
+- ["10YoutubeKit21VideoProgressBarColorO", "_rawHashValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "deinit"]
+- ["10YoutubeKit21VideoProgressBarColorO", "hash"]
+- ["10YoutubeKit21VideoProgressBarColorO", "hashValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "init"]
+- ["10YoutubeKit21VideoProgressBarColorO", "rawValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "red"]
+- ["10YoutubeKit21VideoProgressBarColorO", "white"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "=="]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "_Default_RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "_rawHashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "deinit"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "hash"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "hashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "html5PlayerError"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "init"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "invalidURLRequest"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "rawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "videoLicenseError"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "videoNotFound"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "videoNotPermited"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "=="]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "_Default_RawValue"]
+- !private ["10YoutubeKit19YTSwiftyPlayerEventO", "_findStringSwitchCase"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "_rawHashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "deinit"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "hash"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "hashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "init"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onApiChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onError"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onPlaybackRateChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onQualityChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onReady"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onStateChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onUpdateCurrentTime"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onYouTubeIframeAPIFailedToLoad"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onYoutubeIframeAPIReady"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "rawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "=="]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "_Default_RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "_rawHashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "buffering"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "cued"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "deinit"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "ended"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "hash"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "hashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "init"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "paused"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "playing"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "rawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "unstarted"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "=="]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "RawValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "_Default_RawValue"]
+- !private ["10YoutubeKit20YTSwiftyVideoQualityO", "_findStringSwitchCase"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "_rawHashValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "auto"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "deinit"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hash"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hashValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hd1080"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hd720"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "highres"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "init"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "large"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "medium"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "rawValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "small"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "unknown"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "jsValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "jsValue"]
+- !private ["s21_ObjectiveCBridgeableP", "jsValue"]
+depends-nominal:
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- "SY"
+- "10YoutubeKit22VideoControlAppearanceO"
+- "10YoutubeKit19VideoEmbedParameterO"
+- "10YoutubeKit13VideoListTypeO"
+- "10YoutubeKit21VideoProgressBarColorO"
+- "10YoutubeKit19YTSwiftyPlayerErrorO"
+- "10YoutubeKit19YTSwiftyPlayerEventO"
+- "10YoutubeKit19YTSwiftyPlayerStateO"
+- "10YoutubeKit20YTSwiftyVideoQualityO"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "fcd6a16f7b78d29ddb3a44aea59e3995"

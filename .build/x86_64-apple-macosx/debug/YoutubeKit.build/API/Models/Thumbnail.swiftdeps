@@ -1,0 +1,554 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Thumbnails"
+provides-nominal:
+- "10YoutubeKit10ThumbnailsO"
+- "10YoutubeKit10ThumbnailsO7DefaultV"
+- "10YoutubeKit10ThumbnailsO10SearchListV"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+provides-member:
+- ["10YoutubeKit10ThumbnailsO", ""]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", ""]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", ""]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", ""]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", ""]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", ""]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", ""]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", ""]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", ""]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", ""]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", ""]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", ""]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", ""]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", ""]
+- ["10YoutubeKit10ThumbnailsO", "Default"]
+- ["10YoutubeKit10ThumbnailsO", "SearchList"]
+- ["10YoutubeKit10ThumbnailsO", "VideoList"]
+- ["10YoutubeKit10ThumbnailsO", "ChannelList"]
+- ["10YoutubeKit10ThumbnailsO", "ActivityList"]
+- ["10YoutubeKit10ThumbnailsO", "PlaylistsList"]
+- ["10YoutubeKit10ThumbnailsO", "PlaylistItemsList"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "Codable"
+- "CodingKey"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "Thumbnails"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "Default"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "String"]
+- !private ["10YoutubeKit10ThumbnailsO12ActivityListV", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "default"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "encode"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "high"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "init"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "maxres"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "medium"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV", "standard"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "Default"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "String"]
+- !private ["10YoutubeKit10ThumbnailsO11ChannelListV", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "default"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "encode"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "high"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "init"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV", "medium"]
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "=="]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "=="]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "=="]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "=="]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "=="]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "=="]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "RawValue"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "_Default_RawValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "_Default_RawValue"]
+- !private ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "_rawHashValue"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "debugDescription"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "default"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "default"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "default"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "default"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "default"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "default"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "deinit"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "description"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "description"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "description"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "description"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "description"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "description"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "hash"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "hash"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "hash"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "hash"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "hash"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "hash"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "hashValue"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "high"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "high"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "high"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "high"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "high"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "high"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "init"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "init"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "init"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "init"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "init"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "init"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "intValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "maxres"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "maxres"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "medium"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "medium"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "medium"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "medium"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "medium"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "medium"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "rawValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "standard"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "standard"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "standard"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "default"]
+- ["Se", "encode"]
+- !private ["Se", "height"]
+- !private ["Se", "high"]
+- ["Se", "init"]
+- !private ["Se", "maxres"]
+- !private ["Se", "medium"]
+- !private ["Se", "standard"]
+- !private ["Se", "url"]
+- !private ["Se", "width"]
+- !private ["s7DecoderP", "container"]
+- !private ["10YoutubeKit10ThumbnailsO7DefaultV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "Int"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "String"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "encode"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "height"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "init"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "url"]
+- ["10YoutubeKit10ThumbnailsO7DefaultV", "width"]
+- ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "default"]
+- ["SE", "encode"]
+- !private ["SE", "height"]
+- !private ["SE", "high"]
+- ["SE", "init"]
+- !private ["SE", "maxres"]
+- !private ["SE", "medium"]
+- !private ["SE", "standard"]
+- !private ["SE", "url"]
+- !private ["SE", "width"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "Default"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "String"]
+- !private ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "default"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "encode"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "high"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "init"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "medium"]
+- ["10YoutubeKit10ThumbnailsO17PlaylistItemsListV", "standard"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "Default"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "String"]
+- !private ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "default"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "encode"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "high"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "init"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "maxres"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "medium"]
+- ["10YoutubeKit10ThumbnailsO13PlaylistsListV", "standard"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "Default"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "String"]
+- !private ["10YoutubeKit10ThumbnailsO10SearchListV", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "default"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "encode"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "high"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "init"]
+- ["10YoutubeKit10ThumbnailsO10SearchListV", "medium"]
+- ["10YoutubeKit10ThumbnailsO", "ActivityList"]
+- ["10YoutubeKit10ThumbnailsO", "ChannelList"]
+- ["10YoutubeKit10ThumbnailsO", "Codable"]
+- ["10YoutubeKit10ThumbnailsO", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO", "Default"]
+- ["10YoutubeKit10ThumbnailsO", "Int"]
+- ["10YoutubeKit10ThumbnailsO", "PlaylistItemsList"]
+- ["10YoutubeKit10ThumbnailsO", "PlaylistsList"]
+- ["10YoutubeKit10ThumbnailsO", "SearchList"]
+- ["10YoutubeKit10ThumbnailsO", "String"]
+- ["10YoutubeKit10ThumbnailsO", "VideoList"]
+- !private ["10YoutubeKit10ThumbnailsO", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "CodingKey"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "CodingKeys"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "Default"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "String"]
+- !private ["10YoutubeKit10ThumbnailsO9VideoListV", "_findStringSwitchCase"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "default"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "deinit"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "encode"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "high"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "init"]
+- ["10YoutubeKit10ThumbnailsO9VideoListV", "medium"]
+depends-nominal:
+- "10YoutubeKit10ThumbnailsO12ActivityListV"
+- "10YoutubeKit10ThumbnailsO11ChannelListV"
+- "s9CodingKeyP"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- !private "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- !private "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- !private "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- !private "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- !private "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- !private "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO10SearchListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO11ChannelListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO12ActivityListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV10CodingKeysO"
+- "10YoutubeKit10ThumbnailsO9VideoListV10CodingKeysO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "10YoutubeKit10ThumbnailsO7DefaultV"
+- "SE"
+- !private "s7EncoderP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "10YoutubeKit10ThumbnailsO17PlaylistItemsListV"
+- "10YoutubeKit10ThumbnailsO13PlaylistsListV"
+- "SY"
+- "10YoutubeKit10ThumbnailsO10SearchListV"
+- "10YoutubeKit10ThumbnailsO"
+- "10YoutubeKit10ThumbnailsO9VideoListV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "fcedc9109eccea21eb94a0932ad565c3"

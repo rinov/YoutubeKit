@@ -1,0 +1,443 @@
+{
+  "": {
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/master.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/ApiSession.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/ApiSession.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/ApiSession.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/ApiSession~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/ApiSession.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/CommentModerationStatus.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentModerationStatus.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentModerationStatus.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentModerationStatus~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentModerationStatus.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/CommentTextFormat.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentTextFormat.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentTextFormat.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentTextFormat~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/CommentTextFormat.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/Filter.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Filter.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Filter.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Filter~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Filter.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/MyRating.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/MyRating.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/MyRating.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/MyRating~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/MyRating.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/Part.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Part.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Part.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Part~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/Part.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/ResultOrder.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/ResultOrder.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/ResultOrder.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/ResultOrder~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/ResultOrder.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchEventType.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchEventType.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchEventType.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchEventType~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchEventType.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchResourceType.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchResourceType.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchResourceType.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchResourceType~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchResourceType.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchSafeMode.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchSafeMode.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchSafeMode.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchSafeMode~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchSafeMode.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoCaption.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoCaption.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoCaption.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoCaption~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoCaption.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoDefinition.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDefinition.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDefinition.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDefinition~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDefinition.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoDimension.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDimension.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDimension.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDimension~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDimension.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoDuration.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDuration.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDuration.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDuration~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoDuration.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoEmbeddable.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoEmbeddable.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoEmbeddable.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoEmbeddable~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoEmbeddable.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoLicense.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoLicense.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoLicense.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoLicense~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoLicense.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoSyndicated.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoSyndicated.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoSyndicated.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoSyndicated~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoSyndicated.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/SearchVideoType.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoType.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoType.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoType~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/SearchVideoType.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Constants/VideoCategory.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/VideoCategory.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/VideoCategory.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/VideoCategory~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Constants/VideoCategory.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/HTTPMethod.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/HTTPMethod.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/HTTPMethod.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/HTTPMethod~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/HTTPMethod.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/ActivityList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ActivityList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ActivityList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ActivityList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ActivityList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/CaptionList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CaptionList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CaptionList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CaptionList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CaptionList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/ChannelList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/ChannelSectionsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelSectionsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelSectionsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelSectionsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ChannelSectionsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/CommentList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/CommentThreadsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentThreadsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentThreadsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentThreadsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/CommentThreadsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/ContentDetails.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ContentDetails.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ContentDetails.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ContentDetails~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ContentDetails.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/GuideCategoriesList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/GuideCategoriesList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/GuideCategoriesList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/GuideCategoriesList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/GuideCategoriesList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/I18nLanguagesList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nLanguagesList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nLanguagesList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nLanguagesList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nLanguagesList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/I18nRegionsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nRegionsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nRegionsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nRegionsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/I18nRegionsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/Localized.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Localized.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Localized.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Localized~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Localized.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/PageInfo.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PageInfo.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PageInfo.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PageInfo~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PageInfo.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/PlaylistItemsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistItemsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistItemsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistItemsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistItemsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/PlaylistsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/PlaylistsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/ResourceID.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ResourceID.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ResourceID.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ResourceID~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/ResourceID.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/SearchList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SearchList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SearchList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SearchList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SearchList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/Snippet.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Snippet.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Snippet.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Snippet~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Snippet.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/Statistics.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Statistics.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Statistics.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Statistics~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Statistics.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/SubscriptionsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SubscriptionsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SubscriptionsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SubscriptionsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/SubscriptionsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/Thumbnail.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Thumbnail.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Thumbnail.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Thumbnail~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/Thumbnail.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/VideoAbuseReportReasonsList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoAbuseReportReasonsList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoAbuseReportReasonsList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoAbuseReportReasonsList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoAbuseReportReasonsList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/VideoCategoriesList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoCategoriesList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoCategoriesList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoCategoriesList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoCategoriesList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Models/VideoList.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoList.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoList.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoList~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Models/VideoList.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requestable.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requestable.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requestable.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requestable~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requestable.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/ActivityInsertRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityInsertRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityInsertRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityInsertRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityInsertRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/ActivityListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ActivityListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/CaptionListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CaptionListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CaptionListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CaptionListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CaptionListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/ChannelListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/ChannelSectionsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelSectionsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelSectionsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelSectionsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/ChannelSectionsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/CommentListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/CommentThreadsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentThreadsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentThreadsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentThreadsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/CommentThreadsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/GuideCategoriesListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/GuideCategoriesListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/GuideCategoriesListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/GuideCategoriesListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/GuideCategoriesListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/I18nLanguagesListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nLanguagesListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nLanguagesListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nLanguagesListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nLanguagesListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/I18nRegionsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nRegionsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nRegionsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nRegionsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/I18nRegionsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/PlaylistItemsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistItemsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistItemsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistItemsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistItemsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/PlaylistsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/PlaylistsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/SearchListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SearchListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SearchListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SearchListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SearchListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/SubscriptionsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SubscriptionsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SubscriptionsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SubscriptionsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/SubscriptionsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/VideoAbuseReportReasonsListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoAbuseReportReasonsListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoAbuseReportReasonsListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoAbuseReportReasonsListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoAbuseReportReasonsListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/VideoCategoryListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoCategoryListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoCategoryListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoCategoryListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoCategoryListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/API/Requests/VideoListRequest.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoListRequest.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoListRequest.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoListRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/API/Requests/VideoListRequest.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Common/QueryParameterable.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/QueryParameterable.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/QueryParameterable.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/QueryParameterable~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/QueryParameterable.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Common/Result.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/Result.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/Result.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/Result~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Common/Result.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Error/RequestError.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/RequestError.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/RequestError.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/RequestError~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/RequestError.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Error/ResponseError.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/ResponseError.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/ResponseError.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/ResponseError~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Error/ResponseError.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Extensions/BoolExtensions.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/BoolExtensions.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/BoolExtensions.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/BoolExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/BoolExtensions.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Extensions/DictionaryExtensions.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/DictionaryExtensions.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/DictionaryExtensions.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/DictionaryExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/DictionaryExtensions.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Extensions/RequestableExtensions.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/RequestableExtensions.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/RequestableExtensions.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/RequestableExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Extensions/RequestableExtensions.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Player/YTSwiftyConstants.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyConstants.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyConstants.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyConstants~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyConstants.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Player/YTSwiftyPlayer.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayer.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayer.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayer.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/Player/YTSwiftyPlayerDelegate.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayerDelegate.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayerDelegate.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayerDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/Player/YTSwiftyPlayerDelegate.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/YoutubeDataAPI.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeDataAPI.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeDataAPI.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeDataAPI~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeDataAPI.swiftdeps"
+  },
+  "/Users/a14668/Desktop/rinov/YoutubeKit/Sources/YoutubeKit/YoutubeKit.swift": {
+    "dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeKit.d",
+    "object": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeKit.swift.o",
+    "swiftmodule": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/a14668/Desktop/rinov/YoutubeKit/.build/x86_64-apple-macosx/debug/YoutubeKit.build/YoutubeKit.swiftdeps"
+  }
+}
