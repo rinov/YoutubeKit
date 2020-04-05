@@ -11,16 +11,16 @@
   "authors": {
     "rinov": "rinov@rinov.jp"
   },
-  "source": {
-    "git": "https://github.com/rinov/YoutubeKit.git",
-    "tag": "0.5.0"
-  },
   "social_media_url": "https://twitter.com/rinov0321",
   "swift_versions": "5.0",
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "Sources/**/*.swift",
+  "source": {
+    "git": "https://github.com/rinov/YoutubeKit.git",
+    "tag": "0.5.0"
+  },
   "resources": "Sources/YoutubeKit/player.html",
   "swift_version": "5.0"
 }
