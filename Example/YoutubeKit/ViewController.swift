@@ -15,7 +15,11 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Note: Run this example, You might be face on following message.
+        // `[Process] kill() returned unexpected error 1`
+        // This is a bug of WKWebView in iOS13 and that will be fixed in 13.4 release.
+
         // Create a new player
         player = YTSwiftyPlayer(
             frame: CGRect(x: 0, y: 0, width: 640, height: 480),
