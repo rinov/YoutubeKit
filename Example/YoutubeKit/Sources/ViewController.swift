@@ -25,7 +25,7 @@ final class ViewController: UIViewController {
             frame: CGRect(x: 0, y: 0, width: 640, height: 480),
             playerVars: [
                 .playsInline(true),
-                .videoID("_6u6UrtXUEI"),
+                .videoID("9AALILYu58w"),
                 .loopVideo(true),
                 .showRelatedVideo(false),
                 .autoplay(true)
