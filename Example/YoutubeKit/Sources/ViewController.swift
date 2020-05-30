@@ -12,7 +12,7 @@ import YoutubeKit
 final class ViewController: UIViewController {
 
     private var player: YTSwiftyPlayer!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,28 +22,25 @@ final class ViewController: UIViewController {
 
         // Create a new player
         player = YTSwiftyPlayer(
-            frame: CGRect(x: 0, y: 0, width: 640, height: 480),
+            frame: .zero,
             playerVars: [
-                .playsInline(true),
+                .playsInline(false),
                 .videoID("9AALILYu58w"),
                 .loopVideo(true),
                 .showRelatedVideo(false),
                 .autoplay(true)
             ])
-        
-        // Set player view
-        view = player
 
-        // Set delegate for detect callback information from the player
+        view = player
         player.delegate = self
-        
+
         // Load video player
         let playerPath = Bundle(for: ViewController.self).path(forResource: "player", ofType: "html")!
         let htmlString = try! String(contentsOfFile: playerPath, encoding: .utf8)
         player.loadPlayerHTML(htmlString)
 
         // (Optional) Create a new request for video list
-        // Please make sure to set your API configuration in `AppDelegate`.
+        // Please make sure to set your API key in `AppDelegate`.
         fetchVideoList()
     }
 
