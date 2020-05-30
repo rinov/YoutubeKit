@@ -49,13 +49,12 @@ final class ViewController: UIViewController {
 
     private func fetchVideoList() {
         let request = VideoListRequest(part: [.id, .snippet, .contentDetails], filter: .chart)
-        
-        YoutubeAPI.shared.send(request) { result in
+        YoutubeAPI.shared .send(request) { result in
             switch result {
             case .success(let response):
-                print(response)
+                print("YoutubeAPI success: \(response)")
             case .failure(let error):
-                print(error)
+                print("YoutubeAPI failure: \(error)")
             }
         }
     }
@@ -65,7 +64,7 @@ extension ViewController: YTSwiftyPlayerDelegate {
     
     func playerReady(_ player: YTSwiftyPlayer) {
         print(#function)
-        // After loading a video, player's API is available.
+        // After loading a video, player API is available.
         // e.g. player.mute()
     }
     
