@@ -27,11 +27,9 @@ final class ViewController: UIViewController {
                 .playsInline(true),
                 .videoID("_6u6UrtXUEI"),
                 .loopVideo(true),
-                .showRelatedVideo(false)
+                .showRelatedVideo(false),
+                .autoplay(true)
             ])
-
-        // Enable auto playback when video is loaded
-        player.autoplay = true
         
         // Set player view
         view = player
@@ -40,13 +38,18 @@ final class ViewController: UIViewController {
         player.delegate = self
         
         // Load video player
-        player.loadPlayer()
-        
+        let playerPath = Bundle(for: ViewController.self).path(forResource: "player", ofType: "html")!
+        let htmlString = try! String(contentsOfFile: playerPath, encoding: .utf8)
+        player.loadPlayerHTML(htmlString)
+
         // (Optional) Create a new request for video list
         // Please make sure to set your API configuration in `AppDelegate`.
+        fetchVideoList()
+    }
+
+    private func fetchVideoList() {
         let request = VideoListRequest(part: [.id, .snippet, .contentDetails], filter: .chart)
         
-        // Send a request
         YoutubeAPI.shared.send(request) { result in
             switch result {
             case .success(let response):
@@ -55,7 +58,6 @@ final class ViewController: UIViewController {
                 print(error)
             }
         }
-
     }
 }
 

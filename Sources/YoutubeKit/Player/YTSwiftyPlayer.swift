@@ -69,6 +69,11 @@ open class YTSwiftyPlayer: WKWebView {
         return config
     }
     
+    public enum Const {
+        /// url: https://www.youtube.com
+        public static let basePlayerURLString = "https://www.youtube.com"
+    }
+
     public init(frame: CGRect = .zero, playerVars: [String: AnyObject]) {
         let config = YTSwiftyPlayer.defaultConfiguration
         let userContentController = WKUserContentController()
@@ -110,7 +115,29 @@ open class YTSwiftyPlayer: WKWebView {
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
+    public func buildPlayerParameters() -> [String: AnyObject] {
+        let events: [String: AnyObject] = {
+            var registerEvents: [String: AnyObject] = [:]
+            callbackHandlers.forEach {
+                registerEvents[$0.rawValue] = $0.rawValue as AnyObject
+            }
+            return  registerEvents
+        }()
+        
+        var parameters = [
+            "width": "100%" as AnyObject,
+            "height": "100%" as AnyObject,
+            "events": events as AnyObject,
+            "playerVars": playerVars as AnyObject,
+            ]
+        
+        if let videoID = playerVars["videoId"] {
+            parameters["videoId"] = videoID
+        }
+        return parameters
+    }
+
     public func setPlayerParameters(_ parameters: [String: AnyObject]) {
         self.playerVars = parameters
     }
@@ -218,34 +245,25 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("loadPlaylist('\(ids.joined(separator: ","))')")
     }
 
+    @available(*, deprecated, renamed: "loadPlayerHTML")
     public func loadPlayer() {
-        let currentBundle = Bundle(for: YTSwiftyPlayer.self)
-        let path = currentBundle.path(forResource: "player", ofType: "html")!
-        let htmlString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
-        let events: [String: AnyObject] = {
-            var registerEvents: [String: AnyObject] = [:]
-            callbackHandlers.forEach {
-                registerEvents[$0.rawValue] = $0.rawValue as AnyObject
-            }
-            return  registerEvents
-        }()
-        
-        var parameters = [
-            "width": "100%" as AnyObject,
-            "height": "100%" as AnyObject,
-            "events": events as AnyObject,
-            "playerVars": playerVars as AnyObject,
-            ]
-        
-        if let videoID = playerVars["videoId"] {
-            parameters["videoId"] = videoID
-        }
-        
+        let playerPath = Bundle(for: YTSwiftyPlayer.self).path(forResource: "player", ofType: "html")!
+        guard let htmlString = try? String(contentsOfFile: playerPath, encoding: .utf8) else { return }
+        loadPlayerHTML(htmlString)
+    }
+
+    public func loadPlayerHTML(_ htmlString: String, baseURLString: String = Const.basePlayerURLString) {
+        let parameters = buildPlayerParameters()
+        loadPlayerHTML(htmlString, parameters: parameters, baseURLString: baseURLString)
+    }
+
+    public func loadPlayerHTML(_ htmlString: String, parameters: [String: AnyObject], baseURLString: String = Const.basePlayerURLString) {
         guard let json = try? JSONSerialization.data(withJSONObject: parameters, options: []),
-            let jsonString = String(data: json, encoding: String.Encoding.utf8),
-            let html = htmlString?.replacingOccurrences(of: "%@", with: jsonString),
-            let baseUrl = URL(string: "https://www.youtube.com") else { return }
-        
+            let jsonString = String(data: json, encoding: .utf8),
+            let baseUrl = URL(string: baseURLString)
+            else { return }
+
+        let html = htmlString.replacingOccurrences(of: "%@", with: jsonString)
         loadHTMLString(html, baseURL: baseUrl)
     }
     
@@ -257,16 +275,12 @@ open class YTSwiftyPlayer: WKWebView {
         isUserInteractionEnabled = true
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
+
     // Evaluate javascript command and convert to simple error(nil) if an error is occurred.
     private func evaluatePlayerCommand(_ commandName: String, callbackHandler: ((Any?) -> ())? = nil) {
         let command = "player.\(commandName);"
         evaluateJavaScript(command) { (result, error) in
-            if error != nil {
-                callbackHandler?(nil)
-                return
-            }
-            callbackHandler?(result)
+            callbackHandler?(error != nil ? nil : result)
         }
     }
 }
