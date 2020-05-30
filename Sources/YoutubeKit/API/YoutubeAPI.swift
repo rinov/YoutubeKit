@@ -25,7 +25,7 @@ public class YoutubeAPI {
             // If the dataTask error is occured.
             if let error = error {
                 DispatchQueue.main.async {
-                    closure(.failed(ResponseError.unexpectedResponse(error)))
+                    closure(.failure(ResponseError.unexpectedResponse(error)))
                 }
                 
                 return
@@ -34,7 +34,7 @@ public class YoutubeAPI {
             // Decodable must have data length at least.
             guard let data = data else {
                 DispatchQueue.main.async {
-                    closure(.failed(ResponseError.unexpectedResponse("The response is empty.")))
+                    closure(.failure(ResponseError.unexpectedResponse("The response is empty.")))
                 }
                 
                 return
@@ -43,7 +43,7 @@ public class YoutubeAPI {
             // rawResponse must be HTTPURLResponse
             guard let httpResponse = rawResponse as? HTTPURLResponse else {
                 DispatchQueue.main.async {
-                    closure(.failed(ResponseError.unexpectedResponse("The response is not a HTTPURLResponse")))
+                    closure(.failure(ResponseError.unexpectedResponse("The response is not a HTTPURLResponse")))
                 }
                 
                 return
@@ -56,12 +56,12 @@ public class YoutubeAPI {
                     print(errJson) //print error json object if data is serializable
                 } catch let serializationError {
                     DispatchQueue.main.async {
-                      closure(.failed(ResponseError.unexpectedResponse(serializationError)))
+                      closure(.failure(ResponseError.unexpectedResponse(serializationError)))
                     }
                 }
                 
                 DispatchQueue.main.async {
-                  closure(.failed(ResponseError.unacceptableStatusCode(httpResponse.statusCode)))
+                  closure(.failure(ResponseError.unacceptableStatusCode(httpResponse.statusCode)))
                 }
                 
                 return
@@ -78,27 +78,27 @@ public class YoutubeAPI {
                 
             } catch DecodingError.keyNotFound(let codingKey, let context){
                 DispatchQueue.main.async {
-                  closure(.failed(DecodingError.keyNotFound(codingKey, context)))
+                  closure(.failure(DecodingError.keyNotFound(codingKey, context)))
                 }
                 
             } catch DecodingError.typeMismatch(let type, let context){
                 DispatchQueue.main.async {
-                  closure(.failed(DecodingError.typeMismatch(type, context)))
+                  closure(.failure(DecodingError.typeMismatch(type, context)))
                 }
                 
             } catch DecodingError.valueNotFound(let type, let context) {
                 DispatchQueue.main.async {
-                  closure(.failed(DecodingError.valueNotFound(type, context)))
+                  closure(.failure(DecodingError.valueNotFound(type, context)))
                 }
                 
             } catch DecodingError.dataCorrupted(let context) {
                 DispatchQueue.main.async {
-                  closure(.failed(DecodingError.dataCorrupted(context)))
+                  closure(.failure(DecodingError.dataCorrupted(context)))
                 }
                 
             } catch {
                 DispatchQueue.main.async {
-                  closure(.failed(ResponseError.unexpectedResponse(data)))
+                  closure(.failure(ResponseError.unexpectedResponse(data)))
                 }
                 
             }

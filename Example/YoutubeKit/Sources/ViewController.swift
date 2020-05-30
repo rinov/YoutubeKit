@@ -54,7 +54,7 @@ final class ViewController: UIViewController {
             switch result {
             case .success(let response):
                 print(response)
-            case .failed(let error):
+            case .failure(let error):
                 print(error)
             }
         }
