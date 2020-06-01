@@ -37,6 +37,12 @@ open class YTSwiftyPlayer: WKWebView {
     
     open private(set) var currentVideoURL: String?
     
+    open private(set) var currentVideoID: String?
+
+    open private(set) var currentVideoTitle: String?
+
+    open private(set) var currentVideoAuthor: String?
+
     open private(set) var currentVideoEmbedCode: String?
 
     open private(set) var playerState: YTSwiftyPlayerState = .unstarted
@@ -331,6 +337,7 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
         updatePlaylistIndex()
         updateDuration()
         updateVideoLoadedFraction()
+        updateVideoData()
     }
     
     private func updateMute() {
@@ -422,5 +429,20 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
             quality = newQuality
         }
         playerQuality = quality
+    }
+
+    private struct VideoDataKeys {
+      static let title = "title"
+      static let id = "video_id"
+      static let author = "author"
+    }
+    private func updateVideoData() {
+      evaluatePlayerCommand("getVideoData()", callbackHandler: { [weak self] result in
+        if let val = result as? [String: Any] {
+          self?.currentVideoTitle = val[VideoDataKeys.title] as? String
+          self?.currentVideoID = val[VideoDataKeys.id] as? String
+          self?.currentVideoAuthor = val[VideoDataKeys.author] as? String
+        }
+      })
     }
 }
