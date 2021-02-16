@@ -5,6 +5,8 @@
 //  Created by Ryo Ishikawa on 12/30/2017
 //
 
+import Foundation
+
 extension Requestable {
     
     public var baseURL: URL {

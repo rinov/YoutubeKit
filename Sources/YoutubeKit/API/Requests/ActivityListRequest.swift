@@ -6,6 +6,8 @@
 //
 
 /// SeeAlso: https://developers.google.com/youtube/v3/docs/activities/list
+import Foundation
+
 public struct ActivityListRequest: Requestable {
     
     public typealias Response = ActivityList
