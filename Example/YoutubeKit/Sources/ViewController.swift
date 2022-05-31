@@ -13,12 +13,10 @@ final class ViewController: UIViewController {
 
     private var player: YTSwiftyPlayer!
 
+    private let youtubeAPI = YoutubeAPI.shared
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Note: Run this example, You might be face on following message.
-        // `[Process] kill() returned unexpected error 1`
-        // This is a bug of WKWebView in iOS13 and that will be fixed in 13.4 release.
 
         // Create a new player
         player = YTSwiftyPlayer(
@@ -39,14 +37,14 @@ final class ViewController: UIViewController {
         let htmlString = try! String(contentsOfFile: playerPath, encoding: .utf8)
         player.loadPlayerHTML(htmlString)
 
-        // (Optional) Create a new request for video list
-        // Please make sure to set your API key in `AppDelegate`.
         fetchVideoList()
     }
 
     private func fetchVideoList() {
         let request = VideoListRequest(part: [.id, .snippet, .contentDetails], filter: .chart)
-        YoutubeAPI.shared .send(request) { result in
+
+        // Please make sure to set your key in `AppDelegate`.
+        youtubeAPI.send(request) { result in
             switch result {
             case .success(let response):
                 print("YoutubeAPI success: \(response)")
@@ -61,7 +59,7 @@ extension ViewController: YTSwiftyPlayerDelegate {
     
     func playerReady(_ player: YTSwiftyPlayer) {
         print(#function)
-        // After loading a video, player API is available.
+        // Player API is available after loading a video.
         // e.g. player.mute()
     }
     

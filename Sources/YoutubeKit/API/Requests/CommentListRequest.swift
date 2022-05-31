@@ -50,7 +50,7 @@ public struct CommentListRequest: Requestable {
     
     public init(part: [Part.CommentThreadsList],
                 filter: Filter.CommentThreadsList,
-                maxResults: Int?,
+                maxResults: Int? = nil,
                 pageToken: String? = nil,
                 textFormat: CommentTextFormat? = nil) {
         self.part = part

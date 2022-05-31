@@ -56,7 +56,7 @@ public struct CommentThreadsListRequest: Requestable {
     
     public init(part: [Part.CommentThreadsList],
                 filter: Filter.CommentThreadsList,
-                maxResults: Int?,
+                maxResults: Int? = nil,
                 moderationStatus: CommentModerationStatus? = nil,
                 order: ResultOrder.CommentThreads? = nil,
                 pageToken: String? = nil,

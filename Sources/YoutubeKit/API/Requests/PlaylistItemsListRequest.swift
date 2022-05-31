@@ -50,7 +50,7 @@ public struct PlaylistItemsListRequest: Requestable {
     
     public init(part: [Part.PlaylistItemsList],
                 filter: Filter.PlaylistItemsList,
-                maxResults: Int?,
+                maxResults: Int? = nil,
                 pageToken: String? = nil,
                 videoID: String? = nil) {
         self.part = part

@@ -28,8 +28,8 @@ public struct Channel: Codable {
 }
 
 public struct TopicDetails: Codable {
-    public let topicCategories: [String]
-    public let topicIDs: [String]
+    public let topicCategories: [String]?
+    public let topicIDs: [String]?
     
     public enum CodingKeys: String, CodingKey {
         case topicCategories = "topicCategories"
@@ -38,15 +38,15 @@ public struct TopicDetails: Codable {
 }
 
 public struct RelatedPlaylists: Codable {
-    public let uploads: String
-    public let watchHistory: String
-    public let watchLater: String
+    public let uploads: String?
+    public let watchHistory: String?
+    public let watchLater: String?
 }
 
 public struct BrandingSettings: Codable {
     public let channelMetadata: ChannelMetadata
-    public let hints: [Hint]
-    public let image: Image
+    public let hints: [Hint]?
+    public let image: Image?
     
     public enum CodingKeys: String, CodingKey {
         case channelMetadata = "channel"
@@ -55,20 +55,20 @@ public struct BrandingSettings: Codable {
 }
 
 public struct Image: Codable {
-    public let bannerImageURL: String
-    public let bannerMobileExtraHdImageURL: String
-    public let bannerMobileHdImageURL: String
-    public let bannerMobileImageURL: String
-    public let bannerMobileLowImageURL: String
-    public let bannerMobileMediumHdImageURL: String
-    public let bannerTabletExtraHdImageURL: String
-    public let bannerTabletHdImageURL: String
-    public let bannerTabletImageURL: String
-    public let bannerTabletLowImageURL: String
-    public let bannerTvHighImageURL: String
-    public let bannerTvImageURL: String
-    public let bannerTvLowImageURL: String
-    public let bannerTvMediumImageURL: String
+    public let bannerImageURL: String?
+    public let bannerMobileExtraHdImageURL: String?
+    public let bannerMobileHdImageURL: String?
+    public let bannerMobileImageURL: String?
+    public let bannerMobileLowImageURL: String?
+    public let bannerMobileMediumHdImageURL: String?
+    public let bannerTabletExtraHdImageURL: String?
+    public let bannerTabletHdImageURL: String?
+    public let bannerTabletImageURL: String?
+    public let bannerTabletLowImageURL: String?
+    public let bannerTvHighImageURL: String?
+    public let bannerTvImageURL: String?
+    public let bannerTvLowImageURL: String?
+    public let bannerTvMediumImageURL: String?
     
     public enum CodingKeys: String, CodingKey {
         case bannerImageURL = "bannerImageUrl"
@@ -89,21 +89,21 @@ public struct Image: Codable {
 }
 
 public struct Hint: Codable {
-    public let property: String
-    public let value: String
+    public let property: String?
+    public let value: String?
 }
 
 public struct ChannelMetadata: Codable {
-    public let defaultTab: String
-    public let description: String
-    public let featuredChannelsTitle: String
-    public let featuredChannelsURLs: [String]
-    public let keywords: String
-    public let profileColor: String
-    public let showBrowseView: Bool
-    public let showRelatedChannels: Bool
-    public let title: String
-    public let unsubscribedTrailer: String
+    public let defaultTab: String?
+    public let description: String?
+    public let featuredChannelsTitle: String?
+    public let featuredChannelsURLs: [String]?
+    public let keywords: String?
+    public let profileColor: String?
+    public let showBrowseView: Bool?
+    public let showRelatedChannels: Bool?
+    public let title: String?
+    public let unsubscribedTrailer: String?
     
     public enum CodingKeys: String, CodingKey {
         case defaultTab

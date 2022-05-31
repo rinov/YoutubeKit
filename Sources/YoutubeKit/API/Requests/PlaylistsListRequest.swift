@@ -63,7 +63,7 @@ public struct PlaylistsListRequest: Requestable {
     
     public init(part: [Part.PlaylistsList],
                 filter: Filter.PlaylistsList,
-                maxResults: Int?,
+                maxResults: Int? = nil,
                 onBehalfOfContentOwner: String? = nil,
                 onBehalfOfContentOwnerChannel: String? = nil,
                 pageToken: String? = nil) {

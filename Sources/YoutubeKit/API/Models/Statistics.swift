@@ -22,9 +22,9 @@ extension Statistics {
 
 extension Statistics {
     public struct ChannelList: Codable {
-        public let commentCount: String
-        public let hiddenSubscriberCount: Bool
-        public let subscriberCount: String
+        public let commentCount: String?
+        public let hiddenSubscriberCount: Bool?
+        public let subscriberCount: String?
         public let videoCount: String
         public let viewCount: String
     }

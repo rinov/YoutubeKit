@@ -8,7 +8,7 @@
 import Foundation
 
 public final class YoutubeKit {
-    
+
     public static let shared = YoutubeKit()
     public static let youtubeDataAPIVersion = "v3"
 
@@ -20,16 +20,16 @@ public final class YoutubeKit {
         return _accessToken
     }
 
-    internal private(set) var _apiKey: String = ""
-    internal private(set) var _accessToken: String = ""
-    
     public func setAPIKey(_ key: String) {
         self._apiKey = key
     }
-    
+
     public func setAccessToken(_ token: String) {
         self._accessToken = token
     }
-    
+
+    internal private(set) var _apiKey: String = ""
+    internal private(set) var _accessToken: String = ""
+
     private init() {}
 }

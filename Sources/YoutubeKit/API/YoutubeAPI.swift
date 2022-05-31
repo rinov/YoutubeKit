@@ -11,15 +11,15 @@ import Foundation
 public class ApiSession {}
 
 public class YoutubeAPI {
-    
+
     public static let shared = YoutubeAPI()
-    
+
     private init() {}
-    
+
     public func send<T: Requestable>(_ request: T, queue: DispatchQueue = .main, completion: ((Result<T.Response, Error>) -> Void)? = nil) {
-        
+
         let urlRequest = request.makeURLRequest()
-        
+
         let task = URLSession.shared.dataTask(with: urlRequest) { (data, rawResponse, error) in
             let result: Result<T.Response, Error>
 
@@ -40,19 +40,19 @@ public class YoutubeAPI {
                 result = .failure(ResponseError.unexpectedResponse("The response is empty."))
                 return
             }
-            
+
             // rawResponse must be HTTPURLResponse
             guard let httpResponse = rawResponse as? HTTPURLResponse else {
                 result = .failure(ResponseError.unexpectedResponse("The response is not a HTTPURLResponse"))
                 return
             }
-            
+
             // To successfully decode to T.Response.self, the status code must between 0 and 299
             guard (0..<300).contains(httpResponse.statusCode) else {
                 result = .failure(ResponseError.unacceptableStatusCode(httpResponse.statusCode))
                 return
             }
-          
+
             // Decoding the response from `data` and handle DecodingError if occured.
             do {
                 let decoder = JSONDecoder()
