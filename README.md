@@ -76,20 +76,22 @@ final class VideoPlayerController: UIViewController {
         
         // Create a new player
         player = YTSwiftyPlayer(
-                    frame: CGRect(x: 0, y: 0, width: 640, height: 480),
-                    playerVars: [.videoID("videoID-abcde")])
+            frame: .zero,
+            playerVars: [
+                .playsInline(false),
+                .videoID("9AALILYu58w"),
+                .loopVideo(true),
+                .showRelatedVideo(false),
+                .autoplay(true)
+            ])
 
-        // Enable auto playback when video is loaded
-        player.autoplay = true
-        
-        // Set player view.
         view = player
-
-        // Set delegate for detect callback information from the player.
         player.delegate = self
-        
-        // Load the video.
-        player.loadPlayer()
+
+        // Load video player
+        let playerPath = Bundle(for: ViewController.self).path(forResource: "player", ofType: "html")!
+        let htmlString = try! String(contentsOfFile: playerPath, encoding: .utf8)
+        player.loadPlayerHTML(htmlString)
     }
 }
 
@@ -231,9 +233,9 @@ ApiSession.shared.send(request) { result in
 ```
 
 ## Requirements
-XCode 10.2+
+XCode 11+
 
-Swift 4+
+Swift 5+
 
 ## Installation
 
