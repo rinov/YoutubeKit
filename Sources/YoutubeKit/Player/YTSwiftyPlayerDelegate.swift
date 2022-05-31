@@ -7,7 +7,7 @@
 //
 
 // MARK: - YTSwiftyPlayerDelegate
-public protocol YTSwiftyPlayerDelegate: class {
+public protocol YTSwiftyPlayerDelegate: AnyObject {
 
     /**
      - parameters:
