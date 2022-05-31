@@ -36,7 +36,7 @@
     function onPlaybackRateChange(event) {
         webkit.messageHandlers.onPlaybackRateChange.postMessage(event.data);
     }
-    function onPlayerError(event) {
+    function onError(event) {
         webkit.messageHandlers.onError.postMessage(event.data);
     }
     function onApiChange(event) {
