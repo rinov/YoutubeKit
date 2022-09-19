@@ -253,7 +253,7 @@ open class YTSwiftyPlayer: WKWebView {
     }
 
     public func loadDefaultPlayer() {
-        guard let playerPath = Bundle.module.path(forResource: "player", ofType: "html"),
+        guard let playerPath = Bundle.yk_frameworkBundle().path(forResource: "player", ofType: "html"),
               let htmlString = try? String(contentsOfFile: playerPath, encoding: .utf8) else { return }
         loadPlayerHTML(htmlString)
     }
