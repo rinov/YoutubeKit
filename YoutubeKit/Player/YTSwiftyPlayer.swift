@@ -252,6 +252,12 @@ open class YTSwiftyPlayer: WKWebView {
         loadPlayerHTML(htmlString)
     }
 
+    public func loadDefaultPlayer() {
+        guard let playerPath = Bundle.module.path(forResource: "player", ofType: "html"),
+              let htmlString = try? String(contentsOfFile: playerPath, encoding: .utf8) else { return }
+        loadPlayerHTML(htmlString)
+    }
+
     public func loadPlayerHTML(_ htmlString: String, baseURLString: String = Const.basePlayerURLString) {
         let parameters = buildPlayerParameters()
         loadPlayerHTML(htmlString, parameters: parameters, baseURLString: baseURLString)
