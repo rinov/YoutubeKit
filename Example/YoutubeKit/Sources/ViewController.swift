@@ -31,12 +31,7 @@ final class ViewController: UIViewController {
 
         view = player
         player.delegate = self
-
-        // Load video player
-        let playerPath = Bundle(for: ViewController.self).path(forResource: "player", ofType: "html")!
-        let htmlString = try! String(contentsOfFile: playerPath, encoding: .utf8)
-        player.loadPlayerHTML(htmlString)
-
+        player.loadDefaultPlayer()
         fetchVideoList()
     }
 

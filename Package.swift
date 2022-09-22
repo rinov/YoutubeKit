@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -15,7 +15,9 @@ let package = Package(
     targets: [
         .target(
             name: "YoutubeKit",
-            dependencies: [])
+            path: "YoutubeKit",
+            resources: [.process("Resources")]
+        )
     ],
     swiftLanguageVersions: [.v5]
 )

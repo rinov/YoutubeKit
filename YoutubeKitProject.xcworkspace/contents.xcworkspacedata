@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:YoutubeKit.xcodeproj">
+      location = "group:Example/YoutubeKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:">
    </FileRef>
 </Workspace>

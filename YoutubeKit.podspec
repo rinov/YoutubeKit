@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YoutubeKit'
-  s.version          = '0.6.0'
+  s.version          = '0.6.1'
   s.summary          = 'YoutubeKit is a video player for easily create a Youtube app.'
 
   s.description      = <<-DESC
@@ -14,6 +14,7 @@ YoutubeKit is a video player that fully supports Youtube IFrame API and YoutubeD
   s.swift_version = "5.0"
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Sources/**/*.swift'
+  s.source_files = 'YoutubeKit/**/*.swift'
+  s.resources = 'YoutubeKit/Resources/*.*'
   s.source           = { :git => 'https://github.com/rinov/YoutubeKit.git', :tag => s.version.to_s }
  end
