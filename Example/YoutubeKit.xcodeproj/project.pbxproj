@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D176D1E28DCB761009D601D /* YoutubeKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YoutubeKit; path = ..; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YoutubeKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D176D1D28DCB761009D601D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1D176D1E28DCB761009D601D /* YoutubeKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		1D2573E92482503200CECFBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +94,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1D176D1D28DCB761009D601D /* Packages */,
 				607FACD21AFB9204008FA782 /* Example for YoutubeKit */,
 				607FACD11AFB9204008FA782 /* Products */,
 				607FACE81AFB9204008FA782 /* Tests */,
