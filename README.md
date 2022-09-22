@@ -233,11 +233,20 @@ ApiSession.shared.send(request) { result in
 ```
 
 ## Requirements
-XCode 11+
+Xcode 12+
 
 Swift 5+
 
 ## Installation
+
+### Swift Package Manager
+Add the following to your Package.swift file:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.7.0")
+]
+```
 
 ### Cocoapods
 
