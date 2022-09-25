@@ -150,7 +150,7 @@ And then you can use `YoutubeDataAPI` request like this.
 let request = VideoListRequest(part: [.id, .statistics], filter: .chart)
 
 // Send a request.
-ApiSession.shared.send(request) { result in
+YoutubeAPI.shared.send(request) { result in
     switch result {
     case .success(let response):
         print(response)
@@ -182,7 +182,7 @@ var nextPageToken: String?
 ...
 
 // Send some request
-ApiSession.shared.send(request) { [weak self] result in
+YoutubeAPI.shared.send(request) { [weak self] result in
     switch result {
     case .success(let response):
     
@@ -222,7 +222,7 @@ And then you can use request requiring authorization, this is an example to get 
 let request = ActivityListRequest(part: [.snippet], filter: .mine(true))
 
 // Send a request.
-ApiSession.shared.send(request) { result in
+YoutubeAPI.shared.send(request) { result in
     switch result {
     case .success(let video):
         print(video)
