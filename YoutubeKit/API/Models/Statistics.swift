@@ -13,7 +13,7 @@ public enum Statistics {}
 extension Statistics {
     public struct VideoList: Codable {
         public let dislikeCount: String?
-        public let likeCount: String
+        public let likeCount: String?
         public let commentCount: String?
         public let favoriteCount: String
         public let viewCount: String
