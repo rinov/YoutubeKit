@@ -244,7 +244,7 @@ Add the following to your Package.swift file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.7.0")
+    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.8.0")
 ]
 ```
 
