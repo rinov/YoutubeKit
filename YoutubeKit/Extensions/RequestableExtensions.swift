@@ -36,36 +36,32 @@ extension Requestable {
     public func makeURLRequest() -> URLRequest {
         let url = baseURL.appendingPathComponent(path)
         var urlRequest = URLRequest(url: url)
-        var header: [String: String] = headerField
         
         urlRequest.httpMethod = httpMethod.rawValue
-        
+
+        // Setup header
+        var header: [String: String] = headerField
         if isAuthorizedRequest && !header.contains(where: { $0.key == "Authorization" }) {
             header["Authorization"] = "Bearer \(YoutubeKit.shared.accessToken)"
         }
-        
         header.forEach { key, value in
             urlRequest.addValue(value, forHTTPHeaderField: key)
         }
-        
+
+        // Setup body
         if let body = httpBody {
             urlRequest.httpBody = body
         }
         
-        guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
-            return urlRequest
-        }
-
+        // Setup query parameters
+        guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return urlRequest }
         var keyParams: [String: Any] = queryParameters
-        
         if !isAuthorizedRequest {
             keyParams["key"] = YoutubeKit.shared.apiKey
         }
+        urlComponents.queryItems = keyParams.map({ URLQueryItem(name: $0.key, value: "\($0.value)") })
         
-        urlComponents.query = keyParams
-            .map { "\($0.key)=\($0.value)" }
-            .joined(separator: "&")
-        
+        // Setup complete URL
         urlRequest.url = urlComponents.url
         
         return urlRequest
