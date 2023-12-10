@@ -10,17 +10,22 @@ import Foundation
 @available(*, unavailable, renamed: "YoutubeAPI")
 public class ApiSession {}
 
-public class YoutubeAPI {
+public class YoutubeAPI: NSObject {
 
     public static let shared = YoutubeAPI()
 
-    private init() {}
+    private lazy var urlSession: URLSession = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
+    private var taskHandlers: [URLSessionTask: (Data?, URLResponse?, Error?) -> Void] = [:]
+    private var taskDataBuffer: [URLSessionTask: Data] = [:]
+
+    private override init() {}
 
     public func send<T: Requestable>(_ request: T, queue: DispatchQueue = .main, completion: ((Result<T.Response, Error>) -> Void)? = nil) {
-
         let urlRequest = request.makeURLRequest()
+        let task = urlSession.dataTask(with: urlRequest)
 
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data, rawResponse, error) in
+        taskDataBuffer[task] = Data()
+        taskHandlers[task] = { data, response, error in
             let result: Result<T.Response, Error>
 
             defer {
@@ -42,7 +47,7 @@ public class YoutubeAPI {
             }
 
             // rawResponse must be HTTPURLResponse
-            guard let httpResponse = rawResponse as? HTTPURLResponse else {
+            guard let httpResponse = response as? HTTPURLResponse else {
                 result = .failure(ResponseError.unexpectedResponse("The response is not a HTTPURLResponse"))
                 return
             }
@@ -69,6 +74,23 @@ public class YoutubeAPI {
                 result = .failure(ResponseError.unexpectedResponse(data))
             }
         }
+
         task.resume()
     }
 }
+
+extension YoutubeAPI: URLSessionDataDelegate {
+
+    public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+        guard var dataBuffer = taskDataBuffer[dataTask] else { return }
+        dataBuffer.append(data)
+        taskDataBuffer[dataTask] = dataBuffer
+    }
+
+    public func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+        guard let handler = taskHandlers[task], let dataBuffer = taskDataBuffer[task] else { return }
+        handler(dataBuffer, task.response, error)
+        taskHandlers[task] = nil
+    }
+}
+
