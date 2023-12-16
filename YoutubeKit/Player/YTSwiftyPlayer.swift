@@ -82,7 +82,7 @@ open class YTSwiftyPlayer: WKWebView {
         super.init(frame: frame, configuration: config)
         
         callbackHandlers.forEach {
-            userContentController.add(self, name: $0.rawValue)
+            userContentController.add(WeakWKScriptMessageHandler(delegate: self), name: $0.rawValue)
         }
         
         commonInit()
@@ -98,7 +98,7 @@ open class YTSwiftyPlayer: WKWebView {
         super.init(frame: frame, configuration: config)
 
         callbackHandlers.forEach {
-            userContentController.add(self, name: $0.rawValue)
+            userContentController.add(WeakWKScriptMessageHandler(delegate: self), name: $0.rawValue)
         }
 
         commonInit()
@@ -287,6 +287,23 @@ open class YTSwiftyPlayer: WKWebView {
         let command = "player.\(commandName);"
         evaluateJavaScript(command) { (result, error) in
             callbackHandler?(error != nil ? nil : result)
+        }
+    }
+
+    deinit {
+        stopLoading()
+    }
+
+    private class WeakWKScriptMessageHandler: NSObject, WKScriptMessageHandler {
+        weak var delegate: WKScriptMessageHandler?
+
+        init(delegate:WKScriptMessageHandler) {
+            self.delegate = delegate
+            super.init()
+        }
+
+        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            self.delegate?.userContentController(userContentController, didReceive: message)
         }
     }
 }
