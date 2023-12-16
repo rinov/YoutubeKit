@@ -23,7 +23,7 @@ final class ViewController: UIViewController {
             frame: .zero,
             playerVars: [
                 .playsInline(false),
-                .videoID("9AALILYu58w"),
+                .videoID("_6u6UrtXUEI"),
                 .loopVideo(true),
                 .showRelatedVideo(false),
                 .autoplay(true)
