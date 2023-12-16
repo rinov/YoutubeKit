@@ -79,7 +79,7 @@ final class VideoPlayerController: UIViewController {
             frame: .zero,
             playerVars: [
                 .playsInline(false),
-                .videoID("9AALILYu58w"),
+                .videoID("_6u6UrtXUEI"),
                 .loopVideo(true),
                 .showRelatedVideo(false),
                 .autoplay(true)
@@ -233,7 +233,7 @@ YoutubeAPI.shared.send(request) { result in
 ```
 
 ## Requirements
-Xcode 12+
+Xcode 14+
 
 Swift 5+
 
@@ -244,7 +244,7 @@ Add the following to your Package.swift file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.8.0")
+    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.9.0")
 ]
 ```
 
