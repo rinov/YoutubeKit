@@ -98,7 +98,11 @@ public enum VideoEmbedParameter {
     
     /// This indicates whether the initial video will automatically start to play when the player loads. Default value is `false`.
     case autoplay(Bool)
-    
+
+    /// This parameter specifies the default language that the player will use to display captions. Set the parameter's value to an ISO 639-1 two-letter language code.
+    /// If you use this parameter and also set the cc_load_policy parameter to 1, then the player will show captions in the specified language when the player loads. If you do not also set the cc_load_policy parameter, then captions will not display by default, but will display in the specified language if the user opts to turn captions on.
+    case preferredLanguage(String)
+
     /// If the value is `true`, It causes closed captions to be shown by default, even if the user has turned captions off. Default value is based on user preference.
     case alwaysShowCaption(Bool)
     
@@ -184,11 +188,16 @@ public enum VideoEmbedParameter {
     /// This parameter indicates whether the player should show related videos when playback of the initial video ends. Default value is `true`.
     case showRelatedVideo(Bool)
 
+    /// This parameter identifies the URL where the player is embedded. This value is used in YouTube Analytics reporting when the YouTube player is embedded in a widget, and that widget is then embedded in a web page or application. In that scenario, the origin parameter identifies the widget provider's domain, but YouTube Analytics should not identify the widget provider as the actual traffic source. Instead, YouTube Analytics uses the widget_referrer parameter value to identify the domain associated with the traffic source.
+    case widgetReferrer(String)
+
     /// The player parameter.
     public var property: (key: String, value: AnyObject) {
         switch self {
         case .autoplay(let isOn):
             return ("autoplay", isOn.jsValue)
+        case .preferredLanguage(let language):
+            return ("cc_lang_pref", language as AnyObject)
         case .alwaysShowCaption(let isOn):
             return ("cc_load_policy", isOn.jsValue)
         case .progressBarColor(let color):
@@ -227,6 +236,8 @@ public enum VideoEmbedParameter {
             return ("playsinline", isOn.jsValue)
         case .showRelatedVideo(let isShow):
             return ("rel", isShow.jsValue)
+        case .widgetReferrer(let referrer):
+            return ("widget_referrer", referrer as AnyObject)
         }
     }
 }
