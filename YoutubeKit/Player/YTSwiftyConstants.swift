@@ -183,10 +183,7 @@ public enum VideoEmbedParameter {
     
     /// This parameter indicates whether the player should show related videos when playback of the initial video ends. Default value is `true`.
     case showRelatedVideo(Bool)
-    
-    /// Setting the parameter's value to `false` causes the player to not display information like the video title and uploader before the video starts playing. If the player is loading a playlist, and you explicitly set the parameter value to 1, then, upon loading, the player will also display thumbnail images for the videos in the playlist. Note that this functionality is only supported for the AS3 player.
-    case showInfo(Bool)
-    
+
     /// The player parameter.
     public var property: (key: String, value: AnyObject) {
         switch self {
@@ -230,8 +227,6 @@ public enum VideoEmbedParameter {
             return ("playsinline", isOn.jsValue)
         case .showRelatedVideo(let isShow):
             return ("rel", isShow.jsValue)
-        case .showInfo(let isShow):
-            return ("showinfo", isShow.jsValue)
         }
     }
 }
