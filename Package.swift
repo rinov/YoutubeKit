@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "YoutubeKit",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -16,12 +16,7 @@ let package = Package(
         .target(
             name: "YoutubeKit",
             path: "YoutubeKit",
-            resources: [.process("Resources")]
-        ),
-        .target(
-            name: "YoutubeKit",
-            path: "YoutubeKit",
-            resources: [.copy("PrivacyInfo.xcprivacy")]
+            resources: [.process("Resources"), .copy("PrivacyInfo.xcprivacy")]
         )
     ],
     swiftLanguageVersions: [.v5]

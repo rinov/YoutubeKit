@@ -70,10 +70,10 @@ import YoutubeKit
 final class VideoPlayerController: UIViewController {
 
     private var player: YTSwiftyPlayer!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Create a new player
         player = YTSwiftyPlayer(
             frame: .zero,
@@ -106,9 +106,9 @@ func player(_ player: YTSwiftyPlayer, didUpdateCurrentTime currentTime: Double)
 func player(_ player: YTSwiftyPlayer, didChangeState state: YTSwiftyPlayerState)
 func player(_ player: YTSwiftyPlayer, didChangePlaybackRate playbackRate: Double)
 func player(_ player: YTSwiftyPlayer, didReceiveError error: YTSwiftyPlayerError)
-func player(_ player: YTSwiftyPlayer, didChangeQuality quality: YTSwiftyVideoQuality) 
-func apiDidChange(_ player: YTSwiftyPlayer)    
-func youtubeIframeAPIReady(_ player: YTSwiftyPlayer)    
+func player(_ player: YTSwiftyPlayer, didChangeQuality quality: YTSwiftyVideoQuality)
+func apiDidChange(_ player: YTSwiftyPlayer)
+func youtubeIframeAPIReady(_ player: YTSwiftyPlayer)
 func youtubeIframeAPIFailedToLoad(_ player: YTSwiftyPlayer)
 ```
 
@@ -185,7 +185,7 @@ var nextPageToken: String?
 YoutubeAPI.shared.send(request) { [weak self] result in
     switch result {
     case .success(let response):
-    
+
         // Save nextPageToken
         self?.nextPage = response.nextPageToken
     case .failed(let error):
@@ -244,7 +244,7 @@ Add the following to your Package.swift file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.9.0")
+    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.10.0")
 ]
 ```
 
