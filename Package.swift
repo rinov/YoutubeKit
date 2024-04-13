@@ -17,6 +17,11 @@ let package = Package(
             name: "YoutubeKit",
             path: "YoutubeKit",
             resources: [.process("Resources")]
+        ),
+        .target(
+            name: "YoutubeKit",
+            path: "YoutubeKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         )
     ],
     swiftLanguageVersions: [.v5]
