@@ -245,7 +245,6 @@ extension Snippet {
         public let videoOwnerChannelId: String?
         public let description: String
         public let thumbnails: Thumbnails.PlaylistItemsList?
-        public let channelId: String
         public let playlistId: String
         public let position: Int
         public let publishedAt: String
@@ -259,7 +258,6 @@ extension Snippet {
             case videoOwnerChannelId
             case description
             case thumbnails
-            case channelId
             case playlistId
             case position
             case publishedAt
