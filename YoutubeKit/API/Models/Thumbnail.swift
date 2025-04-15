@@ -102,14 +102,18 @@ extension Thumbnails {
 
 extension Thumbnails {
     public struct PlaylistItemsList: Codable {
-        public let high: Default
-        public let medium: Default
-        public let `default`: Default
+        public let `default`: Default?
+        public let high: Default?
+        public let medium: Default?
+        public let standard: Default?
+        public let maxres: Default?
         
         public enum CodingKeys: String, CodingKey {
-            case high = "high"
-            case medium = "medium"
             case `default` = "default"
+            case high
+            case medium
+            case standard
+            case maxres
         }
     }
 }
