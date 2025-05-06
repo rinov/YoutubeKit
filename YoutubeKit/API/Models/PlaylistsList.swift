@@ -21,6 +21,7 @@ public struct Playlist: Codable {
     public let id: String
     public let kind: String
     public let snippet: Snippet.PlaylistsList?
+    public let contentDetails: ContentDetails.PlaylistsList?
     public let status: PlaylistsStatus?
 }
 

@@ -114,6 +114,7 @@ extension Part {
     public enum PlaylistsList: String {
         case id
         case snippet
+        case contentDetails
         case status
     }
 }
