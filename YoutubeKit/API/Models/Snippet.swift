@@ -242,11 +242,10 @@ extension Snippet {
         public let channelID: String
         public let channelTitle: String
         public let videoOwnerChannelTitle: String?
-        public let videoOwnerChannelId: String?
+        public let videoOwnerChannelID: String?
         public let description: String
         public let thumbnails: Thumbnails.PlaylistItemsList?
-        public let channelId: String
-        public let playlistId: String
+        public let playlistID: String
         public let position: Int
         public let publishedAt: String
         public let resourceID: ResourceID.PlaylistItemsList
@@ -256,11 +255,10 @@ extension Snippet {
             case channelID = "channelId"
             case channelTitle
             case videoOwnerChannelTitle
-            case videoOwnerChannelId
+            case videoOwnerChannelID = "videoOwnerChannelId"
             case description
             case thumbnails
-            case channelId
-            case playlistId
+            case playlistID = "playlistId"
             case position
             case publishedAt
             case resourceID = "resourceId"
