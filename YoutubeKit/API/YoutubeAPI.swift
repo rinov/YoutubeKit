@@ -15,8 +15,8 @@ public class YoutubeAPI: NSObject {
     public static let shared = YoutubeAPI()
 
     private lazy var urlSession: URLSession = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
-    private var taskHandlers: [URLSessionTask: (Data?, URLResponse?, Error?) -> Void] = [:]
-    private var taskDataBuffer: [URLSessionTask: Data] = [:]
+    private var taskHandlers: [Int: (Data?, URLResponse?, Error?) -> Void] = [:]
+    private var taskDataBuffers: [Int: Data] = [:]
     private let syncQueue = DispatchQueue(label: "YoutubeAPI.SyncQueue")
 
     private override init() {}
@@ -26,8 +26,9 @@ public class YoutubeAPI: NSObject {
         let task = urlSession.dataTask(with: urlRequest)
 
         syncQueue.sync {
-            taskDataBuffer[task] = Data()
-            taskHandlers[task] = { data, response, error in
+            let taskID = task.taskIdentifier
+            taskDataBuffers[taskID] = Data()
+            taskHandlers[taskID] = { data, response, error in
                 let result: Result<T.Response, Error>
 
                 defer {
@@ -86,17 +87,21 @@ extension YoutubeAPI: URLSessionDataDelegate {
 
     public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         syncQueue.sync {
-            guard var dataBuffer = taskDataBuffer[dataTask] else { return }
+            let taskID = dataTask.taskIdentifier
+            guard var dataBuffer = taskDataBuffers[taskID] else { return }
             dataBuffer.append(data)
-            taskDataBuffer[dataTask] = dataBuffer
+            taskDataBuffers[taskID] = dataBuffer
         }
     }
 
     public func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         syncQueue.sync {
-            guard let handler = taskHandlers[task], let dataBuffer = taskDataBuffer[task] else { return }
+            let taskID = task.taskIdentifier
+            guard
+                let handler = taskHandlers.removeValue(forKey: taskID),
+                let dataBuffer = taskDataBuffers.removeValue(forKey: taskID)
+            else { return }
             handler(dataBuffer, task.response, error)
-            taskHandlers[task] = nil
         }
     }
 }
