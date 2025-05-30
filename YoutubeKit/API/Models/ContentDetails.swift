@@ -48,8 +48,11 @@ extension ContentDetails {
 extension ContentDetails {
     public struct PlaylistItemsList: Codable {
         public let videoID: String
-        public let videoPublishedAt: String
-        
+        /* Whereas the documentation seems indicating that this property is non-optional, the reality is different.
+         * In some cases this property may not be returned by the API, at least in the following case :
+         *   If a playlist contains a video which is now private and not owned by the owner of the access token. */
+        public let videoPublishedAt: String?
+
         public enum CodingKeys: String, CodingKey {
             case videoID = "videoId"
             case videoPublishedAt = "videoPublishedAt"
