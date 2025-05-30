@@ -19,6 +19,7 @@ public struct VideoListRequest: Requestable {
     }
     
     public var isAuthorizedRequest: Bool {
+        guard !isAuthorized else { return true }
         switch filter {
         case .chart:
             return false
@@ -57,6 +58,7 @@ public struct VideoListRequest: Requestable {
     public let pageToken: String?
     public let regionCode: String?
     public let videoCategoryID: String?
+    public let isAuthorized: Bool
     
     public init(part: [Part.VideoList],
                 filter: Filter.VideoList,
@@ -64,7 +66,8 @@ public struct VideoListRequest: Requestable {
                 onBehalfOfContentOwner: String? = nil,
                 pageToken: String? = nil,
                 regionCode: String? = nil,
-                videoCategoryID: String? = nil) {
+                videoCategoryID: String? = nil,
+                isAuthorized: Bool = false) {
         self.part = part
         self.filter = filter
         self.maxResults = maxResults
@@ -72,5 +75,6 @@ public struct VideoListRequest: Requestable {
         self.pageToken = pageToken
         self.regionCode = regionCode
         self.videoCategoryID = videoCategoryID
+        self.isAuthorized = isAuthorized
     }
 }
