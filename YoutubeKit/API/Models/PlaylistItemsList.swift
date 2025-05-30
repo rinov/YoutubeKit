@@ -17,12 +17,12 @@ public struct PlaylistItemsList: Codable {
 }
 
 public struct PlaylistItem: Codable {
-    public let contentDetails: ContentDetails.PlaylistItemsList
+    public let kind: String
     public let etag: String
     public let id: String
-    public let kind: String
-    public let snippet: Snippet.PlaylistItemsList
-    public let status: PlaylistItemsStatus
+    public let snippet: Snippet.PlaylistItemsList?
+    public let contentDetails: ContentDetails.PlaylistItemsList?
+    public let status: PlaylistItemsStatus?
 }
 
 public struct PlaylistItemsStatus: Codable {
