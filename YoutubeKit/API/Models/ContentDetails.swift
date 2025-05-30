@@ -46,6 +46,12 @@ extension ContentDetails {
 }
 
 extension ContentDetails {
+    public struct PlaylistsList: Codable {
+        public let itemCount: Int
+    }
+}
+
+extension ContentDetails {
     public struct PlaylistItemsList: Codable {
         public let videoID: String
         /* Whereas the documentation seems indicating that this property is non-optional, the reality is different.
