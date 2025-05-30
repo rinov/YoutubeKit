@@ -20,6 +20,10 @@ public struct PlaylistItemsListRequest: Requestable {
         return .get
     }
     
+    public var isAuthorizedRequest: Bool {
+        return isAuthorized
+    }
+    
     public var queryParameters: [String : Any] {
         var q: [String: Any] = [:]
         let part = self.part
@@ -47,16 +51,19 @@ public struct PlaylistItemsListRequest: Requestable {
     public let maxResults: Int?
     public let pageToken: String?
     public let videoID: String?
+    public let isAuthorized: Bool
     
     public init(part: [Part.PlaylistItemsList],
                 filter: Filter.PlaylistItemsList,
                 maxResults: Int? = nil,
                 pageToken: String? = nil,
-                videoID: String? = nil) {
+                videoID: String? = nil,
+                isAuthorized: Bool = false) {
         self.part = part
         self.filter = filter
         self.maxResults = maxResults
         self.pageToken = pageToken
         self.videoID = videoID
+        self.isAuthorized = isAuthorized
     }
 }
