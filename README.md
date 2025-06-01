@@ -233,9 +233,9 @@ YoutubeAPI.shared.send(request) { result in
 ```
 
 ## Requirements
-Xcode 14+
+Xcode 16+
 
-Swift 5+
+Swift 6+
 
 ## Installation
 
