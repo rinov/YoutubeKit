@@ -248,7 +248,9 @@ dependencies: [
 ]
 ```
 
-### Cocoapods
+### Cocoapods (Deprecated)
+
+SeelAlso: https://blog.cocoapods.org/CocoaPods-Specs-Repo/
 
 ```
 $ pod repo update
