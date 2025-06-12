@@ -241,23 +241,27 @@ extension Snippet {
     public struct PlaylistItemsList: Codable {
         public let channelID: String
         public let channelTitle: String
+        public let videoOwnerChannelTitle: String?
+        public let videoOwnerChannelID: String?
         public let description: String
+        public let thumbnails: Thumbnails.PlaylistItemsList?
         public let playlistID: String
         public let position: Int
         public let publishedAt: String
         public let resourceID: ResourceID.PlaylistItemsList
-        public let thumbnails: Thumbnails.PlaylistItemsList?
         public let title: String
         
         public enum CodingKeys: String, CodingKey {
             case channelID = "channelId"
             case channelTitle
+            case videoOwnerChannelTitle
+            case videoOwnerChannelID = "videoOwnerChannelId"
             case description
+            case thumbnails
             case playlistID = "playlistId"
             case position
             case publishedAt
             case resourceID = "resourceId"
-            case thumbnails
             case title
         }
     }
