@@ -232,6 +232,27 @@ YoutubeAPI.shared.send(request) { result in
 }
 ```
 
+## Known Issues
+
+Below is a summary of the currently open issues. Contributions and pull requests are welcome!
+
+| # | Title | Category |
+|---|-------|----------|
+| [#111](https://github.com/rinov/YoutubeKit/issues/111) | Error code 4 when loading any video | Bug |
+| [#109](https://github.com/rinov/YoutubeKit/issues/109) | "This Video is unavailable" error code 0 | Bug |
+| [#102](https://github.com/rinov/YoutubeKit/issues/102) | DecodingError when fetching YouTube playlist items | Bug |
+| [#97](https://github.com/rinov/YoutubeKit/issues/97) | SwiftUI integration broken after `loadPlayerHTML()` rename | Bug |
+| [#89](https://github.com/rinov/YoutubeKit/issues/89) | 403 PERMISSION_DENIED when using `SearchListRequest` from iOS client | Question |
+| [#80](https://github.com/rinov/YoutubeKit/issues/80) | Add support for YouTube Live Stream embed | Enhancement |
+| [#77](https://github.com/rinov/YoutubeKit/issues/77) | No API to control player volume | Question |
+| [#63](https://github.com/rinov/YoutubeKit/issues/63) | No way to hide share/watch icons in the player | Question |
+| [#36](https://github.com/rinov/YoutubeKit/issues/36) | Swift 4.2 and non-iOS Apple platform support | Question |
+| [#35](https://github.com/rinov/YoutubeKit/issues/35) | Looping ignores `startTime`/`endTime` after first loop | Bug |
+
+> **Fixed in recent versions:**
+> - [#101](https://github.com/rinov/YoutubeKit/issues/101) Missing `<meta name="viewport">` in `player.html` causing small controls on some devices — fixed by adding the viewport meta tag.
+> - [#59](https://github.com/rinov/YoutubeKit/issues/59) `seek(to:allowSeekAhead:)` only accepted `Int` seconds — changed to `Double` for sub-second precision.
+
 ## Requirements
 Xcode 16+
 

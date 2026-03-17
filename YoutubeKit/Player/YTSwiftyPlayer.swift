@@ -159,7 +159,7 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("stopVideo()")
     }
 
-    public func seek(to seconds: Int, allowSeekAhead: Bool) {
+    public func seek(to seconds: Double, allowSeekAhead: Bool) {
         evaluatePlayerCommand("seekTo(\(seconds),\(allowSeekAhead ? 1 : 0))")
     }
 
