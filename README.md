@@ -1,10 +1,9 @@
 # YoutubeKit
 
-`YoutubeKit` is a video player that fully supports `Youtube IFrame API` and `YoutubeDataAPI` to easily create Youtube applications.
+`YoutubeKit` はYouTube IFrameプレイヤーとYouTube Data API向けのiOSライブラリです。
 
-[![Swift](https://img.shields.io/badge/Swift-4-blue.svg)](https://img.shields.io/badge/Swift-4-blue.svg)
+[![Swift](https://img.shields.io/badge/Swift-5-blue.svg)](https://img.shields.io/badge/Swift-5-blue.svg)
 [![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)
-[![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)]((https://img.shields.io/badge/Carthage-compatible-brightgreen.svg))
 [![License](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)
 
 ## Important Referecens
@@ -16,8 +15,7 @@
 
 ## Example
 
-This is an app using `YoutubeKit`. A simple video playback example is included into `Example`.
-You can create these functions very easily by using `YoutubeKit`.
+`Example` に動画再生とData APIのサンプルがあります。
 
 |Example1|Example2|
 |:-:|:-:|
@@ -36,22 +34,19 @@ You can create these functions very easily by using `YoutubeKit`.
 `YTSwiftyPlayer` is a video player that supports Youtube IFrame API.
 
 Features:
-- High performance (Performance is 30% better than traditional UIWebView based player)
-- Low memory impact (maximum 70% off)
-- Type safe parameter interface(All IFrame API's parameters are supported as `VideoEmbedParameter`)
+- WKWebViewを使用したIFrameプレイヤー
+- 型付きのパラメータ指定（`VideoEmbedParameter`）
 
 ## YoutubeDataAPI
 This library supports `YoutubeDataAPI (v3)`. For the details is [Here](https://developers.google.com/youtube/v3/docs/).
 
 Available API lists:
 - Actitivty(list)
-- Actitivty(insert)
 - Caption(list)
 - Channel(list)
 - ChannelSections(list)
 - Comment(list)
 - CommentThreads(list)
-- GuideCategories(list)
 - PlaylistItems(list)
 - Playlists(list)
 - Search(list)
@@ -62,9 +57,8 @@ Available API lists:
 
 # Get Started
 
-Playback the youtube video.
-
 ```swift
+import UIKit
 import YoutubeKit
 
 final class VideoPlayerController: UIViewController {
@@ -89,12 +83,12 @@ final class VideoPlayerController: UIViewController {
         player.delegate = self
 
         // Load video player
-        let playerPath = Bundle(for: ViewController.self).path(forResource: "player", ofType: "html")!
-        let htmlString = try! String(contentsOfFile: playerPath, encoding: .utf8)
-        player.loadPlayerHTML(htmlString)
+        player.loadDefaultPlayer()
     }
 }
 
+// この例では任意のdelegateメソッドのデフォルト実装を使用する。
+extension VideoPlayerController: YTSwiftyPlayerDelegate {}
 ```
 
 ### YTSwiftyPlayerDelegate
@@ -149,7 +143,7 @@ First, Get API key from [Here](https://console.developers.google.com/apis).
 Next, add this code in your AppDelegate.
 
 ```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     // Set your API key here
     YoutubeKit.shared.setAPIKey("Your API key")
@@ -170,7 +164,7 @@ YoutubeAPI.shared.send(request) { result in
     switch result {
     case .success(let response):
         print(response)
-    case .failed(let error):
+    case .failure(let error):
         print(error)
     }
 }
@@ -188,8 +182,8 @@ YoutubeAPI.shared.send(request) { [weak self] result in
     case .success(let response):
 
         // Save nextPageToken
-        self?.nextPage = response.nextPageToken
-    case .failed(let error):
+        self?.nextPageToken = response.nextPageToken
+    case .failure(let error):
         print(error)
     }
 }
@@ -207,7 +201,7 @@ To use `GoogleSignIn`, you can easily get your access token.
 First, add this code in your AppDelegate.
 
 ```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     // Set your access token for autheticate request
     YoutubeKit.shared.setAccessToken("Your access token")
@@ -227,11 +221,29 @@ YoutubeAPI.shared.send(request) { result in
     switch result {
     case .success(let video):
         print(video)
-    case .failed(let error):
+    case .failure(let error):
         print(error)
     }
 }
 ```
+
+## 廃止済み機能からの移行
+
+既存コードのため型・enumケース・関数の引数は保持し、削除ではなく非推奨警告を追加しています。
+YouTube側で終了した機能は、古いAPIを呼び続けても復活しません。
+
+| 旧機能 | 現在の扱い |
+|---|---|
+| `ActivityInsertRequest` / `GuideCategoriesListRequest` | サービス終了。直接の代替APIなし |
+| `Filter.ChannelList.categoryID` / `Filter.SearchList.relatedToVideoID` | サービス終了。ID指定や通常検索への設計変更が必要 |
+| `VideoListType.search` | Data APIで検索し、取得した動画IDをプレイヤーに渡す |
+| `showModestbranding` / `setPlaybackQuality` / `availableQualityLevels` | 効果なし・非対応。プレイヤーに任せる |
+| `suggestedQuality` 引数 | 呼び出し互換性のため保持。YouTubeに無視される |
+| `showRelatedVideo(false)` | 関連動画を同一チャンネルに限定する。完全な非表示ではない |
+
+根拠: [Data APIの変更履歴](https://developers.google.com/youtube/v3/revision_history)、
+[IFrame変更履歴](https://developers.google.com/youtube/iframe_api_revision_history)、
+[プレイヤーパラメータ](https://developers.google.com/youtube/player_parameters)。
 
 ## Requirements
 
@@ -258,35 +270,18 @@ Add the following to your Package.swift file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.10.0")
+    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.13.0")
 ]
 ```
 
-### Cocoapods (Deprecated)
+### CocoaPods（旧導入方法）
 
-SeelAlso: https://blog.cocoapods.org/CocoaPods-Specs-Repo/
+既存利用者向けにpodspecと `pod 'YoutubeKit'` は維持しています。新規導入はSwiftPMを推奨します。
 
-```
-$ pod repo update
-```
+### Carthage（旧導入方法）
 
-And add this to your Podfile:
-
-
-```ruby
-pod 'YoutubeKit'
-```
-
-`$ pod install`
-
-### Carthage
-Add this to your Cartfile:
-
-`github "rinov/YoutubeKit"`
-
-and
-
-`$ carthage update`
+現行リポジトリには共有frameworkターゲットがありません。新規導入はSwiftPMを推奨します。
+既存利用者は動作確認済みのバージョンを固定し、移行前にリソース読込を検証してください。
 
 ## Author
 
@@ -295,6 +290,7 @@ Github: [https://github.com/rinov](https://github.com/rinov)
 Twitter: [https://twitter.com/rinov0321](https://twitter.com/rinov0321)
 
 Email: rinov[at]rinov.jp
+
 ## License
 
 YoutubeKit is available under the MIT license.

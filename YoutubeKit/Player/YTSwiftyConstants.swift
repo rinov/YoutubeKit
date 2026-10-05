@@ -6,6 +6,7 @@
 //  Copyright © 2017 Ryo Ishikawa. All rights reserved.
 //
 
+// 公開パラメータの互換性。廃止機能のケースも残し、現在のYouTube仕様を案内する。
 /**
  An state of current player
  
@@ -84,6 +85,7 @@ public enum VideoControlAppearance: Int {
 public enum VideoListType: String {
     
     ///  The list parameter value specifies the search query.
+    @available(*, deprecated, message: "YouTubeはlistType=searchを廃止しました。Data APIで検索した動画IDを指定してください。")
     case search         = "search"
     
     /// The list parameter value identifies the YouTube channel whose uploaded videos will be loaded.
@@ -167,10 +169,8 @@ public enum VideoEmbedParameter {
      */
     case loopVideo(Bool)
     
-    /**
-      This parameter lets you use a YouTube player that does not show a YouTube logo. Set the parameter value to `true` to prevent the YouTube logo from displaying in the control bar.
-     - note: A small YouTube text label will still display in the upper-right corner of a paused video when the user's mouse pointer hovers over the player.
-     */
+    /// YouTubeはmodestbrandingを廃止しており、指定しても効果はない。
+    @available(*, deprecated, message: "YouTubeはmodestbrandingを廃止しました。ブランド表示はプレイヤーが決定します。")
     case showModestbranding(Bool)
     
     /// This parameter provides an extra security measure for the IFrame API and is only supported for IFrame embeds. If you are using the IFrame API, which means you are setting the enablejsapi parameter value to 1, you should always specify your domain as the origin parameter value.
@@ -185,7 +185,7 @@ public enum VideoEmbedParameter {
     /// This parameter controls whether videos play inline or fullscreen. Default value is `false`.
     case playsInline(Bool)
     
-    /// This parameter indicates whether the player should show related videos when playback of the initial video ends. Default value is `true`.
+    /// falseは関連動画を同一チャンネルに限定する。関連動画を完全に非表示にはできない。
     case showRelatedVideo(Bool)
 
     /// This parameter identifies the URL where the player is embedded. This value is used in YouTube Analytics reporting when the YouTube player is embedded in a widget, and that widget is then embedded in a web page or application. In that scenario, the origin parameter identifies the widget provider's domain, but YouTube Analytics should not identify the widget provider as the actual traffic source. Instead, YouTube Analytics uses the widget_referrer parameter value to identify the domain associated with the traffic source.
