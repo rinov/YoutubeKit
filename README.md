@@ -233,9 +233,19 @@ YoutubeAPI.shared.send(request) { result in
 ```
 
 ## Requirements
-Xcode 16+
 
-Swift 6+
+iOS 13以降。SwiftPMのtools versionは5.3、ライブラリの言語モードはSwift 5です。
+Swift 6コンパイラの使用とSwift 6言語モードへの移行は別の設定です。
+ExampleはiOS 13以降のSceneライフサイクルを使用します。
+
+## 開発時の検証
+
+`python3 Scripts/run-tests.py` でパッケージの回帰テストとExampleの起動テストを実行します。
+インストール済みの最新iPhone Simulatorを自動選択します。APIキーは不要です。
+最新SDKが要求する最低OSは `--deployment-target 15.0` で検証ビルドだけに指定できます。
+配布するパッケージとCocoaPodsの最低対応はiOS 13のままです。
+CIはXcode 26系とXcode 27系で同じテストを実行します。
+実機では再生・全画面切替・回転・バックグラウンド復帰も確認してください。
 
 ## Installation
 
