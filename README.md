@@ -1,22 +1,21 @@
 # YoutubeKit
 <!-- Installation and usage guidance for consumers of the public API. -->
 
-`YoutubeKit` はYouTube IFrameプレイヤーとYouTube Data API向けのiOSライブラリです。
+`YoutubeKit` is an iOS library for the YouTube IFrame Player and YouTube Data API.
 
 [![Swift](https://img.shields.io/badge/Swift-5-blue.svg)](https://img.shields.io/badge/Swift-5-blue.svg)
 [![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)
 [![License](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)
 
-## Important Referecens
+## References
 `YoutubeKit` is created based on the following references. If you are unsure whether it is a normal behavior or a bug, please check the following documents first.
 
 - [YoutubeDataAPI (V3)](https://developers.google.com/youtube/v3/docs/)
-
 - [Youtube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference)
 
 ## Example
 
-`Example` に動画再生とData APIのサンプルがあります。
+The `Example` project demonstrates video playback and Data API requests.
 
 |Example1|Example2|
 |:-:|:-:|
@@ -24,25 +23,20 @@
 |Example3|Example4|
 |![Floating](https://github.com/rinov/Storage/blob/master/YoutubeKit/floating.gif)|![Rotate](https://github.com/rinov/Storage/blob/master/YoutubeKit/rotate.gif)|
 
-## What is YoutubeKit?
-`YoutubeKit` provides useful functions to create Youtube applications. It consists of the following two functions.
-
-- `YTSwiftyPlayer (WKWebView + HTML5 + IFrame API)`
-
-- `YoutubeDataAPI`
-
 ## YTSwiftyPlayer
 `YTSwiftyPlayer` is a video player that supports Youtube IFrame API.
 
 Features:
-- WKWebViewを使用したIFrameプレイヤー
-- 型付きのパラメータ指定（`VideoEmbedParameter`）
+
+- A WKWebView-based IFrame player
+- Typed player parameters (`VideoEmbedParameter`)
 
 ## YoutubeDataAPI
 This library supports `YoutubeDataAPI (v3)`. For the details is [Here](https://developers.google.com/youtube/v3/docs/).
 
 Available API lists:
-- Actitivty(list)
+
+- Activity(list)
 - Caption(list)
 - Channel(list)
 - ChannelSections(list)
@@ -88,12 +82,12 @@ final class VideoPlayerController: UIViewController {
     }
 }
 
-// この例では任意のdelegateメソッドのデフォルト実装を使用する。
+// Use the default implementations of the optional delegate callbacks.
 extension VideoPlayerController: YTSwiftyPlayerDelegate {}
 ```
 
 ### YTSwiftyPlayerDelegate
-`YTSwiftyPlayerDelegate`  supports folowing delegate methods.
+`YTSwiftyPlayerDelegate` provides default implementations of these callbacks:
 
 ```swift
 func playerReady(_ player: YTSwiftyPlayer)
@@ -101,27 +95,30 @@ func player(_ player: YTSwiftyPlayer, didUpdateCurrentTime currentTime: Double)
 func player(_ player: YTSwiftyPlayer, didChangeState state: YTSwiftyPlayerState)
 func player(_ player: YTSwiftyPlayer, didChangePlaybackRate playbackRate: Double)
 func player(_ player: YTSwiftyPlayer, didReceiveError error: YTSwiftyPlayerError)
+func player(_ player: YTSwiftyPlayer, didReceiveErrorCode code: Int)
+func autoplayBlocked(_ player: YTSwiftyPlayer)
 func player(_ player: YTSwiftyPlayer, didChangeQuality quality: YTSwiftyVideoQuality)
 func apiDidChange(_ player: YTSwiftyPlayer)
 func youtubeIframeAPIReady(_ player: YTSwiftyPlayer)
 func youtubeIframeAPIFailedToLoad(_ player: YTSwiftyPlayer)
 ```
 
-### プレイヤーの識別と失敗通知
+### Player identity and failure callbacks
 
-`loadDefaultPlayer()` とURLを省略した `loadPlayerHTML` は、ホストアプリのBundle IDから
-`https://<bundle-id>` を生成し、YouTubeにRefererとして渡します。
-独自ホストでは `loadDefaultPlayer(baseURLString:)` または既存の `baseURLString:` で明示できます。
-Bundle IDがない場合は従来のURLにフォールバックするため、利用側で識別URLを指定してください。
-既存の `Const.basePlayerURLString` と明示的なURL指定は維持します。
+`loadDefaultPlayer()` and `loadPlayerHTML` without an explicit URL derive
+`https://<bundle-id>` from the host app's bundle ID for the YouTube Referer.
+Custom hosts can supply `loadDefaultPlayer(baseURLString:)` or the existing `baseURLString:` argument.
+Without a valid bundle ID, the legacy URL is used; supply an explicit app identity URL in that case.
+`Const.basePlayerURLString` and explicit base URLs remain supported.
 
-`player(_:didReceiveErrorCode:)` は153（識別情報不足）を含む全エラーを通知します。
-既存の型付き `didReceiveError` は既知のコードに対して引き続き先に呼ばれます。
-`autoplayBlocked(_:)` は自動再生拒否を通知します。ユーザー操作による再生を案内してください。
-両メソッドはデフォルト実装があるため、既存delegateの変更は不要です。
-独自HTMLテンプレートでは同梱HTMLの `onAutoplayBlocked` 転送関数も取り込んでください。
+`player(_:didReceiveErrorCode:)` reports all error codes, including 153 (missing client identity).
+The existing typed `didReceiveError` callback still runs first for known codes.
+`autoplayBlocked(_:)` reports blocked autoplay; allow the user to start playback with a tap.
+Both new callbacks have default implementations, so existing delegates need no changes.
+Custom HTML templates should also forward `onAutoplayBlocked`, as the bundled template does.
+The Example logs raw error codes and blocked autoplay for troubleshooting.
 
-参考: [YouTubeの識別要件](https://developers.google.com/youtube/terms/required-minimum-functionality)
+See [YouTube's client identity requirements](https://developers.google.com/youtube/terms/required-minimum-functionality).
 
 ### Call IFrame API during playback.
 ```swift
@@ -136,7 +133,7 @@ player.seek(to: 15.5, allowSeekAhead: true)
 player.mute()
 
 // Load another video.
-player.loadVideo(videoID: "abcde")
+player.loadVideo(videoID: "M7lc1UVf-VE")
 ```
 
 `Int` values and method references remain supported; NaN and infinity are ignored. The bundled HTML uses the device viewport width. See [GitHub Issues](https://github.com/rinov/YoutubeKit/issues) for current bugs and requests.
@@ -154,8 +151,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
     return true
 }
-
 ```
+
+For iOS-restricted API keys, requests automatically include the host app's bundle ID.
+See [API key restrictions](Documentation/API-key-restrictions.md) for setup and custom headers.
 
 And then you can use `YoutubeDataAPI` request like this.
 
@@ -172,7 +171,6 @@ YoutubeAPI.shared.send(request) { result in
         print(error)
     }
 }
-
 ```
 
 ### Fetch the next page (Pagination)
@@ -231,41 +229,40 @@ YoutubeAPI.shared.send(request) { result in
 }
 ```
 
-## 廃止済み機能からの移行
+## Migrating from retired YouTube features
 
-既存コードのため型・enumケース・関数の引数は保持し、削除ではなく非推奨警告を追加しています。
-YouTube側で終了した機能は、古いAPIを呼び続けても復活しません。
+Existing types, enum cases, and arguments are retained with deprecation warnings.
+Keeping a client API available does not restore a feature removed by YouTube.
 
-| 旧機能 | 現在の扱い |
+| Legacy feature | Current behavior or migration |
 |---|---|
-| `ActivityInsertRequest` / `GuideCategoriesListRequest` | サービス終了。直接の代替APIなし |
-| `Filter.ChannelList.categoryID` / `Filter.SearchList.relatedToVideoID` | サービス終了。ID指定や通常検索への設計変更が必要 |
-| `VideoListType.search` | Data APIで検索し、取得した動画IDをプレイヤーに渡す |
-| `showModestbranding` / `setPlaybackQuality` / `availableQualityLevels` | 効果なし・非対応。プレイヤーに任せる |
-| `suggestedQuality` 引数 | 呼び出し互換性のため保持。YouTubeに無視される |
-| `showRelatedVideo(false)` | 関連動画を同一チャンネルに限定する。完全な非表示ではない |
+| `ActivityInsertRequest` / `GuideCategoriesListRequest` | Retired by YouTube; no direct replacement |
+| `Filter.ChannelList.categoryID` / `Filter.SearchList.relatedToVideoID` | Retired; use supported ID filters or search queries |
+| `VideoListType.search` | Search with the Data API and pass the returned video IDs to the player |
+| `showModestbranding` / `setPlaybackQuality` / `availableQualityLevels` | Unsupported or ignored; let YouTube control branding and quality |
+| `suggestedQuality` argument | Retained for source compatibility; ignored by YouTube |
+| `showRelatedVideo(false)` | Limits related videos to the same channel; does not hide them |
 
-根拠: [Data APIの変更履歴](https://developers.google.com/youtube/v3/revision_history)、
-[IFrame変更履歴](https://developers.google.com/youtube/iframe_api_revision_history)、
-[プレイヤーパラメータ](https://developers.google.com/youtube/player_parameters)。
+Sources: [Data API revision history](https://developers.google.com/youtube/v3/revision_history),
+[IFrame revision history](https://developers.google.com/youtube/iframe_api_revision_history),
+[player parameters](https://developers.google.com/youtube/player_parameters).
 
 ## Requirements
 
-iOS 13以降。SwiftPMのtools versionは5.3、ライブラリの言語モードはSwift 5です。
-Swift 6コンパイラの使用とSwift 6言語モードへの移行は別の設定です。
-通信APIは従来のcompletionと任意のDecodableレスポンスに対応します。
-completion内のUI更新は `.main` キューを使い、共有する可変参照は利用側でも同期してください。
-`ResponseError.unexpectedResponse(Any)` は互換性のため維持し、任意のペイロードのスレッド安全性は保証しません。
-ExampleはiOS 13以降のSceneライフサイクルを使用します。
+iOS 13 or later. SwiftPM tools version is 5.3; the default Swift language mode is 5.
+Using a Swift 6 compiler does not require switching the application's language mode to Swift 6.
+The networking API retains completion handlers and arbitrary `Decodable` response types.
+Use the `.main` callback queue for UI updates and synchronize mutable references shared by your app.
+`ResponseError.unexpectedResponse(Any)` is retained; arbitrary payloads are not guaranteed thread-safe.
+The Example uses the iOS 13 scene lifecycle.
 
-## 開発時の検証
+## Development and release verification
 
-`python3 Scripts/run-tests.py` でパッケージの回帰テストとExampleの起動テストを実行します。
-インストール済みの最新iPhone Simulatorを自動選択します。APIキーは不要です。
-最新SDKが要求する最低OSは `--deployment-target 15.0` で検証ビルドだけに指定できます。
-配布するパッケージとCocoaPodsの最低対応はiOS 13のままです。
-CIはXcode 26系とXcode 27系で同じテストを実行します。
-実機では再生・全画面切替・回転・バックグラウンド復帰も確認してください。
+Run `python3 Scripts/run-tests.py` for package regression tests and hosted Example tests.
+It selects the latest installed iPhone Simulator; no API key is needed for automated tests.
+Use `--language-mode 6` to test Swift 6 and `--deployment-target 15.0` when required by the SDK.
+This override only affects validation builds; package and CocoaPods deployment targets remain iOS 13.
+CI runs on Xcode 26 and 27. See [release preparation](RELEASING.md) for live playback checks and publishing.
 
 ## Installation
 
@@ -274,26 +271,25 @@ Add the following to your Package.swift file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.13.0")
+    .package(url: "https://github.com/rinov/YoutubeKit.git", from: "0.14.0")
 ]
 ```
 
-### CocoaPods（旧導入方法）
+### CocoaPods (existing integrations)
 
-既存利用者向けにpodspecと `pod 'YoutubeKit'` は維持しています。新規導入はSwiftPMを推奨します。
+The podspec remains available for existing users. SwiftPM is recommended for new integrations.
+Use `pod 'YoutubeKit', '~> 0.14.0'` after this version is published to CocoaPods.
+Upgrading from the previously published 0.9.0 requires iOS 13 (0.9.0 supported iOS 11).
+Applications that still support iOS 11 or 12 must remain on a compatible older version.
 
-### Carthage（旧導入方法）
+### Carthage (legacy)
 
-現行リポジトリには共有frameworkターゲットがありません。新規導入はSwiftPMを推奨します。
-既存利用者は動作確認済みのバージョンを固定し、移行前にリソース読込を検証してください。
+The current repository has no shared framework target; use SwiftPM for new integrations.
+Existing users should pin their validated version and verify resource loading before migrating.
 
 ## Author
 
-Github: [https://github.com/rinov](https://github.com/rinov)
-
-Twitter: [https://twitter.com/rinov0321](https://twitter.com/rinov0321)
-
-Email: rinov[at]rinov.jp
+[rinov](https://github.com/rinov) · [Twitter](https://twitter.com/rinov0321) · rinov[at]rinov.jp
 
 ## License
 

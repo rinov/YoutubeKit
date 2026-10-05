@@ -28,7 +28,7 @@ open class YTSwiftyPlayer: WKWebView {
 
     open internal(set) var availablePlaybackRates: [Double] = [1]
 
-    @available(*, deprecated, message: "YouTubeは画質一覧の取得をサポートしていません。")
+    @available(*, deprecated, message: "YouTube no longer supports retrieving available quality levels.")
     open internal(set) var availableQualityLevels: [YTSwiftyVideoQuality] = []
 
     open internal(set) var bufferedVideoRate: Double = 0
@@ -76,10 +76,10 @@ open class YTSwiftyPlayer: WKWebView {
     }
 
     public enum Const {
-        /// 従来の明示的なURL指定との互換性を維持する。
+        /// Retained for compatibility with existing explicit base URLs.
         public static let basePlayerURLString = "https://www.youtube-nocookie.com"
 
-        /// ローカルHTMLのRefererを利用アプリのBundle IDから生成する。
+        /// Builds the local HTML Referer from the host application bundle ID.
         public static var defaultBaseURLString: String {
             return PlayerClientIdentity.baseURLString(bundleIdentifier: Bundle.main.bundleIdentifier)
         }
@@ -216,7 +216,7 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("setPlaybackRate(\(suggestedRate))")
     }
 
-    @available(*, deprecated, message: "YouTubeが再生画質を自動選択するため、この指定に効果はありません。")
+    @available(*, deprecated, message: "YouTube selects playback quality automatically; this setting has no effect.")
     public func setPlaybackQuality(_ suggestedQuality: YTSwiftyVideoQuality) {
         evaluatePlayerCommand("setPlaybackQuality(\(suggestedQuality.rawValue))")
     }
@@ -229,12 +229,12 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("setShuffle(\(shufflePlaylist))")
     }
 
-    /// suggestedQualityはYouTubeに無視される。既存の呼び出し形式を維持するために残す。
+    /// YouTube ignores suggestedQuality; the parameter is retained for source compatibility.
     public func cueVideo(videoID: String, startSeconds: Int = 0, suggestedQuality: YTSwiftyVideoQuality = .large) {
         evaluatePlayerCommand("cueVideoById('\(videoID)',\(startSeconds),'\(suggestedQuality.rawValue)')")
     }
 
-    /// suggestedQualityはYouTubeに無視される。既存の呼び出し形式を維持するために残す。
+    /// YouTube ignores suggestedQuality; the parameter is retained for source compatibility.
     public func loadVideo(videoID: String, startSeconds: Int = 0, suggestedQuality: YTSwiftyVideoQuality = .large) {
         evaluatePlayerCommand("loadVideoById('\(videoID)',\(startSeconds),'\(suggestedQuality.rawValue)')")
     }

@@ -4,6 +4,7 @@
 //
 //  Created by Ryo Ishikawa on 12/30/2017.
 //  Copyright (c) 2017 Ryo Ishikawa. All rights reserved.
+//  Demonstrates playback and logs player failures for release smoke tests.
 //
 
 import UIKit
@@ -79,6 +80,15 @@ extension ViewController {
     
     func player(_ player: YTSwiftyPlayer, didReceiveError error: YTSwiftyPlayerError) {
         print("\(#function): \(error)")
+    }
+
+    // The typed callback covers legacy cases; this also reports 153 and future codes.
+    func player(_ player: YTSwiftyPlayer, didReceiveErrorCode code: Int) {
+        print("YouTube player error code: \(code)")
+    }
+
+    func autoplayBlocked(_ player: YTSwiftyPlayer) {
+        print("Autoplay was blocked. Tap the player's play button to continue.")
     }
     
     func player(_ player: YTSwiftyPlayer, didChangeQuality quality: YTSwiftyVideoQuality) {

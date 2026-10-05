@@ -9,7 +9,7 @@
 import Foundation
 
 // 廃止済みAPIの移行案内。既存コードの型とリクエスト形式は維持する。
-@available(*, deprecated, message: "YouTubeはactivities.insertを廃止しました。この型は既存コードの互換性のために保持しています。")
+@available(*, deprecated, message: "YouTube no longer supports activities.insert. This type is retained for source compatibility.")
 public struct ActivityInsertRequest: Requestable {
     
     public typealias Response = ActivityList

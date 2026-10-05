@@ -49,7 +49,7 @@ extension Filter {
 
 extension Filter {
     public enum ChannelList: QueryParameterable {
-        @available(*, deprecated, message: "YouTubeはchannels.listのcategoryIdフィルターを廃止しました。")
+        @available(*, deprecated, message: "YouTube no longer supports the channels.list categoryId filter.")
         case categoryID(String)
         case userName(String)
         case id(String)
@@ -112,7 +112,7 @@ extension Filter {
     public enum SearchList: QueryParameterable {
         case forContentOwner(Bool)
         case forMine(Bool)
-        @available(*, deprecated, message: "YouTubeはrelatedToVideoIdを廃止しました。search.listのqなどを利用してください。")
+        @available(*, deprecated, message: "YouTube no longer supports relatedToVideoId. Use search.list with q or another supported filter.")
         case relatedToVideoID(String)
         
         public var keyValue: (key: String, value: Any) {
