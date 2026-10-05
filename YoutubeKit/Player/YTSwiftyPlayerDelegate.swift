@@ -6,8 +6,16 @@
 //  Copyright © 2017 Ryo Ishikawa. All rights reserved.
 //
 
+// 利用側のdelegate実装を維持するため、追加通知にはデフォルト実装を用意する。
 // MARK: - YTSwiftyPlayerDelegate
 public protocol YTSwiftyPlayerDelegate: AnyObject {
+
+    /// 153（クライアント識別情報不足）を含む、YouTubeのすべてのエラーコード。
+    /// 既存enumで表せるコードでは、従来の型付き通知も先に呼ばれる。
+    func player(_ player: YTSwiftyPlayer, didReceiveErrorCode code: Int)
+
+    /// WebKitまたはYouTubeが自動再生を拒否した。ユーザー操作による再生を案内する。
+    func autoplayBlocked(_ player: YTSwiftyPlayer)
 
     /**
      - parameters:
@@ -79,6 +87,9 @@ public protocol YTSwiftyPlayerDelegate: AnyObject {
 
 // Default implementation of delegate methods, These delegate functions are option.
 public extension YTSwiftyPlayerDelegate {
+
+    func player(_ player: YTSwiftyPlayer, didReceiveErrorCode code: Int) {}
+    func autoplayBlocked(_ player: YTSwiftyPlayer) {}
 
     /**
       * Invoked when player state has changed.

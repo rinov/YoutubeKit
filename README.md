@@ -112,6 +112,22 @@ func youtubeIframeAPIReady(_ player: YTSwiftyPlayer)
 func youtubeIframeAPIFailedToLoad(_ player: YTSwiftyPlayer)
 ```
 
+### プレイヤーの識別と失敗通知
+
+`loadDefaultPlayer()` とURLを省略した `loadPlayerHTML` は、ホストアプリのBundle IDから
+`https://<bundle-id>` を生成し、YouTubeにRefererとして渡します。
+独自ホストでは `loadDefaultPlayer(baseURLString:)` または既存の `baseURLString:` で明示できます。
+Bundle IDがない場合は従来のURLにフォールバックするため、利用側で識別URLを指定してください。
+既存の `Const.basePlayerURLString` と明示的なURL指定は維持します。
+
+`player(_:didReceiveErrorCode:)` は153（識別情報不足）を含む全エラーを通知します。
+既存の型付き `didReceiveError` は既知のコードに対して引き続き先に呼ばれます。
+`autoplayBlocked(_:)` は自動再生拒否を通知します。ユーザー操作による再生を案内してください。
+両メソッドはデフォルト実装があるため、既存delegateの変更は不要です。
+独自HTMLテンプレートでは同梱HTMLの `onAutoplayBlocked` 転送関数も取り込んでください。
+
+参考: [YouTubeの識別要件](https://developers.google.com/youtube/terms/required-minimum-functionality)
+
 ### Call IFrame API during playback.
 ```swift
 // Pause the video.
@@ -261,8 +277,6 @@ And add this to your Podfile:
 pod 'YoutubeKit'
 ```
 
-and
-
 `$ pod install`
 
 ### Carthage
@@ -274,7 +288,6 @@ and
 
 `$ carthage update`
 
-
 ## Author
 
 Github: [https://github.com/rinov](https://github.com/rinov)
@@ -282,7 +295,6 @@ Github: [https://github.com/rinov](https://github.com/rinov)
 Twitter: [https://twitter.com/rinov0321](https://twitter.com/rinov0321)
 
 Email: rinov[at]rinov.jp
-
 ## License
 
 YoutubeKit is available under the MIT license.
