@@ -1,3 +1,4 @@
+// 配布方式ごとのリソース探索。SPM生成のBundle.moduleを優先し旧配布方式も維持する。
 import Foundation
 
 private class BundleToken {}
@@ -6,6 +7,9 @@ extension Bundle {
     // This is copied method from SPM generated Bundle.module for CocoaPods support
     static func yk_frameworkBundle() -> Bundle {
 
+        #if SWIFT_PACKAGE
+        return .module
+        #else
         let candidates = [
             // Bundle should be present here when the package is linked into an App.
             Bundle.main.resourceURL,
@@ -33,5 +37,6 @@ extension Bundle {
 
         // Return whatever bundle this code is in as a last resort.
         return Bundle(for: BundleToken.self)
+        #endif
     }
 }

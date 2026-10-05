@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- WKWebViewとIFrameのイベント連携。失敗通知をSwift側に転送する。 -->
 <html>
 <head>
     <style>
@@ -35,6 +36,9 @@
     }
     function onPlaybackRateChange(event) {
         webkit.messageHandlers.onPlaybackRateChange.postMessage(event.data);
+    }
+    function onAutoplayBlocked(event) {
+        webkit.messageHandlers.onAutoplayBlocked.postMessage('');
     }
     function onError(event) {
         webkit.messageHandlers.onError.postMessage(event.data);
