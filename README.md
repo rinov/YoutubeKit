@@ -1,4 +1,5 @@
 # YoutubeKit
+<!-- Installation and usage guidance for consumers of the public API. -->
 
 `YoutubeKit` はYouTube IFrameプレイヤーとYouTube Data API向けのiOSライブラリです。
 
@@ -127,8 +128,9 @@ Bundle IDがない場合は従来のURLにフォールバックするため、�
 // Pause the video.
 player.pauseVideo()
 
-// Seek after 15 seconds.
+// Seek to a whole or fractional second.
 player.seek(to: 15, allowSeekAhead: true)
+player.seek(to: 15.5, allowSeekAhead: true)
 
 // Set a mute.
 player.mute()
@@ -136,6 +138,8 @@ player.mute()
 // Load another video.
 player.loadVideo(videoID: "abcde")
 ```
+
+`Int` values and method references remain supported; NaN and infinity are ignored. The bundled HTML uses the device viewport width. See [GitHub Issues](https://github.com/rinov/YoutubeKit/issues) for current bugs and requests.
 
 ### Get video information using YoutubeDataAPI
 First, Get API key from [Here](https://console.developers.google.com/apis).
