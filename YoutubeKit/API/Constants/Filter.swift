@@ -5,6 +5,7 @@
 //  Created by Ryo Ishikawa on 12/30/2017
 //
 
+// フィルターの互換性。廃止されたサーバー機能はケースを残して案内する。
 // MARK: - Namespace
 public enum Filter {}
 
@@ -48,6 +49,7 @@ extension Filter {
 
 extension Filter {
     public enum ChannelList: QueryParameterable {
+        @available(*, deprecated, message: "YouTubeはchannels.listのcategoryIdフィルターを廃止しました。")
         case categoryID(String)
         case userName(String)
         case id(String)
@@ -110,6 +112,7 @@ extension Filter {
     public enum SearchList: QueryParameterable {
         case forContentOwner(Bool)
         case forMine(Bool)
+        @available(*, deprecated, message: "YouTubeはrelatedToVideoIdを廃止しました。search.listのqなどを利用してください。")
         case relatedToVideoID(String)
         
         public var keyValue: (key: String, value: Any) {

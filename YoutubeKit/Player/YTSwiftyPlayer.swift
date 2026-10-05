@@ -5,6 +5,7 @@
 //  Created by Ryo Ishikawa on 12/30/2017
 //  Copyright © 2017 Ryo Ishikawa. All rights reserved.
 //
+// WKWebViewの構成と公開操作。状態の更新はEvents拡張と共有する。
 import UIKit
 import WebKit
 
@@ -21,33 +22,34 @@ open class YTSwiftyPlayer: WKWebView {
 
     open weak var delegate: YTSwiftyPlayerDelegate?
 
-    open private(set) var isMuted = false
+    open internal(set) var isMuted = false
 
-    open private(set) var playbackRate: Double = 1.0
+    open internal(set) var playbackRate: Double = 1.0
 
-    open private(set) var availablePlaybackRates: [Double] = [1]
+    open internal(set) var availablePlaybackRates: [Double] = [1]
 
-    open private(set) var availableQualityLevels: [YTSwiftyVideoQuality] = []
+    @available(*, deprecated, message: "YouTubeは画質一覧の取得をサポートしていません。")
+    open internal(set) var availableQualityLevels: [YTSwiftyVideoQuality] = []
 
-    open private(set) var bufferedVideoRate: Double = 0
+    open internal(set) var bufferedVideoRate: Double = 0
 
-    open private(set) var currentPlaylist: [String] = []
+    open internal(set) var currentPlaylist: [String] = []
 
-    open private(set) var currentPlaylistIndex: Int = 0
+    open internal(set) var currentPlaylistIndex: Int = 0
 
-    open private(set) var currentVideoURL: String?
+    open internal(set) var currentVideoURL: String?
 
-    open private(set) var currentVideoEmbedCode: String?
+    open internal(set) var currentVideoEmbedCode: String?
 
-    open private(set) var playerState: YTSwiftyPlayerState = .unstarted
+    open internal(set) var playerState: YTSwiftyPlayerState = .unstarted
 
-    open private(set) var playerQuality: YTSwiftyVideoQuality = .unknown
+    open internal(set) var playerQuality: YTSwiftyVideoQuality = .unknown
 
-    open private(set) var duration: Double?
+    open internal(set) var duration: Double?
 
-    open private(set) var currentTime: Double = 0.0
+    open internal(set) var currentTime: Double = 0.0
  
-    private var playerVars: [String: AnyObject] = [:]
+    internal var playerVars: [String: AnyObject] = [:]
 
     private let callbackHandlers: [YTSwiftyPlayerEvent] = [
         .onYoutubeIframeAPIReady,
@@ -69,9 +71,18 @@ open class YTSwiftyPlayer: WKWebView {
         return config
     }
 
+    private var scriptHandlerNames: [String] {
+        return callbackHandlers.map { $0.rawValue } + [PlayerClientIdentity.autoplayBlockedEvent]
+    }
+
     public enum Const {
-        /// url: https://www.youtube.com
+        /// 従来の明示的なURL指定との互換性を維持する。
         public static let basePlayerURLString = "https://www.youtube-nocookie.com"
+
+        /// ローカルHTMLのRefererを利用アプリのBundle IDから生成する。
+        public static var defaultBaseURLString: String {
+            return PlayerClientIdentity.baseURLString(bundleIdentifier: Bundle.main.bundleIdentifier)
+        }
     }
 
     public init(frame: CGRect = .zero, playerVars: [String: AnyObject]) {
@@ -81,8 +92,8 @@ open class YTSwiftyPlayer: WKWebView {
         
         super.init(frame: frame, configuration: config)
         
-        callbackHandlers.forEach {
-            userContentController.add(WeakWKScriptMessageHandler(delegate: self), name: $0.rawValue)
+        scriptHandlerNames.forEach {
+            userContentController.add(WeakWKScriptMessageHandler(delegate: self), name: $0)
         }
         
         commonInit()
@@ -97,8 +108,8 @@ open class YTSwiftyPlayer: WKWebView {
 
         super.init(frame: frame, configuration: config)
 
-        callbackHandlers.forEach {
-            userContentController.add(WeakWKScriptMessageHandler(delegate: self), name: $0.rawValue)
+        scriptHandlerNames.forEach {
+            userContentController.add(WeakWKScriptMessageHandler(delegate: self), name: $0)
         }
 
         commonInit()
@@ -119,8 +130,8 @@ open class YTSwiftyPlayer: WKWebView {
     public func buildPlayerParameters() -> [String: AnyObject] {
         let events: [String: AnyObject] = {
             var registerEvents: [String: AnyObject] = [:]
-            callbackHandlers.forEach {
-                registerEvents[$0.rawValue] = $0.rawValue as AnyObject
+            scriptHandlerNames.forEach {
+                registerEvents[$0] = $0 as AnyObject
             }
             return  registerEvents
         }()
@@ -159,7 +170,7 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("stopVideo()")
     }
 
-    public func seek(to seconds: Double, allowSeekAhead: Bool) {
+    public func seek(to seconds: Int, allowSeekAhead: Bool) {
         evaluatePlayerCommand("seekTo(\(seconds),\(allowSeekAhead ? 1 : 0))")
     }
 
@@ -205,6 +216,7 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("setPlaybackRate(\(suggestedRate))")
     }
 
+    @available(*, deprecated, message: "YouTubeが再生画質を自動選択するため、この指定に効果はありません。")
     public func setPlaybackQuality(_ suggestedQuality: YTSwiftyVideoQuality) {
         evaluatePlayerCommand("setPlaybackQuality(\(suggestedQuality.rawValue))")
     }
@@ -217,10 +229,12 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("setShuffle(\(shufflePlaylist))")
     }
 
+    /// suggestedQualityはYouTubeに無視される。既存の呼び出し形式を維持するために残す。
     public func cueVideo(videoID: String, startSeconds: Int = 0, suggestedQuality: YTSwiftyVideoQuality = .large) {
         evaluatePlayerCommand("cueVideoById('\(videoID)',\(startSeconds),'\(suggestedQuality.rawValue)')")
     }
 
+    /// suggestedQualityはYouTubeに無視される。既存の呼び出し形式を維持するために残す。
     public func loadVideo(videoID: String, startSeconds: Int = 0, suggestedQuality: YTSwiftyVideoQuality = .large) {
         evaluatePlayerCommand("loadVideoById('\(videoID)',\(startSeconds),'\(suggestedQuality.rawValue)')")
     }
@@ -245,34 +259,6 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("loadPlaylist('\(ids.joined(separator: ","))')")
     }
 
-    @available(*, deprecated, renamed: "loadPlayerHTML")
-    public func loadPlayer() {
-        let playerPath = Bundle(for: YTSwiftyPlayer.self).path(forResource: "player", ofType: "html")!
-        guard let htmlString = try? String(contentsOfFile: playerPath, encoding: .utf8) else { return }
-        loadPlayerHTML(htmlString)
-    }
-
-    public func loadDefaultPlayer() {
-        guard let playerPath = Bundle.yk_frameworkBundle().path(forResource: "player", ofType: "html"),
-              let htmlString = try? String(contentsOfFile: playerPath, encoding: .utf8) else { return }
-        loadPlayerHTML(htmlString)
-    }
-
-    public func loadPlayerHTML(_ htmlString: String, baseURLString: String = Const.basePlayerURLString) {
-        let parameters = buildPlayerParameters()
-        loadPlayerHTML(htmlString, parameters: parameters, baseURLString: baseURLString)
-    }
-
-    public func loadPlayerHTML(_ htmlString: String, parameters: [String: AnyObject], baseURLString: String = Const.basePlayerURLString) {
-        guard let json = try? JSONSerialization.data(withJSONObject: parameters, options: []),
-            let jsonString = String(data: json, encoding: .utf8),
-            let baseUrl = URL(string: baseURLString)
-            else { return }
-
-        let html = htmlString.replacingOccurrences(of: "%@", with: jsonString)
-        loadHTMLString(html, baseURL: baseUrl)
-    }
-
     // MARK: - Private Methods
     
     private func commonInit() {
@@ -283,16 +269,14 @@ open class YTSwiftyPlayer: WKWebView {
     }
 
     // Evaluate javascript command and convert to simple error(nil) if an error is occurred.
-    private func evaluatePlayerCommand(_ commandName: String, callbackHandler: ((Any?) -> ())? = nil) {
+    internal func evaluatePlayerCommand(_ commandName: String, callbackHandler: ((Any?) -> ())? = nil) {
         let command = "player.\(commandName);"
         evaluateJavaScript(command) { (result, error) in
             callbackHandler?(error != nil ? nil : result)
         }
     }
 
-    deinit {
-        stopLoading()
-    }
+    // WKWebViewの破棄に後処理を任せる。非隔離deinitからUIKitを呼び出さない。
 
     private class WeakWKScriptMessageHandler: NSObject, WKScriptMessageHandler {
         weak var delegate: WKScriptMessageHandler?
@@ -305,159 +289,5 @@ open class YTSwiftyPlayer: WKWebView {
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             self.delegate?.userContentController(userContentController, didReceive: message)
         }
-    }
-}
-
-extension YTSwiftyPlayer: WKScriptMessageHandler {
-
-    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        guard let event = YTSwiftyPlayerEvent(rawValue: message.name) else { return }
-        switch event {
-        case .onReady:
-            delegate?.playerReady(self)
-            
-            // The HTML5 video element, in certain mobile browsers, only allows playback to take place if it's initiated by a user interaction, due to this restriction, functions and parameters such as autoplay, playVideo(), loadVideoById() won't work in all mobile environments.
-            // So it have to call explicit `playVideo()` to work autoplay in mobile environment.
-            if autoplay || playerVars.contains(where: { $0.key == "autoplay" && String(describing: $0.value) == "1" }) {
-                playVideo()
-            }
-            updateInfo()
-        case .onStateChange:
-            updateState(message.body as? Int)
-            let isLoop = playerVars["loop"] as? String == "1"
-            if playerState == .ended && isLoop {
-                playVideo()
-            }
-            delegate?.player(self, didChangeState: playerState)
-        case .onQualityChange:
-            updateQuality(message.body as? String)
-            delegate?.player(self, didChangeQuality: playerQuality)
-        case .onError:
-            if let message = message.body as? Int,
-                let error = YTSwiftyPlayerError(rawValue: message) {
-                delegate?.player(self, didReceiveError: error)
-            }
-        case .onUpdateCurrentTime:
-            updateInfo()
-            if let currentTime = message.body as? Double {
-                self.currentTime = currentTime
-                delegate?.player(self, didUpdateCurrentTime: currentTime)
-            }
-        case .onPlaybackRateChange:
-            if let playbackRate = message.body as? Double {
-                delegate?.player(self, didChangePlaybackRate: playbackRate)
-            }
-        case .onApiChange:
-            delegate?.apiDidChange(self)
-        case .onYoutubeIframeAPIReady:
-            delegate?.youtubeIframeAPIReady(self)
-        case .onYouTubeIframeAPIFailedToLoad:
-            delegate?.youtubeIframeAPIFailedToLoad(self)
-        }
-    }
-
-    // MARK: - Private Methods
-
-    private func updateInfo() {
-        updateMute()
-        updatePlaybackRate()
-        updateAvailableQualityLevels()
-        updateCurrentPlaylist()
-        updateCurrentVideoURL()
-        updateCurrentVideoEmbedCode()
-        updatePlaylistIndex()
-        updateDuration()
-        updateVideoLoadedFraction()
-    }
-
-    private func updateMute() {
-        evaluatePlayerCommand("isMuted()") { [weak self] result in
-            guard let me = self,
-                let isMuted = result as? Bool else { return }
-            me.isMuted = isMuted
-        }
-    }
-
-    private func updatePlaybackRate() {
-        evaluatePlayerCommand("getPlaybackRate()") { [weak self] result in
-            guard let me = self,
-                let playbackRate = result as? Double else { return }
-            me.playbackRate = playbackRate
-        }
-    }
-
-    private func updateVideoLoadedFraction() {
-        evaluatePlayerCommand("getVideoLoadedFraction()") { [weak self] result in
-            guard let me = self,
-                let bufferedVideoRate = result as? Double else { return }
-            me.bufferedVideoRate = bufferedVideoRate
-        }
-    }
-
-    private func updateAvailableQualityLevels() {
-        evaluatePlayerCommand("getAvailableQualityLevels()") { [weak self] result in
-            guard let me = self,
-                let availableQualityLevels = result as? [String] else { return }
-            me.availableQualityLevels = availableQualityLevels
-              .compactMap { YTSwiftyVideoQuality(rawValue: $0) }
-        }
-    }
-
-    private func updateCurrentVideoURL() {
-        evaluatePlayerCommand("getVideoUrl()") { [weak self] result in
-            guard let me = self,
-                let url = result as? String else { return }
-            me.currentVideoURL = url
-        }
-    }
-
-    private func updateCurrentVideoEmbedCode() {
-        evaluatePlayerCommand("getVideoEmbedCode()") { [weak self] result in
-            guard let me = self,
-                let embedCode = result as? String else { return }
-            me.currentVideoEmbedCode = embedCode
-        }
-    }
-
-    private func updateCurrentPlaylist() {
-        evaluatePlayerCommand("getPlaylist()") { [weak self] result in
-            guard let me = self,
-                let playlist = result as? [String] else { return }
-            me.currentPlaylist = playlist
-        }
-    }
-
-    private func updatePlaylistIndex() {
-        evaluatePlayerCommand("getPlaylistIndex()") { [weak self] result in
-            guard let me = self,
-                let index = result as? Int else { return }
-            me.currentPlaylistIndex = index
-        }
-    }
-
-    private func updateDuration() {
-        evaluatePlayerCommand("getDuration()") { [weak self] result in
-            guard let me = self,
-                let duration = result as? Double else { return }
-            me.duration = duration
-        }
-    }
-
-    private func updateState(_ message: Int?) {
-        var state: YTSwiftyPlayerState = .unstarted
-        if let message = message,
-            let newState = YTSwiftyPlayerState(rawValue: message) {
-            state = newState
-        }
-        playerState = state
-    }
-
-    private func updateQuality(_ message: String?) {
-        var quality: YTSwiftyVideoQuality = .unknown
-        if let message = message,
-            let newQuality = YTSwiftyVideoQuality(rawValue: message) {
-            quality = newQuality
-        }
-        playerQuality = quality
     }
 }

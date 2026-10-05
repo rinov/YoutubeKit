@@ -1,4 +1,5 @@
 // !$*UTF8*$!
+// Exampleと起動テストのビルド設定。ライブラリの最低対応OSは変更しない。
 {
 	archiveVersion = 1;
 	classes = {
@@ -7,6 +8,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0DE00000000000000000001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000002 /* SceneDelegate.swift */; };
+		C0DE00000000000000000003 /* SceneLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000004 /* SceneLifecycleTests.swift */; };
 		21B4044B28D8C8830044DA1B /* YoutubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 21B4044A28D8C8830044DA1B /* YoutubeKit */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0DE00000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000004 /* SceneLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLifecycleTests.swift; sourceTree = "<group>"; };
 		1D176D1E28DCB761009D601D /* YoutubeKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YoutubeKit; path = ..; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YoutubeKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				C0DE00000000000000000002 /* SceneDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
 			path = Sources;
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				C0DE00000000000000000004 /* SceneLifecycleTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				C0DE00000000000000000001 /* SceneDelegate.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DE00000000000000000003 /* SceneLifecycleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -397,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -456,6 +465,8 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoutubeKit_Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YoutubeKit_Example";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,6 +488,8 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoutubeKit_Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YoutubeKit_Example";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

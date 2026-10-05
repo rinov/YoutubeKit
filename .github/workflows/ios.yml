@@ -1,0 +1,33 @@
+# パッケージとExampleの回帰検証。配布設定を変更せず複数のXcodeで実行する。
+name: iOS compatibility
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-26
+            deployment: "13.0"
+            language: "5"
+          - runner: macos-26
+            deployment: "13.0"
+            language: "6"
+          - runner: xcode-27
+            deployment: "15.0"
+            language: "5"
+          - runner: xcode-27
+            deployment: "15.0"
+            language: "6"
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: xcodebuild -version
+      - run: python3 Scripts/run-tests.py --language-mode '${{ matrix.language }}' --deployment-target '${{ matrix.deployment }}'
