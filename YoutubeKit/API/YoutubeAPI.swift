@@ -5,6 +5,7 @@
 //  Created by Ryo Ishikawa on 12/30/2017
 //
 
+// 通信状態を直列化し、既存のcompletion形式を保ったまま並行呼び出しを扱う。
 import Foundation
 
 @available(*, unavailable, renamed: "YoutubeAPI")
@@ -14,12 +15,37 @@ public class YoutubeAPI: NSObject {
 
     public static let shared = YoutubeAPI()
 
-    private lazy var urlSession: URLSession = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
+    private var storedSession: URLSession?
+    private let configuration: URLSessionConfiguration
+
+    // lazyの初回アクセス自体はスレッド安全ではないため、生成も同じキューで保護する。
+    private var urlSession: URLSession {
+        return syncQueue.sync {
+            if let session = storedSession { return session }
+            let session = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
+            storedSession = session
+            return session
+        }
+    }
     private var taskHandlers: [Int: (Data?, URLResponse?, Error?) -> Void] = [:]
     private var taskDataBuffers: [Int: Data] = [:]
     private let syncQueue = DispatchQueue(label: "YoutubeAPI.SyncQueue")
 
-    private override init() {}
+    private override init() {
+        configuration = .default
+        super.init()
+    }
+
+    // テストではURLProtocolを使い、公開APIを増やさず通信結果を再現する。
+    internal init(configuration: URLSessionConfiguration) {
+        self.configuration = configuration.copy() as! URLSessionConfiguration
+        super.init()
+    }
+
+    internal func invalidateSession() {
+        let session = syncQueue.sync { storedSession }
+        session?.invalidateAndCancel()
+    }
 
     public func send<T: Requestable>(_ request: T, queue: DispatchQueue = .main, completion: ((Result<T.Response, Error>) -> Void)? = nil) {
         let urlRequest = request.makeURLRequest()
@@ -32,9 +58,11 @@ public class YoutubeAPI: NSObject {
                 let result: Result<T.Response, Error>
 
                 defer {
-                    queue.async {
+                    // 既存APIに@SendableやResponse: Sendableを強制しない。
+                    // 結果は生成後に変更せず、指定キューでcompletionを一度だけ実行する。
+                    queue.async(execute: DispatchWorkItem {
                         completion?(result)
-                    }
+                    })
                 }
 
                 // If the dataTask error is occured.
@@ -106,3 +134,8 @@ extension YoutubeAPI: URLSessionDataDelegate {
     }
 }
 
+
+#if compiler(>=5.5)
+// セッション生成とタスク辞書はsyncQueueで保護。外部からの継承は従来どおり不可。
+extension YoutubeAPI: @unchecked Sendable {}
+#endif

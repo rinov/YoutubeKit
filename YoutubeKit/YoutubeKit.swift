@@ -5,6 +5,7 @@
 //  Created by Ryo Ishikawa on 12/30/2017
 //
 
+// 認証情報の読み書きをロックし、既存の同期setter/getterを維持する。
 import Foundation
 
 public final class YoutubeKit {
@@ -28,8 +29,40 @@ public final class YoutubeKit {
         self._accessToken = token
     }
 
-    internal private(set) var _apiKey: String = ""
-    internal private(set) var _accessToken: String = ""
+    private let credentialLock = NSLock()
+    private var storedAPIKey = ""
+    private var storedAccessToken = ""
+
+    internal private(set) var _apiKey: String {
+        get {
+            credentialLock.lock()
+            defer { credentialLock.unlock() }
+            return storedAPIKey
+        }
+        set {
+            credentialLock.lock()
+            defer { credentialLock.unlock() }
+            storedAPIKey = newValue
+        }
+    }
+
+    internal private(set) var _accessToken: String {
+        get {
+            credentialLock.lock()
+            defer { credentialLock.unlock() }
+            return storedAccessToken
+        }
+        set {
+            credentialLock.lock()
+            defer { credentialLock.unlock() }
+            storedAccessToken = newValue
+        }
+    }
 
     private init() {}
 }
+
+#if compiler(>=5.5)
+// 可変の認証情報はすべてcredentialLock経由で読み書きする。
+extension YoutubeKit: @unchecked Sendable {}
+#endif
