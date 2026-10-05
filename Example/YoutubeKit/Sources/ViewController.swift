@@ -50,7 +50,14 @@ final class ViewController: UIViewController {
     }
 }
 
-extension ViewController: YTSwiftyPlayerDelegate {
+// WKWebViewの通知はメインスレッドで届く。既存の非隔離delegate契約をExample側で適合する。
+#if compiler(>=6.0)
+extension ViewController: @preconcurrency YTSwiftyPlayerDelegate {}
+#else
+extension ViewController: YTSwiftyPlayerDelegate {}
+#endif
+
+extension ViewController {
     
     func playerReady(_ player: YTSwiftyPlayer) {
         print(#function)

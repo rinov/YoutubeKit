@@ -11,7 +11,7 @@ import YoutubeKit
 
 // Exampleのプロセス初期化。画面の所有権はSceneDelegateに委ねる。
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
