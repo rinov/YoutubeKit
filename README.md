@@ -161,21 +161,6 @@ YoutubeAPI.shared.send(request) { result in
 
 ```
 
-Example of response here.
-
-```ruby
-VideoList(items: [YoutubeKit.Video(etag: "\"A8kisgyDEbllhHF9ooXPFFrkc/nR6_A9oyIoLTJuucY_UXeasjYNU\"",
-kind: "youtube#video",
-id: "jeiDjeJgF0",
-contentDetails: nil,
-statistics: Optional(YoutubeKit.Statistics.VideoList(dislikeCount: "1631", likeCount: "60307", commentCount: Optional("8675"), favoriteCount: "0", viewCount: "1259046")),
-snippet: nil,
-status: nil),
-etag: "\"J67fSnfblalhHF0foXPiFFrkc/TZGPJdE22-LilSv4-3VNoPw1cS4\"",
-kind: "youtube#videoListResponse",
-pageInfo: YoutubeKit.PageInfo(resultsPerPage: 5, totalResults: 200))
-```
-
 ### Fetch the next page (Pagination)
 ```swift
 var nextPageToken: String?
@@ -236,6 +221,9 @@ YoutubeAPI.shared.send(request) { result in
 
 iOS 13以降。SwiftPMのtools versionは5.3、ライブラリの言語モードはSwift 5です。
 Swift 6コンパイラの使用とSwift 6言語モードへの移行は別の設定です。
+通信APIは従来のcompletionと任意のDecodableレスポンスに対応します。
+completion内のUI更新は `.main` キューを使い、共有する可変参照は利用側でも同期してください。
+`ResponseError.unexpectedResponse(Any)` は互換性のため維持し、任意のペイロードのスレッド安全性は保証しません。
 ExampleはiOS 13以降のSceneライフサイクルを使用します。
 
 ## 開発時の検証
