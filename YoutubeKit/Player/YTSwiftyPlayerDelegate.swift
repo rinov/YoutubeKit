@@ -10,11 +10,11 @@
 // MARK: - YTSwiftyPlayerDelegate
 public protocol YTSwiftyPlayerDelegate: AnyObject {
 
-    /// 153（クライアント識別情報不足）を含む、YouTubeのすべてのエラーコード。
-    /// 既存enumで表せるコードでは、従来の型付き通知も先に呼ばれる。
+    /// Every YouTube error code, including 153 (missing client identity).
+    /// For known enum cases, the existing typed error callback is invoked first.
     func player(_ player: YTSwiftyPlayer, didReceiveErrorCode code: Int)
 
-    /// WebKitまたはYouTubeが自動再生を拒否した。ユーザー操作による再生を案内する。
+    /// WebKit or YouTube blocked autoplay. Offer playback through a user gesture.
     func autoplayBlocked(_ player: YTSwiftyPlayer)
 
     /**

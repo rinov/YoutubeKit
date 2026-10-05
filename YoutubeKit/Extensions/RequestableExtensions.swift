@@ -3,6 +3,7 @@
 //  YoutubeKit
 //
 //  Created by Ryo Ishikawa on 12/30/2017
+//  Builds Data API requests while preserving caller-supplied authentication headers.
 //
 
 import Foundation
@@ -34,6 +35,11 @@ extension Requestable {
     }
 
     public func makeURLRequest() -> URLRequest {
+        return makeURLRequest(bundleIdentifier: Bundle.main.bundleIdentifier)
+    }
+
+    // Keep identity injectable internally so missing app bundles can be tested without global state.
+    internal func makeURLRequest(bundleIdentifier: String?) -> URLRequest {
         let url = baseURL.appendingPathComponent(path)
         var urlRequest = URLRequest(url: url)
         
@@ -43,6 +49,14 @@ extension Requestable {
         var header: [String: String] = headerField
         if isAuthorizedRequest && !header.contains(where: { $0.key == "Authorization" }) {
             header["Authorization"] = "Bearer \(YoutubeKit.shared.accessToken)"
+        }
+        // Google requires the exact app ID for iOS-restricted API keys. HTTP header names
+        // are case-insensitive; an explicit caller value (including an empty one) wins.
+        let identityHeader = "X-Ios-Bundle-Identifier"
+        if !isAuthorizedRequest,
+           !header.keys.contains(where: { $0.caseInsensitiveCompare(identityHeader) == .orderedSame }),
+           let identifier = bundleIdentifier, !identifier.isEmpty {
+            header[identityHeader] = identifier
         }
         header.forEach { key, value in
             urlRequest.addValue(value, forHTTPHeaderField: key)

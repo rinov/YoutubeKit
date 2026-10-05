@@ -85,7 +85,7 @@ public enum VideoControlAppearance: Int {
 public enum VideoListType: String {
     
     ///  The list parameter value specifies the search query.
-    @available(*, deprecated, message: "YouTubeはlistType=searchを廃止しました。Data APIで検索した動画IDを指定してください。")
+    @available(*, deprecated, message: "YouTube no longer supports listType=search. Search with the Data API and pass video IDs instead.")
     case search         = "search"
     
     /// The list parameter value identifies the YouTube channel whose uploaded videos will be loaded.
@@ -169,8 +169,8 @@ public enum VideoEmbedParameter {
      */
     case loopVideo(Bool)
     
-    /// YouTubeはmodestbrandingを廃止しており、指定しても効果はない。
-    @available(*, deprecated, message: "YouTubeはmodestbrandingを廃止しました。ブランド表示はプレイヤーが決定します。")
+    /// YouTube no longer supports modestbranding; this parameter has no effect.
+    @available(*, deprecated, message: "YouTube no longer supports modestbranding. Branding is controlled by the player.")
     case showModestbranding(Bool)
     
     /// This parameter provides an extra security measure for the IFrame API and is only supported for IFrame embeds. If you are using the IFrame API, which means you are setting the enablejsapi parameter value to 1, you should always specify your domain as the origin parameter value.
@@ -185,7 +185,7 @@ public enum VideoEmbedParameter {
     /// This parameter controls whether videos play inline or fullscreen. Default value is `false`.
     case playsInline(Bool)
     
-    /// falseは関連動画を同一チャンネルに限定する。関連動画を完全に非表示にはできない。
+    /// false limits related videos to the same channel; it does not hide them completely.
     case showRelatedVideo(Bool)
 
     /// This parameter identifies the URL where the player is embedded. This value is used in YouTube Analytics reporting when the YouTube player is embedded in a widget, and that widget is then embedded in a web page or application. In that scenario, the origin parameter identifies the widget provider's domain, but YouTube Analytics should not identify the widget provider as the actual traffic source. Instead, YouTube Analytics uses the widget_referrer parameter value to identify the domain associated with the traffic source.

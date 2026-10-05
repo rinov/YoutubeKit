@@ -9,7 +9,7 @@ import Foundation
 
 /// SeeAlso: https://developers.google.com/youtube/v3/docs/guideCategories/list
 // 廃止済みAPIの移行案内。既存コードの型とリクエスト形式は維持する。
-@available(*, deprecated, message: "YouTubeはguideCategories.listを廃止しました。この型は既存コードの互換性のために保持しています。")
+@available(*, deprecated, message: "YouTube no longer supports guideCategories.list. This type is retained for source compatibility.")
 public struct GuideCategoriesListRequest: Requestable {
     
     public typealias Response = GuideCategoriesList
