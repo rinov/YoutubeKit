@@ -28,6 +28,7 @@ open class YTSwiftyPlayer: WKWebView {
 
     open internal(set) var availablePlaybackRates: [Double] = [1]
 
+    @available(*, deprecated, message: "YouTubeは画質一覧の取得をサポートしていません。")
     open internal(set) var availableQualityLevels: [YTSwiftyVideoQuality] = []
 
     open internal(set) var bufferedVideoRate: Double = 0
@@ -215,6 +216,7 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("setPlaybackRate(\(suggestedRate))")
     }
 
+    @available(*, deprecated, message: "YouTubeが再生画質を自動選択するため、この指定に効果はありません。")
     public func setPlaybackQuality(_ suggestedQuality: YTSwiftyVideoQuality) {
         evaluatePlayerCommand("setPlaybackQuality(\(suggestedQuality.rawValue))")
     }
@@ -227,10 +229,12 @@ open class YTSwiftyPlayer: WKWebView {
         evaluatePlayerCommand("setShuffle(\(shufflePlaylist))")
     }
 
+    /// suggestedQualityはYouTubeに無視される。既存の呼び出し形式を維持するために残す。
     public func cueVideo(videoID: String, startSeconds: Int = 0, suggestedQuality: YTSwiftyVideoQuality = .large) {
         evaluatePlayerCommand("cueVideoById('\(videoID)',\(startSeconds),'\(suggestedQuality.rawValue)')")
     }
 
+    /// suggestedQualityはYouTubeに無視される。既存の呼び出し形式を維持するために残す。
     public func loadVideo(videoID: String, startSeconds: Int = 0, suggestedQuality: YTSwiftyVideoQuality = .large) {
         evaluatePlayerCommand("loadVideoById('\(videoID)',\(startSeconds),'\(suggestedQuality.rawValue)')")
     }
