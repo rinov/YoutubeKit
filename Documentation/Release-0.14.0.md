@@ -22,7 +22,8 @@ and adds iOS client identity to Data API requests while preserving existing publ
 - Existing delegates, enum cases, completion handlers, and `Decodable` responses remain supported.
 - Custom player base URLs continue to take precedence. Hosts without a valid bundle ID should provide an explicit identity URL.
 - Deprecated APIs remain callable but cannot restore server features removed by YouTube. New warnings may affect builds that treat warnings as errors.
-- CocoaPods users upgrading from **0.9.0** need **iOS 13**, compared with iOS 11 in that version. Apps supporting iOS 11 or 12 should retain a compatible older version.
+- CocoaPods distribution is deprecated and this version is not published to CocoaPods trunk (latest there: **0.9.0**). Migrate to SwiftPM, or reference the `0.14.0` tag with `:git` until migrating.
+- Upgrading from **0.9.0** requires **iOS 13**, compared with iOS 11 in that version. Apps supporting iOS 11 or 12 should retain a compatible older version.
 - SwiftPM is recommended for new integrations. Carthage has no maintained shared framework target in this repository.
 
 ## Known limitations
