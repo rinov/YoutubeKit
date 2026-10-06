@@ -10,7 +10,7 @@ This preparation does not create a tag or publish a release.
 - [ ] Confirm `YoutubeKit.podspec`, the README installation example, release title, and tag all use `0.14.0`.
 - [ ] Run package and hosted Example tests with `python3 Scripts/run-tests.py --language-mode 5` and `--language-mode 6`.
 - [ ] Run `pod lib lint YoutubeKit.podspec --allow-warnings` and repeat with `--use-libraries`; inspect all warnings.
-- [ ] In a consumer app, confirm bundled player HTML loads through SwiftPM and CocoaPods, and the privacy manifest is included.
+- [ ] In a consumer app, confirm bundled player HTML loads through SwiftPM and a `:git` CocoaPods reference, and the privacy manifest is included.
 - [ ] Run the live checks below and record the app bundle ID, device, iOS version, commit, video ID, and outcome without credentials.
 
 Deprecation warnings are expected in compatibility tests and the retained legacy quality query.
@@ -47,11 +47,10 @@ git tag -a 0.14.0 -m "YoutubeKit 0.14.0"
 git push origin 0.14.0
 pod spec lint YoutubeKit.podspec --allow-warnings
 gh release create 0.14.0 --verify-tag --title "YoutubeKit 0.14.0" --notes-file Documentation/Release-0.14.0.md
-pod trunk push YoutubeKit.podspec --allow-warnings
 ```
 
 `pod spec lint` verifies the tagged remote source, unlike `pod lib lint`, which checks the local tree.
-Publishing to CocoaPods requires the maintainer's authenticated trunk session.
-Check `pod trunk info YoutubeKit` and the GitHub release afterward; both should list 0.14.0.
-Finally, install 0.14.0 in clean SwiftPM and CocoaPods consumer projects and repeat the resource-loading check.
+CocoaPods distribution is deprecated, so releases are not pushed to CocoaPods trunk.
+Check the GitHub release afterward; it should list 0.14.0 as the latest release.
+Finally, install 0.14.0 in clean SwiftPM and `:git` CocoaPods consumer projects and repeat the resource-loading check.
 Do not move an already published tag; prepare a new patch release if a correction is needed.

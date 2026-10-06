@@ -4,7 +4,7 @@
 `YoutubeKit` is an iOS library for the YouTube IFrame Player and YouTube Data API.
 
 [![Swift](https://img.shields.io/badge/Swift-5-blue.svg)](https://img.shields.io/badge/Swift-5-blue.svg)
-[![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)
+[![Cocoapods](https://img.shields.io/badge/Cocoapods-deprecated-lightgrey.svg)](#cocoapods-deprecated)
 [![License](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)](https://img.shields.io/badge/LICENSE-MIT-yellowgreen.svg)
 
 ## References
@@ -275,11 +275,18 @@ dependencies: [
 ]
 ```
 
-### CocoaPods (existing integrations)
+### CocoaPods (deprecated)
 
-The podspec remains available for existing users. SwiftPM is recommended for new integrations.
-Use `pod 'YoutubeKit', '~> 0.14.0'` after this version is published to CocoaPods.
-Upgrading from the previously published 0.9.0 requires iOS 13 (0.9.0 supported iOS 11).
+CocoaPods distribution is deprecated; migrate to SwiftPM.
+The latest version on CocoaPods trunk is 0.9.0, and newer versions are not published there.
+CocoaPods trunk becomes [read-only on December 2, 2026](https://blog.cocoapods.org/CocoaPods-Specs-Repo/).
+Until migrating, existing integrations can reference a release tag directly:
+
+```ruby
+pod 'YoutubeKit', :git => 'https://github.com/rinov/YoutubeKit.git', :tag => '0.14.0'
+```
+
+Upgrading from 0.9.0 requires iOS 13 (0.9.0 supported iOS 11).
 Applications that still support iOS 11 or 12 must remain on a compatible older version.
 
 ### Carthage (legacy)
